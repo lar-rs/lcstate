@@ -1,12 +1,11 @@
 <node>
  <interface name="lar.wqm.relay">
-    <property name="RelayString" type="s" access="readwrite"/>
     <property name="Opened" type="b" access="read"/>
-    <property name="MassWarning" type="b" access="readwrite"/>
-    <property name="MassCritical" type="b" access="readwrite"/>
     <method name="Open">
+      <arg direction="out" type="b" name="done"/>
     </method>
     <method name="Close">
+      <arg direction="out" type="b" name="done"/>
     </method>
   </interface>
 </node>

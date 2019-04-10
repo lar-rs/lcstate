@@ -1,0 +1,53 @@
+<node>
+  <interface name="lar.wqm.status">
+    <property name='serial' type="s" access="readwrite"/>
+    <property name="Online" type="b" access="read"/>
+    <property name="Status" type="s" access="read"/>
+    <property name="Busy" type="b" access="read"/>
+    <property name="Maintenance" type="b" access="readwrite"/>
+    <property name="IgnoreErrors" type="b" access="read"/>
+    <property name="GreenButton" type="b" access="read"/>
+    <property name="RedButton" type="b" access="read"/>
+    <property name="Autostart" type="b" access="read"/>
+
+    <property name="Limit" type="b" access="read"/>
+    <property name="Critical" type="b" access="read"/>
+    <property name="Warning" type="b" access="read"/>
+  </interface>
+
+ <interface name="lar.ams.ultra.temperatur">
+		<property name="FurnaceMax"     type="d" access="readwrite"/>
+		<property name="HousingMin"     type="d" access="readwrite"/>
+		<property name="CheckFurnace"   type="b" access="readwrite"/>
+		<property name="CheckHousing"   type="b" access="readwrite"/>
+		<property name="ErrorFurnace"   type="b" access="read"/>
+		<property name="ErrorHousing"   type="b" access="read"/>
+		<property name="FurnaceCurrent" type="d" access="read"/>
+		<property name="HousingCurrent" type="d" access="read"/>
+	</interface>
+
+  <interface name="lar.ams.ultra.mon.humidity">
+		<property name="Min"            type="d" access="readwrite"/>
+		<property name="Max"            type="d" access="readwrite"/>
+		<property name="CheckMax"       type="b" access="readwrite"/>
+		<property name="CheckMin"       type="b" access="readwrite"/>
+		<property name="Sollwert"       type="d" access="readwrite"/>
+		<property name="Deviation"      type="d" access="readwrite"/>
+		<property name="Correction"     type="d" access="readwrite"/>
+		<property name="OutOfRange"     type="b" access="read"/>
+		<property name="Broked"         type="b" access="read"/>
+		<property name="Value"          type="d" access="read"/>
+	</interface>
+  <interface name="lar.ams.ultra.mon.pressure">
+		<property name="Min"            type="d" access="readwrite"/>
+		<property name="Max"            type="d" access="readwrite"/>
+		<property name="CheckMax"       type="b" access="readwrite"/>
+		<property name="CheckMin"       type="b" access="readwrite"/>
+		<property name="Sollwert"       type="d" access="readwrite"/>
+		<property name="Deviation"      type="d" access="readwrite"/>
+		<property name="Correction"     type="d" access="readwrite"/>
+		<property name="OutOfRange"     type="b" access="read"/>
+		<property name="Broked"         type="b" access="read"/>
+		<property name="Value"          type="d" access="read"/>
+	</interface>
+</node>

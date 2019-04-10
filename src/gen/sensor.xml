@@ -1,51 +1,10 @@
 <node>
   <interface name="lar.wqm.sensor">
     <!-- Die folgenden Eigenschaften sind eigentlich Konstanten, d. h.: sie sind immer gleich. -->
-    <property name="Sensor" type="u" access="readwrite"/>
     <property name="Error" type="b" access="read"/>
 
     <!-- Für eingeschaltete Sensoren wird hier das unverarbeitet Signal in der angegebenen Periode ausgegeben.
 	     Für RS-232 ist dies eine Zeichenkette, für den Analogeingang ist dies eine ganze Zahl von 0 bis 4095. -->
-    <property name="Low" type="d" access="readwrite"/>
-    <!-- Minimaler Ausgangswert, ca. 0 -->
-    <property name="High" type="d" access="readwrite"/>
-    <!-- Maximaler Ausgangswert, Edinburgh: ca. 1, Aide z. B.: ca 500 -->
-    <property name="IncreasesOne" type="b" access="read"/>
-    <!-- Der Sensor hat vor dem Begrenzen 1 überschritten. -->
-    <property name="WarmingUp" type="b" access="read"/>
-    <!-- Format -->
-    <property name="FormatError" type="b" access="read"/>
-
-    <property name="Fsr" type="d" access="read"/>
-    <property name="Signal" type="d" access="read"/>
-
-    <method name="GetFsr">
-      <arg name="Value" direction="out" type="d"/>
-    </method>
-    <method name="GetSignal">
-      <arg name="Value" direction="out" type="d"/>
-    </method>
-   </interface>
-   <interface name="lar.ams.ultra.sensor.ndir2">
-    <!-- Die folgenden Eigenschaften sind eigentlich Konstanten, d. h.: sie sind immer gleich. -->
-    <property name="Sensor" type="u" access="readwrite"/>
-    <property name="Error" type="b" access="read"/>
-
-    <!-- Für eingeschaltete Sensoren wird hier das unverarbeitet Signal in der angegebenen Periode ausgegeben.
-	     Für RS-232 ist dies eine Zeichenkette, für den Analogeingang ist dies eine ganze Zahl von 0 bis 4095. -->
-    <property name="Name" type="s" access="read"/>
-    <!--
-      Mögliche Namen:
-        1: CO2 - NDIR 50 ppm
-        CO2 - NDIR 150 ppm
-        CO2 - NDIR 500 ppm
-        CO2 - NDIR 2000 ppm
-        CO2 - NDIR 5000 ppm
-        CO2 - NDIR 1 %
-        CO2 - NDIR 3 %
-        Tnb
-        O2 - %u ppm
-    -->
     <property name="Low" type="d" access="readwrite"/>
     <!-- Minimaler Ausgangswert, ca. 0 -->
     <property name="High" type="d" access="readwrite"/>

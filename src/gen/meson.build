@@ -1,57 +1,68 @@
 
-include_core = include_directories('.')
+gen_include = include_directories('.')
 
 gnome = import('gnome')
 
-introspection_sources=[
+gen_sources=[
 
   gnome.gdbus_codegen (
-    'airdlow',
+    'airflow',
     'airflow.xml',
     interface_prefix: 'lar.wqm',
-    namespace: 'WQM'
+    namespace: 'Wqm'
   ),
   gnome.gdbus_codegen (
-    'analogsout',
-    'analogsout.xml',
+    'can',
+    'can.xml',
+    interface_prefix: 'lar.wqm',
+    namespace: 'Wqm'
+  ),
+  gnome.gdbus_codegen (
+    'axis',
+    'axis.xml',
+    interface_prefix: 'lar.wqm',
+    namespace: 'Wqm'
+  ),
+  gnome.gdbus_codegen (
+    'airflow',
+    'airflow.xml',
+    interface_prefix: 'lar.wqm',
+    namespace: 'Wqm'
+  ),
+  gnome.gdbus_codegen (
+    'airflow',
+    'airflow.xml',
+    interface_prefix: 'lar.wqm',
+    namespace: 'Wqm'
+  ),
+
+
+
+
+
+  gnome.gdbus_codegen (
+    'analog',
+    'analog.xml',
     interface_prefix: 'lar.ams.',
-    namespace: 'WQM'
+    namespace: 'Wqm'
   ),
   gnome.gdbus_codegen (
     'sensor',
-    'sensors.xml',
+    'sensor.xml',
     interface_prefix: 'lar.ams.',
-    namespace: 'WQM'
-  ),
-  gnome.gdbus_codegen (
-    'ultra-pc-generated-code',
-    'ultra-pc.xml',
-    interface_prefix: 'lar.ams.',
-    namespace: 'WQM'
-  ),
-  gnome.gdbus_codegen (
-    'ultra-can-generated-code',
-    'ultra-can.xml',
-    interface_prefix: 'lar.ams.',
-    namespace: 'WQM'
-  ),
-  gnome.gdbus_codegen (
-    'ultra-ams-generated-code',
-    'ultra-ams.xml',
-    interface_prefix:'lar.ams.',
-    namespace: 'WQM'
+    namespace: 'Wqm'
   ),
 ]
 gen_lib = static_library(
   'gen',
-  sources: sources,
-  include_directories: include_gen,
+  sources: gen_sources,
+  include_directories: gen_include,
   dependencies: glib_dep
 )
 
 gen_dep = declare_dependency(
-	sources:   sources,
-	include_directories: include_gen,
+	sources:   gen_sources,
+	include_directories: gen_include,
 	link_with: gen_lib,
   dependencies: glib_dep
 )
