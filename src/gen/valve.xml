@@ -1,0 +1,11 @@
+<node>
+  <interface name="lar.wqm.valve">
+    <property name="open" type="b" access="read"/>
+    <method name="Open">
+      <arg direction="out" type="b" name="is_done"/>
+    </method>
+    <method name="Close">
+      <arg direction="out" type="b" name="is_done"/>
+    </method>
+  </interface>
+</node>

@@ -1,0 +1,17 @@
+<node>
+  <interface name="lar.wqm.status">
+    <property name='serial' type="s" access="readwrite"/>
+    <property name="Online" type="b" access="read"/>
+    <property name="Status" type="s" access="read"/>
+    <property name="Busy" type="b" access="read"/>
+    <property name="Maintenance" type="b" access="readwrite"/>
+    <property name="IgnoreErrors" type="b" access="read"/>
+    <property name="GreenButton" type="b" access="read"/>
+    <property name="RedButton" type="b" access="read"/>
+    <property name="Autostart" type="b" access="read"/>
+
+    <property name="Limit" type="b" access="read"/>
+    <property name="Critical" type="b" access="read"/>
+    <property name="Warning" type="b" access="read"/>
+  </interface>
+</node>

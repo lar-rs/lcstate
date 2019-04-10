@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+]>
+<refentry id="gdbus-com.lar.tera.gapp">
+  <refmeta>    <refentrytitle role="top_of_page" id="gdbus-interface-com-lar-tera-gapp.top_of_page">com.lar.tera.gapp</refentrytitle>
+  <indexterm zone="gdbus-interface-com-lar-tera-gapp.top_of_page"><primary sortas="gapp">com.lar.tera.gapp</primary></indexterm>
+  </refmeta>  <refnamediv>    <refname>com.lar.tera.gapp</refname>    <refpurpose></refpurpose>  </refnamediv>  <refsynopsisdiv role="synopsis">
+    <title role="synopsis.title">Methods</title>
+    <synopsis>
+<link linkend="gdbus-method-com-lar-tera-gapp.Start">Start</link> (IN  s layout);
+</synopsis>
+  </refsynopsisdiv>
+  <refsect1 role="properties">
+    <title role="properties.title">Properties</title>
+    <synopsis>
+<link linkend="gdbus-property-com-lar-tera-gapp.Started">Started</link>    readable   b
+<link linkend="gdbus-property-com-lar-tera-gapp.Activated">Activated</link>  readable   b
+<link linkend="gdbus-property-com-lar-tera-gapp.PlugId">PlugId</link>     readable   t
+<link linkend="gdbus-property-com-lar-tera-gapp.Icon">Icon</link>       readable   s
+<link linkend="gdbus-property-com-lar-tera-gapp.Processed">Processed</link>  readable   b
+</synopsis>
+  </refsect1>
+<refsect1 role="desc" id="gdbus-interface-com-lar-tera-gapp">
+  <title role="desc.title">Description</title>
+  <para></para>
+</refsect1>
+<refsect1 role="details" id="gdbus-methods-com.lar.tera.gapp">
+  <title role="details.title">Method Details</title>
+<refsect2 role="method" id="gdbus-method-com-lar-tera-gapp.Start">
+  <title>The Start() method</title>
+  <indexterm zone="gdbus-method-com-lar-tera-gapp.Start"><primary sortas="gapp.Start">com.lar.tera.gapp.Start()</primary></indexterm>
+<programlisting>
+Start (IN  s layout);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>layout</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+</refsect1>
+<refsect1 role="details" id="gdbus-properties-com.lar.tera.gapp">
+  <title role="details.title">Property Details</title>
+<refsect2 role="property" id="gdbus-property-com-lar-tera-gapp.Started">
+  <title>The "Started" property</title>
+  <indexterm zone="gdbus-property-com-lar-tera-gapp.Started"><primary sortas="gapp:Started">com.lar.tera.gapp:Started</primary></indexterm>
+<programlisting>
+Started  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-com-lar-tera-gapp.Activated">
+  <title>The "Activated" property</title>
+  <indexterm zone="gdbus-property-com-lar-tera-gapp.Activated"><primary sortas="gapp:Activated">com.lar.tera.gapp:Activated</primary></indexterm>
+<programlisting>
+Activated  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-com-lar-tera-gapp.PlugId">
+  <title>The "PlugId" property</title>
+  <indexterm zone="gdbus-property-com-lar-tera-gapp.PlugId"><primary sortas="gapp:PlugId">com.lar.tera.gapp:PlugId</primary></indexterm>
+<programlisting>
+PlugId  readable   t
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-com-lar-tera-gapp.Icon">
+  <title>The "Icon" property</title>
+  <indexterm zone="gdbus-property-com-lar-tera-gapp.Icon"><primary sortas="gapp:Icon">com.lar.tera.gapp:Icon</primary></indexterm>
+<programlisting>
+Icon  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-com-lar-tera-gapp.Processed">
+  <title>The "Processed" property</title>
+  <indexterm zone="gdbus-property-com-lar-tera-gapp.Processed"><primary sortas="gapp:Processed">com.lar.tera.gapp:Processed</primary></indexterm>
+<programlisting>
+Processed  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+</refsect1>
+</refentry>
+

@@ -1,0 +1,80 @@
+<schemalist>
+  <schema id="com.lar.LGDM" path="/com/lar/LGDM/" gettext-domain="lgdm">
+    <key name="test-level" type="u">
+      <range min="0" max="4"/>
+      <default>0</default>
+      <summary>GDM test level debugging </summary>
+      <description>
+        GDM test level.
+      </description>
+    </key>
+    <key name="x-max" type="i">
+      <range min="640" max="3200"/>
+      <default>800</default>
+      <summary>GDM status x spacing</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+    <key name="y-max" type="i">
+      <range min="480" max="2800"/>
+      <default>600</default>
+      <summary>GDM status y spacing</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+    </schema>
+   <schema id="com.lar.LGDM.Status" path="/com/lar/LGDM/Status/" gettext-domain="lgdm">
+  	<key name="height" type="i">
+      <range min="20" max="150"/>
+      <default>40</default>
+      <summary>GDM status height</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+    <key name="time-format" type="s">
+      <default>"%H:%M:%S %d.%m.%y"</default>
+      <summary>Time format</summary>
+      <description>
+        User interface time format.
+      </description>
+    </key>
+    <key name="x-spacing" type="i">
+      <range min="0" max="100"/>
+      <default>0</default>
+      <summary>GDM status x spacing</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+    <key name="y-spacing" type="i">
+      <range min="0" max="150"/>
+      <default>0</default>
+      <summary>GDM status y spacing</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+  </schema>
+  <schema id="com.lar.LGDM.Sidebar" path="/com/lar/LGDM/Sidebar/" gettext-domain="lgdm">
+    <key name="width" type="i">
+      <range min="30" max="150"/>
+      <default>60</default>
+      <summary>GDM sidebar width</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+  </schema>
+  <schema id="com.lar.LGDM.Desktop" path="/com/lar/LGDM/Desktop/" gettext-domain="lgdm">
+     <key name="starter-path" type="s">
+      <default>"/usr/local/share/largdm/applications/"</default>
+      <summary>Desktop application path</summary>
+      <description>
+        User interface theme name.
+      </description>
+    </key>
+  </schema>
+</schemalist>

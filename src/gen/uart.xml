@@ -1,0 +1,10 @@
+<node>
+  <interface name="lar.wqm.uart">
+    <method name="Read">
+      <arg direction="out" type="s" name="value"/>
+    </method>
+    <method name="Write">
+      <arg direction="in" type="s" name="value"/>
+    </method>
+  </interface>
+</node>

@@ -1,0 +1,16 @@
+<node>
+<interface name="lar.wqm.temperatur">
+    <property name="SollValue" type="d" access="readwrite"/>
+    <property name="Correction" type="d" access="readwrite"/>
+    <property name="Deviation" type="d" access="readwrite"/>
+    <property name="Error" type="b" access="readwrite"/>
+    <property name="OutOfRange" type="b" access="read"/>
+
+  <!-- Read:
+	    @temperatur: Temperatur
+	    @since: 2.31 Read. -->
+    <method name="Read">
+      <arg direction="out" type="d" name="temperatur"/>
+    </method>
+  </interface>
+</node>

@@ -1,0 +1,16 @@
+<glade-catalog name="lgdm_catalog" domain="glade-3" 
+               depends="gtk+" version="1.0">
+	<glade-widget-classes>
+    	<glade-widget-class title="Gdm layout class" name="GlLayout" 
+                        generic-name="GlLayout" parent="GtkScrolledWindow"
+                        icon-name="widget-gtk-scrolledwindow"/>
+    </glade-widget-classes>
+    <glade-widget-classes>
+    	<glade-widget-class title="Gdm statistic dialog class" name="GlSatisticDialog"
+                        generic-name="GlSatisticDialog" parent="GtkDialog"
+                        icon-name="widget-gtk-dialog"/>
+    </glade-widget-classes>
+    <glade-widget-group name="lgdm-widgets" title="LGDM-widgets">
+		<glade-widget-class-ref name="GlLayout"/>
+	</glade-widget-group>
+</glade-catalog>

@@ -1,0 +1,22 @@
+<node>
+	<interface name="lar.wqm.analog.out">
+		<!-- Min:
+		 	@since: 2.36 Property with a later <quote>since</quote> annotation.
+			-->
+		<property name="Min" type="d" access="readwrite"/>
+		<!-- Max:
+		 	@since: 2.36 Property with a later <quote>since</quote> annotation.
+			-->
+		<property name="Max" type="d" access="readwrite"/>
+		<property name="Value" type="d" access="read"/>
+		<!-- SetValue:
+		   	@is_done: Ruckmeldung - Wenn analog value geandert wurde.
+		   	@value: Messungsergebnisswert.
+		   	@min: Minimale Grenze des Kanals.
+		   	@max: Maximale Grenze des Kanals.
+		    @since: 1.0 Setzt in Analogausgang neues Messwert. -->
+		<method name="Set">
+			<arg direction="in" type="d" name="value"/>
+		</method>
+	</interface>
+</node>

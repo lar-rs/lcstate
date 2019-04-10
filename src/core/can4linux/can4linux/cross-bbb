@@ -1,0 +1,59 @@
+# Environment and files as used for the generic driver module
+# Look at all settings and change according your set-up
+# 
+# can be used für cross compiling the genric driver version
+# if all variables are set correctly
+#
+ARCH=arm
+CROSS_COMPILE=arm-angstrom-linux-gnueabi-
+
+CROSS_TOOL_PATH=~/development/bb/setup-scripts/build/tmp-angstrom_v2012_12-eglibc/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-angstrom-linux-gnueabi
+
+PATH=$PATH:$CROSS_TOOL_PATH
+CC=${CROSS_TOOL_PATH}/${CROSS_COMPILE}-gcc
+AR=${CROSS_TOOL_PATH}/${CROSS_COMPILE}-ar
+LD=${CROSS_TOOL_PATH}/${CROSS_COMPILE}-ld
+RANLIB=${CROSS_TOOL_PATH}/${CROSS_COMPILE}-ranlib
+DEPMOD=${CROSS_TOOL_PATH}/${CROSS_COMPILE}-depmod-2.6
+
+
+[ ${KDIR} ] || KDIR=/home/bb/kernel/kernel/
+DEPLOYDIR=
+DESTDIR=$(dirname $(pwd))/install/arm
+LD_LIBRARY_PATH=${DEPLOYDIR}/lib/
+
+LIBS=
+CFLAGS="-Wall -Wstrict-prototypes -Os -Wl,-s"
+LDFLAGS=
+
+export ARCH
+export CROSS_COMPILE
+export CC
+export AR
+export LD
+export RANLIB
+export DEPMOD
+export LIBS
+export CFLAGS
+export LDFLAGS
+export DEPLOYDIR
+export DESTDIR
+export KDIR
+export PATH
+
+echo
+echo "PATH            " $PATH
+echo "ARCH            " $ARCH
+echo "CROSS_COMPILE   " $CROSS_COMPILE
+echo "CC              " $CC
+echo "AR              " $AR
+echo "LD              " $LD
+echo "RANLIB          " $RANLIB
+echo "DEPMOD          " $DEPMOD
+echo "KDIR            " $KDIR
+echo "LIBS            " $LIBS
+echo "CFLAGS          " $CFLAGS
+echo "LDFLAGS         " $LDFLAGS
+echo "DEPLOYDIR       " $DEPLOYDIR
+echo "DESTDIR         " $DESTDIR
+echo

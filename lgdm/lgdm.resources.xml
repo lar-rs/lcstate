@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/lgdm">
+  	<file>layout/desktop.ui</file>
+  	<file>layout/status.ui</file>
+  	<file>layout/sidebar.ui</file>
+    <file>layout/desktop-action.ui</file>
+    <file>layout/status-action.ui</file>
+    <file>layout/desktop-actions.ui</file>
+    <file>layout/user-login.ui</file>
+    <file>layout/layout-manager.ui</file>
+    <file>layout/service-log.ui</file>
+    <file>layout/select-device.ui</file>
+    <file>dialog/time_setting.ui</file>
+    <file>dialog/statistic-dialog.ui</file>
+    <file>dialog/string-dialog.ui</file>
+    <file>dialog/date-complete-dialog.ui</file>
+    <file>dialog/boolean-dialog.ui</file>
+    <file>dialog/spinner-dialog.ui</file>
+    <file>dialog/combo-dialog.ui</file>
+    <file>dialog/combo-row.ui</file>
+    <file>dialog/date_dialog.ui</file>
+    <file>dialog/date_settings.ui</file>
+    <file>dialog/interval-dialog.ui</file>
+    <file>row/user.ui</file>
+    <file>image/welcomLar.png</file>
+    <file>image/start-bild.png</file>
+    <file>image/Logo_LAR_m_Balken_2016_300dpi.png</file>
+    <file>image/vnc-01.svg</file>
+    <file>image/vnc-02.svg</file>
+    <file>image/vnc-03.svg</file>
+    <file>image/user.svg</file>
+    <file>image/lock.svg</file>
+    <file>image/unlock.svg</file>
+  </gresource>
+</gresources>

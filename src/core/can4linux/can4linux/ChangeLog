@@ -1,0 +1,2111 @@
+2015-12-06 18:02  hjoertel
+
+	* [r526] write.c: - cast size_t written to unsigned int for display
+	  with printk()
+
+2015-12-06 07:39  hjoertel
+
+	* [r525] write.c: - returnvalue corrected, was mistake with last ci
+
+2015-12-05 18:54  hjoertel
+
+	* [r524] core.c: - changed copyright in kernel message
+
+2015-12-04 18:32  hjoertel
+
+	* [r523] mcp2515funcs.c: - changed data type of rxfifo to unsigned,
+	  it is mostly used as array
+	  index.
+
+2015-12-04 18:19  hjoertel
+
+	* [r522] write.c: - changed data type of written to size_t,
+	  introduced reval as return
+	  value
+
+2015-12-02 17:09  hjoertel
+
+	* [r521] mcp2515funcs.c: - #if 0 for (currently) unused code
+	  - extended the struct device driver with .bus=&spi_bus_type
+
+2015-12-02 16:22  hjoertel
+
+	* [r520] mcp2515funcs.c: - removed .suspend and .remove entries,
+	  they are not used at the moment
+
+2015-12-02 16:13  hjoertel
+
+	* [r519] defs.h, ioctl.c, read.c, select.c, write.c: - removed
+	  __LDDK_MINOR, using now iminor(file_inode(file))
+
+2015-12-02 16:09  hjoertel
+
+	* [r518] allwinnerfuncs.c: - extended (c) message
+
+2015-10-23 17:04  hjoertel
+
+	* [r516] allwinnerfuncs.c: - thanks R.Stürmer, added missing
+	  interrupt ack for arbitration lost and
+	  can overrun
+
+2015-10-22 11:57  aph-le
+
+	* [r515] can4linux.h: Changed datatypes of the structures which are
+	  passed between kernel and user space to kernel datatypes.
+
+2015-10-22 11:29  aph-le
+
+	* [r514] Makefile-standard: Removed wrong webpage link for janz
+	  target
+
+2015-10-15 10:52  hjoertel
+
+	* [r511] version.inc: - changed some more data types in user API
+	  structs to __u
+	  this shoud not affect the current canmsg_ layout
+
+2015-10-15 10:49  hjoertel
+
+	* [r510] can4linux.h: - changed some more data types in user API
+	  structs to __u
+	  this shoud not affect the current canmsg_ layout
+
+2015-10-15 10:46  hjoertel
+
+	* [r509] defs.h: - changed some texts for __CAN_TYPE__
+	  - new ctl_table definition for kernel > 3.17.0
+
+2015-10-14 14:51  hjoertel
+
+	* [r507] Makefile-standard: - removed depricated EXTRA_CFLAGS by
+	  ccflags-y
+	  - enabled more compiler warnings
+
+2015-10-13 14:50  hjoertel
+
+	* [r506] can4linux.h: - removed some spelling errors
+
+2015-09-14 21:02  hjoertel
+
+	* [r505] can4linux.h: - only the new canmsg_t struct ist now valid,
+	  using the __u data types.
+
+2015-08-25 12:47  hjoertel
+
+	* [r503] imx35funcs.c: - extended copyright message
+	  - removed some spelling errors
+
+2015-07-13 08:24  hjoertel
+
+	* [r502] bitrate: - bitrate can be used for SocketCAn now as well
+
+2015-07-10 17:22  hjoertel
+
+	* [r501] ChangeLog: - simple ci, forgot to ci together with
+	  version.inc
+
+2015-07-10 17:01  hjoertel
+
+	* [r500] version.inc: - version update
+
+2015-07-10 16:47  hjoertel
+
+	* [r499] sysctl.c: - someone needed the old .ctl_name,
+	  therefore #if defined OLD_SYCTL was added
+
+2015-07-10 16:32  hjoertel
+
+	* [r498] bananapi.c: - use include <mach/clock.h> fo clock names
+
+2015-07-10 16:29  hjoertel
+
+	* [r497] Makefile-standard: - increased -DCAN_MAX_OPEN=4
+
+2015-05-19 19:14  hjoertel
+
+	* [r486] Makefile-imx35: - removed line ending error in the
+	  definition of DEFS
+
+2015-05-19 19:13  hjoertel
+
+	* [r485] ChangeLog:
+
+2015-05-19 19:02  hjoertel
+
+	* [r484] imx35.c: - enabled #include of mach-mx35/crm_regs.h
+
+2015-05-19 19:01  hjoertel
+
+	* [r483] core.c: - use explicite CAN register addresses for imx35
+
+2015-05-19 18:59  hjoertel
+
+	* [r482] imx35.c: - changed naming of some functions and variables
+	  using linux kernel
+	  style
+
+2015-05-19 18:47  hjoertel
+
+	* [r481] ems_pci.c: - removed very small spelling error
+
+2015-05-19 17:47  hjoertel
+
+	* [r480] imx35funcs.c: - replaced adjustlength() by dlc2len()
+
+2015-04-14 08:45  hjoertel
+
+	* [r479] bitrate: - prepared for handling all devices, depending on
+	  the real number available
+
+2015-03-17 19:17  hjoertel
+
+	* [r478] ioctl.c: - added case CAN_IOCTL_CONFIG, which was removed
+	  by accident with rev
+	  466
+
+2015-03-04 17:30  hjoertel
+
+	* [r477] INSTALL.pdf, INSTALL.t2: - update and extended the doc
+
+2015-03-03 17:32  hjoertel
+
+	* [r476] defs.h: - changed adjlen to dlc2len
+
+2015-03-01 18:59  hjoertel
+
+	* [r475] can4linux.h: - using kernel data types in canmsg_t
+	  - Diese und die folgenden Zeilen werden ignoriert --
+	  
+	  M can4linux.h
+
+2015-03-01 18:58  hjoertel
+
+	* [r474] ChangeLog: - update
+
+2015-03-01 18:56  hjoertel
+
+	* [r473] allwinnerfuncs.c, core.c, genericfuncs.c, mcp2515funcs.c,
+	  read.c, sja1000funcs.c, version.inc, write.c: - using kernel data
+	  types in canmsg_t
+	  - renamed adjlength to dlc2len
+
+2015-03-01 13:42  hjoertel
+
+	* [r472] Makefile-standard: - added TARGET=RASPI to the help
+	  section
+
+2015-02-22 12:20  hjoertel
+
+	* [r469] write.c: - set BRS bit
+	  - handle dlc code for external representation in virtual mode
+
+2015-01-25 17:05  hjoertel
+
+	* [r467] write.c: - corrected the documentation of the count
+	  parameter to write()
+
+2015-01-25 16:38  hjoertel
+
+	* [r466] ioctl.c: - removed VERiFY_READ, because VERIFY_WRITE is a
+	  superset of VERIFY_READ.
+
+2015-01-05 16:38  hjoertel
+
+	* [r464] ixxat_pci.c: - commented out display of message struct
+
+2015-01-05 15:05  hjoertel
+
+	* [r461] ifi_canfdfuncs.c: - corrected handling of dlc and data
+	  length in multi open
+
+2015-01-05 10:41  hjoertel
+
+	* [r460] ifi_canfdfuncs.c: - corrected register dlc handling in TX
+	  ISR
+
+2015-01-05 10:28  hjoertel
+
+	* [r459] ifi_canfdfuncs.c, ixxat_pci.c: - changed #include
+	  directive tu use "file" for local files
+
+2015-01-04 23:20  hjoertel
+
+	* [r458] bananapi.c: - removed doubled #define PIO_BASE, is already
+	  in arch header
+
+2015-01-04 23:18  hjoertel
+
+	* [r457] write.c: - added one debug line in write()
+
+2015-01-04 23:16  hjoertel
+
+	* [r456] bitrate: can4linux bitrate configuration script
+
+2015-01-04 23:14  hjoertel
+
+	* [r455] ixxat_pci.c: - removed unused variable with pci pointer
+	  - added some debug code
+
+2015-01-04 23:13  hjoertel
+
+	* [r454] can4linux.h: - added alternative canmsg_t structure
+
+2014-12-25 17:21  hjoertel
+
+	* [r452] Makefile-standard: - added BANANAPI to the help text
+	  - added headers to the ctags file for IB500
+
+2014-12-21 15:50  hjoertel
+
+	* [r450] ifi_canfdfuncs.c: - changed two DBG statements
+
+2014-12-21 11:56  hjoertel
+
+	* [r449] debug: - set debug level only of an argument is given to
+	  the debug command
+
+2014-12-17 13:29  hjoertel
+
+	* [r446] defs.h: - simplified dlc conversation functions
+
+2014-12-04 13:59  hjoertel
+
+	* [r444] ems_pci.c: - changed pr_err() to pr_info()
+
+2014-12-04 13:54  hjoertel
+
+	* [r443] version.inc:
+
+2014-12-04 13:44  hjoertel
+
+	* [r442] ixxat_pci.c: - changed one pr_err() to pr_info()
+
+2014-12-03 21:22  hjoertel
+
+	* [r441] mcp2515funcs.c: - using the more generic
+	  util.c:get_timestamp() in the ISR
+
+2014-12-03 18:26  hjoertel
+
+	* [r440] mcp2515funcs.c: - move irqsrc check for nothing at the
+	  very beginning
+
+2014-12-03 18:21  hjoertel
+
+	* [r439] sja1000funcs.c: - remove useless comment
+
+2014-12-01 21:51  hjoertel
+
+	* [r438] util.c: - removed some spelling errors, added comment
+
+2014-12-01 21:46  hjoertel
+
+	* [r437] core.c, defs.h, mcp2515.h, mcp2515funcs.c, raspberrypi.c:
+	  - first usable version for the RaspberryPi using MCP2515 via SPI
+
+2014-11-21 21:51  hjoertel
+
+	* [r436] allwinner.h: - changed timings for 1 Mbit/s,
+	  - added timing for 10 Kbit/s
+
+2014-11-21 19:36  hjoertel
+
+	* [r435] allwinner.h, allwinnerfuncs.c: - Implemented the error
+	  counters in /proc
+
+2014-11-16 12:17  hjoertel
+
+	* [r434] Makefile-standard: - finalised the RASPI TARGET
+	  - changed the ctags target to fit better the selected hardware
+	  TARGET
+
+2014-11-07 10:22  hjoertel
+
+	* [r432] can4linux.h: - added Bit Rate Switch flag define MSG_RBRS
+
+2014-11-07 10:19  hjoertel
+
+	* [r431] ixxat_pci.c: - issuing more precise version information to
+	  syslog
+
+2014-10-26 23:31  hjoertel
+
+	* [r430] ifi_canfdfuncs.c, version.inc: - evaluate the BRS and ESI
+	  bits an CAN FD frame
+
+2014-10-25 23:31  hjoertel
+
+	* [r427] ifi_canfdfuncs.c: - activated update of
+	  proc_[rt]xerrcounter
+
+2014-10-24 11:58  hjoertel
+
+	* [r424] ifi_canfdfuncs.c: - corrected wrong variablename board to
+	  minor
+
+2014-10-24 11:54  hjoertel
+
+	* [r423] ifi_canfdfuncs.c: - added the sefreception functionaility
+
+2014-10-21 09:13  hjoertel
+
+	* [r420] ifi_canfdfuncs.c: - implement the bus monitoring silent
+	  mode can_set_listenonlymode()
+
+2014-10-20 21:21  hjoertel
+
+	* [r419] ifi_canfd.h, ifi_canfdfuncs.c: - completed bit timing
+	  settings according latest CiA recommendations
+
+2014-10-20 20:17  hjoertel
+
+	* [r418] ifi_canfd.h: - removed ifi (c) (was wrong)
+	  - added new bit timing parameters for CiA PlugFest
+
+2014-10-15 17:46  hjoertel
+
+	* [r417] ChangeLog: - updated the Changelog file
+
+2014-10-10 15:03  hjoertel
+
+	* [r416] bananapi.c: - small documentation changes regarding used
+	  CAN pins
+
+2014-10-07 09:52  hjoertel
+
+	* [r415] Makefile-standard: -removed space in help text
+
+2014-08-18 19:37  hjoertel
+
+	* [r408] allwinnerfuncs.c: added missing auto vars
+
+2014-08-18 19:19  hjoertel
+
+	* [r407] allwinnerfuncs.c: - added CAN error state handling
+
+2014-08-18 19:11  hjoertel
+
+	* [r406] Readme: - explained what happens behind scenes: open()
+
+2014-08-18 19:08  hjoertel
+
+	* [r405] defs.h: dded BANANAPI dependencies
+
+2014-08-18 19:06  hjoertel
+
+	* [r404] allwinnerfuncs.c: - corrected extended id transmit frame
+	  programming trbuf[1-4] as learned
+	  from experience.
+
+2014-08-16 23:41  hjoertel
+
+	* [r403] allwinnerfuncs.c, bananapi.c: implemented interrupt driven
+	  receive
+
+2014-08-16 23:39  hjoertel
+
+	* [r402] bananapi.h: removed unused macros, only long word access
+	  is used
+
+2014-08-16 23:36  hjoertel
+
+	* [r401] can4linux.h: new #define CAN_TYPE_ALLWINNER_CAN
+	  #de
+
+2014-08-16 23:35  hjoertel
+
+	* [r400] allwinner.h: - corrected register layout, especiall
+	  trbuf[0-x]
+
+2014-08-10 08:13  hjoertel
+
+	* [r398] allwinnerfuncs.c: - improved CAN TX interrupt handling
+
+2014-08-09 17:28  hjoertel
+
+	* [r397] Makefile-standard, allwinner.h, allwinnerfuncs.c,
+	  bananapi.c, core.c: - improved the TARGET=BANANAPI so it is able
+	  to send a frame,
+	  initialization seems to be correct now
+
+2014-08-09 17:21  hjoertel
+
+	* [r396] open.c: use pr_err() in case vendor init fails
+
+2014-08-09 17:19  hjoertel
+
+	* [r395] kvaser_pci.c: - pointer initializer NULL instead of 0
+
+2014-08-09 17:17  hjoertel
+
+	* [r394] port_atcanmini.c, port_atcanmini.h: make
+	  TARGET=ATCANMINI_PELICAN compile again
+
+2014-08-09 17:16  hjoertel
+
+	* [r393] Makefile-standard, close.c: - make
+	  TARGET=ATCANMINIi_PELICAN compile again
+
+2014-08-09 17:05  hjoertel
+
+	* [r392] sja1000.h: - added comment for canregs_t usage
+
+2014-08-03 13:16  hjoertel
+
+	* [r391] sja1000funcs.c: - corrected Listen-Only Mode comment
+	  - can_start_chip(): moved one code line after DBGIN()
+
+2014-08-03 13:09  hjoertel
+
+	* [r390] genericfuncs.c: - corrected some (unused) macro names
+	  - correcte listen_only_mode comment
+
+2014-08-03 10:57  hjoertel
+
+	* [r389] allwinner.h, allwinnerfuncs.c, bananapi.c, bananapi.h: -
+	  start working on the sun7i CAN , Allwinner BananaPi
+
+2014-07-31 19:34  hjoertel
+
+	* [r387] sysctl.c: - /proc entries Speedfactor and Transmitterdelay
+	  are only needed with #define CANFD
+
+2014-07-24 19:18  hjoertel
+
+	* [r385] close.c, core.c, defs.h, open.c, util.c: - implementing
+	  /proc/sys/dev/Can/OpenCount
+
+2014-07-24 12:02  hjoertel
+
+	* [r384] multilog.c: - use the generic name for board init: int
+	  init_board_hw(int n)
+
+2014-07-24 12:00  hjoertel
+
+	* [r383] ems_pci.c: - spelling error in variable proc_dbgmask
+
+2014-07-24 11:55  hjoertel
+
+	* [r382] generichardware.h: - updated link to bit timing calculator
+
+2014-07-24 11:53  hjoertel
+
+	* [r381] README: - discussionf or entry /proc/sys/dev/Can/OpenCount
+
+2014-07-24 11:51  hjoertel
+
+	* [r380] core.c, defs.h, sysctl.c: - corrected variable name
+	  version to proc_version
+	  - introduce proc_opencoount entry "OpenCount"
+	  currently a fixed string only
+
+2014-07-15 21:54  hjoertel
+
+	* [r379] allwinner.h: - CAN module in the Allwinner A20
+
+2014-07-15 21:46  hjoertel
+
+	* [r378] sja1000.h: - removed spelling errors
+	  - link to bit timing calculator
+
+2014-07-01 10:00  hjoertel
+
+	* [r377] dcanfuncs.c, imx35funcs.c, sja1000funcs.c: make
+	  can_showstat() a void function, returning nothing
+
+2014-05-13 21:40  hjoertel
+
+	* [r376] Doxyfile: - enabled search box
+
+2014-05-13 21:39  hjoertel
+
+	* [r375] Makefile-standard: new target: copyman - copies Doxygen
+	  doc to can-wiki
+
+2014-05-13 19:02  hjoertel
+
+	* [r374] core.c: commented on "Transmitterdelay"
+
+2014-05-13 18:53  hjoertel
+
+	* [r373] core.c, sysctl.c: proc_timeout is now initialized at
+	  variable definition in sysctl.c
+
+2014-05-13 18:49  hjoertel
+
+	* [r372] defs.h: defs.h: removed useless #ifdef __KERNEL__
+
+2014-05-13 18:45  hjoertel
+
+	* [r371] sysctl.c: sysctl.c: proc entry "Arbitrationlost" is of
+	  course read only for all
+
+2014-05-13 11:34  hjoertel
+
+	* [r370] defs.h: added proc_tdely for "Transmitterdelay"
+
+2014-05-13 11:33  hjoertel
+
+	* [r369] sysctl.c: sysctl.c: added "Transmitterdelay" entry for
+	  CANFD
+
+2014-05-13 11:30  hjoertel
+
+	* [r368] ifi_canfdfuncs.c: ifi_canfdfuncs.c: first version working
+	  with extended frame length
+	  and increased data phase bit rate
+
+2014-05-13 11:16  hjoertel
+
+	* [r367] Makefile-standard: Makefile-standard: added comment how to
+	  use the GENERIC version with
+	  another major number and module name
+
+2014-05-09 18:06  hjoertel
+
+	* [r364] generic_board.c: generic_board.ci: removed spelling errors
+
+2014-05-09 18:04  hjoertel
+
+	* [r363] ixxat_pci.c: ifi_canfdfuncs.c,ixxat_pci.c:
+	  improved the CAN FD mode, Extended data length is working
+
+2014-05-09 18:03  hjoertel
+
+	* [r362] read.c: read.c: adjusted data length in case of CAN FD to
+	  bytes
+
+2014-05-08 12:10  hjoertel
+
+	* [r361] Makefile-standard: Makefile-standard: don't set
+	  /proc/sys/dev/Can/dbgMask in target simload
+
+2014-05-07 17:21  hjoertel
+
+	* [r360] can4linux.h, defs.h, ifi_canfd.h, ifi_canfd_regs.h,
+	  ifi_canfdfuncs.c, ixxat_pci.c, ixxat_pci.h: added the IXXAT IB500
+	  CAN FD Board to can4linuxi
+	  First releases is working in the classic CAN mode
+	  CAN FD will be the next step
+
+2014-05-04 09:44  hjoertel
+
+	* [r359] Makefile-standard: Makefile: use checkpatch.pl for
+	  checking coding style of c-files
+
+2014-05-04 09:18  hjoertel
+
+	* [r358] core.c: core.c: removed checkpatch errors/warnings
+
+2014-05-01 08:19  hjoertel
+
+	* [r357] Makefile-standard: Makefile: added target 'dload'
+	  Makefile: rearranged help text for 'make help'
+
+2014-05-01 08:06  hjoertel
+
+	* [r356] sja1000funcs.c: sja1000funcs.c: removed very small
+	  spelling error
+
+2014-04-26 11:14  hjoertel
+
+	* [r350] genericfuncs.c: genericfuncs.c:can_getstat() now delivers
+	  some more useful information
+
+2014-04-13 14:42  hjoertel
+
+	* [r347] bf537funcs.c, dcanfuncs.c, genericfuncs.c, imx35funcs.c,
+	  mcf5282funcs.c, xcanpsfuncs.c: corrected small spelling error
+
+2014-04-13 14:34  hjoertel
+
+	* [r346] ems_pci.h: - corrected all other than byte access macros
+	  to use void __iomem
+	  pointers
+
+2014-04-03 14:14  hjoertel
+
+	* [r345] cc_pci.c, cc_pci.h: Adopting Contemporary Controls
+	  cc_pci.[ch] to new coding style.
+
+2014-04-01 11:30  hjoertel
+
+	* [r342] zedboard.c: - reactivated missing return value in
+	  init_board_hw()
+
+2014-03-29 21:51  hjoertel
+
+	* [r341] Makefile-standard: removed some spelling errors
+
+2014-03-27 17:45  hjoertel
+
+	* [r340] Makefile-standard: - added target IXXAT_IB500
+
+2014-03-27 17:44  hjoertel
+
+	* [r339] TouCAN.h, at9263.h, bf537.h, dcan.h, generichardware.h,
+	  i82527.h, imx35flexcan.h, sja1000.h, xcanps.h: changed #define
+	  CAN_SYSCLK_is_ok to CAN_SYSCLK_IS_OK according Linux
+	  kernel coding style
+
+2014-03-26 22:19  hjoertel
+
+	* [r336] ioctl.c: - wrong return values caused by setting the
+	  default return value to
+	  error, default is now 0, no error
+	  -- eiesenunds of some ioctl die folgenden Zeilen werden ignoriert
+	  --
+	  
+	  M ioctl.c
+
+2014-03-26 22:06  hjoertel
+
+	* [r335] defs.h: - started support for IXXAT_IB500
+
+2014-03-19 17:29  hjoertel
+
+	* [r334] zedboard.c: forgot exit_board_hw, thanks to michaeli.duell
+
+2014-03-01 15:36  hjoertel
+
+	* [r333] core.c, generic_board.c: - added init_board_hw() and
+	  exit_board_hw() to generic_board.c
+
+2014-02-21 18:34  hjoertel
+
+	* [r332] Makefile-standard: - Listed GENERIC in list of possible
+	  TARGETs
+	  - increased number of open files for TARGET=GENERIC
+
+2014-02-14 18:16  hjoertel
+
+	* [r331] core.c: put the setting of proc_dbgmask in #if 0/#endif
+
+2014-02-14 18:09  hjoertel
+
+	* [r330] janz_pcil.c: placed hardware functions
+	  init_board_hw()/exit_board_hw() here
+	  removed code for linux < 2.5
+
+2014-02-14 17:56  hjoertel
+
+	* [r329] kvaser_pci.c: new board support functions init_board_hw(),
+	  exit_board_hw()
+	  moved from core.c to here
+	  formatted kernel messages to be more fancy
+
+2014-02-14 17:54  hjoertel
+
+	* [r328] core.c: removed Kvaser stuff from ican_exit ito
+	  kvaser_pci.c
+
+2014-02-14 17:36  hjoertel
+
+	* [r327] ems_pci.c: Some improvements for formatting kernel
+	  messages
+
+2014-02-14 17:15  hjoertel
+
+	* [r326] ems_pci.c: - removed unnecessary i#if
+	  defined(CAN4LINUX_PCI)
+	  - removed some spelling errors
+	  - introduced exit_board_hw()
+
+2014-02-14 17:12  hjoertel
+
+	* [r325] core.c: ntroduced exit_board_hw() to be used by alle
+	  hardware packages
+	  <target_hw>.c
+
+2014-02-14 16:53  hjoertel
+
+	* [r324] util.c: can_dump() used wrong source for inb() when
+	  CAN_PORT_IO was used
+
+2014-02-12 23:06  hjoertel
+
+	* [r323] core.c: - next step to move out hardware code,
+	  MULTILOG_SJA1000
+
+2014-02-12 23:05  hjoertel
+
+	* [r322] sja1000funcs.c: - wrong function call prinfo() in
+	  commented out code
+
+2014-02-12 23:03  hjoertel
+
+	* [r321] write.c: - wrong calculation of rxfifoindex led to always
+	  do selfreception, now
+	  corrected
+
+2014-02-12 22:52  hjoertel
+
+	* [r320] ems_pci.c: - wrong condition for test of virtual corrected
+	  - set already_called to prevent multiple execution
+
+2014-02-09 18:06  hjoertel
+
+	* [r319] core.c, zedboard.c: use generic named init_board_hw() in
+	  core.c and zedboard.c
+
+2014-02-09 17:54  hjoertel
+
+	* [r318] core.c, defs.h, ems_pci.c: changed core.c and ems_pci.c to
+	  use the generic named init_board_hw()
+	  function. core.c will be changed to call this function for all
+	  hardware
+	  targets in the future.
+
+2013-12-21 17:57  hjoertel
+
+	* [r313] multilog.c, multilog.h: changed sources to linux kernel
+	  coding style
+
+2013-12-21 16:39  hjoertel
+
+	* [r312] Makefile-bbb, beaglebone.c, beaglebone.h, core.c,
+	  cross-bbb, dcan.h, dcanfuncs.c, defs.h: prepare for
+	  TARGET=BEAGLENONE and Bosch D_CAN controller
+
+2013-12-20 16:18  hjoertel
+
+	* [r308] genericfuncs.c: usie pr_info() instead of printk()
+	  removead small spelling error
+
+2013-12-17 17:18  hjoertel
+
+	* [r307] imx35.c: Forgot ci of imx35.c version with new coding
+	  style
+
+2013-12-17 17:16  hjoertel
+
+	* [r306] README.imx: - update
+
+2013-12-17 17:15  hjoertel
+
+	* [r305] README-Kernel-2.6: - update: valid also for 3.x kernels
+
+2013-12-17 17:13  hjoertel
+
+	* [r304] sja1000funcs.c: - corrected small spelling error CAM ->
+	  CAN
+
+2013-12-17 17:12  hjoertel
+
+	* [r303] util.c: - removed inb() out of pr_info in can_dump()
+	  - added #define pr_fmt
+
+2013-12-17 17:09  hjoertel
+
+	* [r302] Makefile-standard: - changed sources to linux kernel
+	  coding style
+
+2013-12-17 17:08  hjoertel
+
+	* [r301] kvaser_pci.c, kvaser_pci.h: - changed sources to linux
+	  kernel coding style
+
+2013-12-16 18:15  hjoertel
+
+	* [r300] read.c: remofed pr_infoi() code
+
+2013-12-16 18:13  hjoertel
+
+	* [r299] read.c: length conversion for CAN FD in read() and write()
+	  user API always uses bytes instead of DLC
+
+2013-12-16 18:12  hjoertel
+
+	* [r298] write.c: length conversion for CAN FD in read() and
+	  write()
+	  user API always uses bytes instead of DLC
+
+2013-12-16 18:10  hjoertel
+
+	* [r297] util.c: removed commented out code for dlc conversion
+
+2013-12-16 18:09  hjoertel
+
+	* [r296] core.c: - activated virtual CAN net mode with
+	  TARGET=GENERIC
+
+2013-12-16 18:07  hjoertel
+
+	* [r295] defs.h: removed old LDDK macro definitions
+	  corrected adjustlength() converts dlc to max length in byte
+
+2013-12-16 18:06  hjoertel
+
+	* [r294] async.c, close.c, select.c: removed old LDDK macro
+	  definitions
+
+2013-12-15 14:26  hjoertel
+
+	* [r293] xcanps.c, xcanps.h, xcanpsfuncs.c, zedboard.c, zedboard.h:
+	  anged sources to linux kernel coding style
+
+2013-12-15 11:42  hjoertel
+
+	* [r292] Makefile-generic, cross-generic, generic_board.c,
+	  generic_board.h, genericfuncs.c, generichardware.h: make the
+	  genric driver verison compile with a cross environment
+	  and native
+
+2013-12-15 11:32  hjoertel
+
+	* [r291] target: dded targets: bbb (BeagleBone Black) and generic
+
+2013-12-15 11:29  hjoertel
+
+	* [r290] README.janz, janz_pcil.c, janz_pcil.h: - changed sources
+	  to linux kernel coding style
+
+2013-12-15 11:22  hjoertel
+
+	* [r289] sysctl.c: - re-introduced board Id value in
+	  /proc/sys/dev/Can used with Janz PCIL
+
+2013-12-15 11:18  hjoertel
+
+	* [r288] sja1000funcs.c: small editorial changes regarding line
+	  length
+	  and naming of jump target tx_done
+
+2013-12-15 11:13  hjoertel
+
+	* [r287] can4linux.h: - re-introduced the CAN termination values
+	  for ioctl()
+
+2013-12-09 20:32  hjoertel
+
+	* [r286] ems_pci.c, ems_pci.h, sja1000funcs.c, version.inc: -
+	  changed sources to linux kernel coding style
+
+2013-12-09 20:17  hjoertel
+
+	* [r285] can4linux.h: - changed sources to linux kernel coding
+	  style
+
+2013-12-09 20:16  hjoertel
+
+	* [r284] core.c, version.inc: - changed sources to linux kernel
+	  coding style
+
+2013-12-09 20:11  hjoertel
+
+	* [r283] async.c, close.c, debug.c, debug.h, defs.h, ecan9.c,
+	  imx35.h, imx35flexcan.h, imx35funcs.c, ioctl.c, open.c, read.c,
+	  select.c, sysctl.c, util.c, write.c: - changed sources to linux
+	  kernel coding style
+	  - removed two bugs in imx35funcs.c:
+	  - transmitted frames were not copied into rx queues
+	  - transmitting stopped after sending rtr frames
+
+2013-12-06 19:50  hjoertel
+
+	* [r282] version.inc: changed creation of svn version info
+
+2013-12-06 18:14  hjoertel
+
+	* [r281] version.inc: version update, +corect global version
+
+2013-11-27 21:24  aph-le
+
+	* [r279] cross-ecan9: Removed double minus in cross-ecan9 paths
+
+2013-11-05 09:45  hjoertel
+
+	* [r278] version.inc: version.inc: test svn keyword sunstitution
+
+2013-11-05 09:40  hjoertel
+
+	* [r277] version.inc: version.inc: update to version 4.2
+
+2013-11-05 09:34  hjoertel
+
+	* [r276] core.c: core.c: changed email address to
+	  hj.oertel@t-online.de
+
+2013-11-05 09:27  hjoertel
+
+	* [r275] xcanps.h: xcanps.h: CAN_BTR_1000K value for 10Mhz
+	  corrected
+	  new table for 100MHz CAN_SYSCLK
+
+2013-10-29 20:56  hjoertel
+
+	* [r273] xcanps.h, xcanpsfuncs.c: repaired extended id for id
+	  larger than 0x01000000
+
+2013-10-29 20:55  hjoertel
+
+	* [r272] zedboard.c: iuse device tree for initialization
+
+2013-10-13 21:44  hjoertel
+
+	* [r269] sysctl.c: compile /proc entry BoardId only for JANZ_PCIL
+
+2013-10-12 14:31  hjoertel
+
+	* [r268] README.janz: - added lspci output
+
+2013-09-27 15:38  hjoertel
+
+	* [r267] README.janz: hex jumper board id readout
+
+2013-09-27 13:55  hjoertel
+
+	* [r266] defs.h, janz_pcil.c, sysctl.c: Support for
+	  /proc/sys/dev/Can/BoardId (used for Janz PCIL)
+
+2013-09-27 13:49  hjoertel
+
+	* [r265] util.c: removed unused inline code which is in def.h
+
+2013-09-25 19:31  hjoertel
+
+	* [r264] defs.h: added prototype for can_control_termination()
+
+2013-09-25 19:29  hjoertel
+
+	* [r263] imx35.c: removed spelling errors and trailing spaces
+
+2013-09-25 19:22  hjoertel
+
+	* [r262] README: - removed spelling error
+
+2013-09-25 19:20  hjoertel
+
+	* [r261] README.janz: . describes some hardware specific for the
+	  PCIL board
+
+2013-09-25 19:16  hjoertel
+
+	* [r260] sysctl.c: - added Chipset string for RASPI
+
+2013-09-25 19:15  hjoertel
+
+	* [r259] cc_pci.c: - reformatted, removed spelling errors and
+	  trailing spaces
+
+2013-09-25 11:27  hjoertel
+
+	* [r258] can4linux.h, ioctl.c, janz_pcil.c, janz_pcil.h: - added
+	  support to control a on-board CAN termination resistor
+
+2013-09-25 09:47  hjoertel
+
+	* [r257] janz_pcil.c: - controlling the board LEDs supported
+	  - using the pr_{err,info} macros instead printk()
+	  - start using linux coding standard
+
+2013-09-25 08:53  hjoertel
+
+	* [r255] core.c: - replaced own err() function by pr_info()
+
+2013-09-25 08:22  hjoertel
+
+	* [r254] error.c: - not needed anymore
+
+2013-09-25 07:39  hjoertel
+
+	* [r253] core.c: - removed trailing spaces (according linux kernel
+	  coding style)
+
+2013-09-25 07:32  hjoertel
+
+	* [r252] janz_pcil.h: - removed unnecessary register access macros
+	  - added comment related the termination resistor
+
+2013-09-25 07:25  hjoertel
+
+	* [r251] core.c: - moved MODULE_ macros to end of file
+	  - fixed some spelling errors, added comments
+
+2013-08-21 19:58  aph-le
+
+	* [r250] can4linux.h, ioctl.c: Added speedfactor ioczl command -
+	  for FD
+
+2013-08-13 14:57  hjoertel
+
+	* [r249] README: - update README with a "kernel API changes" and
+	  ToDo section
+
+2013-08-10 13:57  hjoertel
+
+	* [r248] core.c: - changed AUTHORs email address
+	  - moved location of zynq_init()
+
+2013-08-07 14:45  hjoertel
+
+	* [r247] defs.h, xcanpsfuncs.c, zedboard.c, zedboard.h: - Update
+	  files to be used with Xilinx Zynq kernel 3.10
+
+2013-08-07 14:38  hjoertel
+
+	* [r246] core.c: - ismall documentation improvement
+
+2013-05-16 08:17  hjoertel
+
+	* [r245] ChangeLog, Makefile-ecan9, README.imx, README.svn,
+	  ecan9.c, imx35funcs.c, util.c:
+
+2013-05-16 08:11  hjoertel
+
+	* [r244] cc_pci.c: - make it sparse proof
+
+2013-05-15 12:47  hjoertel
+
+	* [r243] ems_pci.c, ems_pci.h, ems_pci2.c: - make it sparse proof
+
+2013-05-15 12:25  hjoertel
+
+	* [r242] version.inc:
+
+2013-05-15 12:20  hjoertel
+
+	* [r241] version.inc:
+
+2013-05-15 12:19  hjoertel
+
+	* [r240] sysctl.c: - Speedfactor initialization corrected
+
+2013-05-15 08:08  hjoertel
+
+	* [r239] core.c: - added Spedfactor documentation
+
+2013-05-08 11:30  hjoertel
+
+	* [r238] defs.h, sysctl.c: - introduced CSN FD Speedfactor variable
+	  in /proc
+
+2013-05-07 11:02  hjoertel
+
+	* [r237] imx35.h, imx35flexcan.h, imx35funcs.c, ioctl.c, read.c,
+	  write.c: - removed a lot of sparse and some gcc warnings
+
+2013-04-30 10:40  hjoertel
+
+	* [r236] util.c: - replaced 0 by NULL (sparse complain)
+
+2013-04-30 10:07  hjoertel
+
+	* [r235] ioctl.c: - variable Can_errno is used only local in
+	  can_ioctl()
+
+2013-04-30 09:21  hjoertel
+
+	* [r234] open.c: - used correct NULL expression (CHECK complain)
+	  ee-ced Diese und die folgenden Zeilen werden ignoriert --
+	  
+	  M open.c
+
+2013-04-30 09:20  hjoertel
+
+	* [r233] defs.h: - corrected the read() and write() prototype
+	  (CHECK complained)
+
+2013-04-30 09:06  hjoertel
+
+	* [r232] COPYING: - added missing license file
+
+2013-04-30 08:54  hjoertel
+
+	* [r231] Makefile-at9263, Makefile-ecan9, Makefile-imx25,
+	  Makefile-imx28, Makefile-imx35, Makefile-mcp2515,
+	  Makefile-mcp2515aur, Makefile-mmc, Makefile-multilog,
+	  Makefile-standard, Makefile-zedboard: - removed error.o from the
+	  object list (was it ever used?)
+
+2013-04-17 10:42  hjoertel
+
+	* [r230] target: - added new target ecan9
+
+2013-04-17 10:41  hjoertel
+
+	* [r229] Makefile-ecan9, cross-ecan9, ecan9.c: - added new target
+	  ecan9, i.MX28 based FlexCAN
+
+2013-04-17 10:30  hjoertel
+
+	* [r228] imx35funcs.c: - replaced printk() by pr_* macros
+
+2013-04-17 09:24  hjoertel
+
+	* [r227] imx35.c: - renamed driver riInterrupt Can -> can4linux
+
+2013-04-13 09:04  hjoertel
+
+	* [r226] imx35funcs.c: - added include linux/sched.h (was:
+	  undefined TASK_INTERRUPTIBLE)
+
+2013-04-03 18:16  hjoertel
+
+	* [r225] README: - added some troubleshooting tips
+
+2013-04-03 18:01  hjoertel
+
+	* [r224] Makefile-standard: - idefine CAN_INDEXED_MEM_IO explained
+	  - make KVASER PCI CAN FD ready
+
+2013-04-03 11:18  hjoertel
+
+	* [r223] Makefile-multilog, cross-multilog, defs.h, multilog.c,
+	  multilog.h, target: - added the Multilog32 by Hansenhof to the
+	  list of supported targets
+
+2013-04-03 11:14  hjoertel
+
+	* [r222] open.c: - in case the number of processes to open the
+	  driver
+	  is larger then compiled in, the max number is reported to syslog
+
+2013-04-03 10:56  hjoertel
+
+	* [r221] core.c, sja1000funcs.c, util.c: - introduced module
+	  parameter errint, to enable sja1000 specific
+	  CAN error interrupts for CAn bus diagnosis
+
+2013-03-28 10:21  hjoertel
+
+	* [r220] README.svn: - update command descriptions with current
+	  sourceforge structure
+
+2013-03-28 08:26  hjoertel
+
+	* [r217] xcanpsfuncs.c: - removed many printk by pr_info/pr_err
+	  and uncommented most of them
+
+2013-03-13 08:19  hjoertel
+
+	* [r216] sja1000funcs.c: - added comment for using this hardware
+	  with the MSG_CANFD Flag set
+
+2013-03-13 08:17  hjoertel
+
+	* [r215] read.c: - update copyright information
+	  - removed unused code
+
+2013-03-13 08:15  hjoertel
+
+	* [r214] open.c: - update copyright information
+	  - removed spelling error
+
+2013-03-13 08:14  hjoertel
+
+	* [r213] write.c: - update copyright information
+
+2013-02-21 07:40  hjoertel
+
+	* [r210] README.svn: - Update new repo
+
+2013-02-19 22:33  hjoertel
+
+	* [r209] xcanps.h: - fixed some bit rates
+
+2013-02-19 12:00  hjoertel
+
+	* [r208] sja1000funcs.c: - call len2dlc() conversion in
+	  CAN_SendMessage()
+
+2013-02-19 11:58  hjoertel
+
+	* [r207] defs.h, util.c: - added len2dlc() for CAN FD frames
+
+2013-02-19 09:57  hjoertel
+
+	* [r202] ioctl.c: - corrected documentation for ioctl(fd,
+	  CONF_TIMESTAMP, ..)
+
+2013-02-18 21:24  hjoertel
+
+	* [r201] can4linux.h: - commented Data area lengaht for classic CAN
+	  and CAN FD
+
+2013-02-18 21:09  hjoertel
+
+	* [r200] Makefile-zedboard: - cleand up comments
+
+2013-02-18 16:23  hjoertel
+
+	* [r199] defs.h, sja1000funcs.c, util.c: - changed driver
+	  interpretation of canmsg.length to be the
+	  length of the data part of the frame instead of the
+	  DLC data length code.
+	  Application code does not need to convert now.
+
+2013-02-18 12:45  hjoertel
+
+	* [r196] core.c, defs.h, sysctl.c: - added new entry
+	  /proc/sys/dev/Can/framelength
+
+2013-02-13 13:28  hjoertel
+
+	* [r195] can4linux.h, core.c, sja1000funcs.c: - added comments on
+	  how the driver signals CAN errors.
+	  It is meant to put it into the Doxygen doc.
+
+2013-02-11 20:57  hjoertel
+
+	* [r194] xcanpsfuncs.c: - handle RX FIFO overflow in CAN ISR
+
+2013-02-11 20:56  hjoertel
+
+	* [r193] Readme: - remarks to using (or not yet) kfifo
+
+2013-02-10 12:31  hjoertel
+
+	* [r192] README.xcanps.zynq: - added information on CAN PIN
+	  assignment to FMC connector,
+	  extract of the user constraints file
+
+2013-02-08 13:40  hjoertel
+
+	* [r189] ioctl.c: - removed printk, left ther for debugging
+
+2013-02-08 12:29  hjoertel
+
+	* [r188] ioctl.c: - return value für unexessary bit rate change
+	  corrected
+	  last version returned error instead of OK
+
+2013-02-08 12:14  hjoertel
+
+	* [r187] cc_pci.c, ems_pci.c: - corrected Clock value as value at
+	  pre-scaler input
+
+2013-02-08 12:09  hjoertel
+
+	* [r186] ems_pci.c, ems_pci2.c: - the Clock reported at
+	  /proc/sys/dev/Can is the real frequency
+	  at input of the Bit Rate Pre-scaler
+
+2013-02-07 20:20  hjoertel
+
+	* [r185] ioctl.c: - return OK if ioctl() tries to set the currently
+	  active bit rate again
+
+2013-02-05 19:19  hjoertel
+
+	* [r184] README.xcanps.zynq: - added hint for getting sources from
+	  svn
+
+2013-02-05 19:18  hjoertel
+
+	* [r183] xcanpsfuncs.c: - changes in acessing CAN1 in the ISR
+
+2013-02-05 19:14  hjoertel
+
+	* [r182] Makefile-zedboard, README.xcanps.zynq, zedboard.c: -
+	  prepared 2nd CAN channel for xcanps
+
+2013-02-03 22:39  hjoertel
+
+	* [r181] Makefile-zedboard, README.xcanps.zynq, can4linux.h,
+	  close.c, core.c, defs.h, xcanps.c, xcanps.h, xcanpsfuncs.c,
+	  zedboard.c, zedboard.h: - first release for XCANPS Xilinx Zynq on
+	  ZedBoard
+	  (see README.xcanps.zynq)
+
+2013-02-03 22:24  hjoertel
+
+	* [r180] sja1000funcs.c: - some lines shortened, beatify
+
+2013-02-03 22:21  hjoertel
+
+	* [r179] Makefile-standard: - added CANFD flag to Contemporary
+	  Controls driver
+
+2013-02-03 22:18  hjoertel
+
+	* [r178] generichardware.h: - removed some target relicts to be
+	  more generic
+
+2013-02-03 10:25  hjoertel
+
+	* [r177] imx35.c: - removed some spelling errors
+
+2013-01-27 12:15  hjoertel
+
+	* [r176] at9263funcs.c, bf537funcs.c, genericfuncs.c,
+	  i82527funcs.c, imx35funcs.c, mcf5282funcs.c, mcp2515funcs.c,
+	  sja1000funcs.c: - corrected wording in comment of bit timing
+	  change
+
+2013-01-23 07:57  hjoertel
+
+	* [r175] Readme: - extend with information on creating new target
+	  support
+
+2013-01-22 21:00  hjoertel
+
+	* [r174] xcanps.h: - Xilinx xcanps CAN controller (on Zynq)
+
+2013-01-22 20:58  hjoertel
+
+	* [r173] sysctl.c: - define Chipset as array with fixed length
+	  PROC_CHIPSET_LENGTHi
+	  - prepared for ZEDBOARD in Chipset
+
+2013-01-13 23:09  hjoertel
+
+	* [r170] Makefile-zedboard, cross-zedboard, target: - working cross
+	  settings and Makefile for Xilinx XCANPS for Zynq
+
+2012-12-03 11:19  hjoertel
+
+	* [r169] defs.h: - add dump_CAN declaration
+
+2012-12-03 11:16  hjoertel
+
+	* [r168] read.c, sysctl.c, util.c: -removed sparse CHECK warnings
+
+2012-11-05 21:12  hjoertel
+
+	* [r167] Makefile-zedboard, cross-zedboard: - begin driver
+	  development xcanps on ZedBoard with Xilinx Zync
+
+2012-10-29 13:33  hjoertel
+
+	* [r166] ems_pci.c: - set CAN Clock value for EMS CPC-PCI
+
+2012-10-29 13:32  hjoertel
+
+	* [r165] core.c: -- set "Chipset" to something generic in virtal
+	  mode
+
+2012-10-29 13:30  hjoertel
+
+	* [r164] Makefile-at9263: - set PWD before using it
+
+2012-10-24 10:39  hjoertel
+
+	* [r159] Makefile-standard: - added target simload (for virtual
+	  CAN)
+
+2012-10-24 10:33  hjoertel
+
+	* [r158] README.svn: - added hint for using tags
+
+2012-10-24 10:32  hjoertel
+
+	* [r157] Makefile-at9263, at9263funcs.c: - minor changes to work
+	  with latest kernel version
+
+2012-10-23 21:15  hjoertel
+
+	* [r156] Makefile-standard: - doc updated with Doxygen 1.8, removed
+	  port header
+	  - Makefile prepared for Rspberry board with external MCP2515
+
+2012-10-23 21:15  hjoertel
+
+	* [r155] Doxyfile: - doc updated with Doxygen 1.8, removed port
+	  header
+	  - Makefile prepared for Rspberry board with external MCP2515
+
+2012-10-23 09:54  hjoertel
+
+	* [r154] CHANGELOG, cross-at9x5, genericfuncs.c, generichardware.h:
+	  - new prototype files to easier support new CAN hardware
+	  - new cross compiler settings for AT9X5
+
+2012-09-20 20:15  hjoertel
+
+	* [r152] sja1000funcs.c: - removed unused vars in isr
+
+2012-09-20 20:12  hjoertel
+
+	* [r151] can4linux.h, core.c, defs.h, ems_pci.c, ioctl.c,
+	  sja1000.h, sja1000funcs.c, sysctl.c, util.c, write.c: - new entry
+	  for ArbitrationLost in /proc/sys/dev/Can
+	  - renamed interrupt source to can4linux in /proc/interrupts
+	  - ioctl() can now set different time stamp formats
+	  (absolute/relative)
+	  - handle bus error interrupts to count and report error frames
+	  - added ESI to flags in canmsg_t
+
+2012-09-11 20:45  hjoertel
+
+	* [r147] defs.h: - removed #include in order to compile for kernel
+	  3.4.6 (SUSE 12.2)
+
+2012-08-02 12:48  hjoertel
+
+	* [r146] Doxyfile, Makefile-standard, can4linuxst.png: - added the
+	  can4linux logo to the Doxygen doc
+
+2012-07-24 20:57  hjoertel
+
+	* [r140] ft.html, port.png: - cleared files and directories
+
+2012-07-24 19:54  hjoertel
+
+	* [r139] CHANGELOG, ChangeLog, Doxyfile, INSTALL.pdf, INSTALL.t2,
+	  Makefile-standard, can4linux.h, write.c: - can4linux with support
+	  for CAN FD (in virtual CAN mode so far)
+	  - examples can_send and receive-select with CAN FD support
+
+2012-07-23 13:45  hjoertel
+
+	* [r138] write.c: - wrong flags handling corrected (RTR, Ext)
+
+2012-07-23 13:45  hjoertel
+
+	* [r137] README: comments in using lspci command
+
+2012-07-19 20:03  hjoertel
+
+	* [r134] ChangeLog, Makefile-standard, cc_pci.c, cc_pci.h, close.c,
+	  core.c, defs.h, ioctl.c, open.c, sja1000funcs.c, sysctl.c,
+	  write.c: - first version with a CAN bus simulation mode
+	  implementing a virtual
+	  CAN bus
+
+2012-07-16 19:36  hjoertel
+
+	* [r132] can4linux.h: - prepare ican4linux.h to be used with CAN FD
+
+2012-07-12 18:47  hjoertel
+
+	* [r131] ems_pci.c, ems_pci2.c: - Register the fixed CAN clock for
+	  CPC_PCI and CPC_PCI2
+
+2012-07-11 10:40  hjoertel
+
+	* [r130] CHANGELOG, core.c, sja1000funcs.c, version.inc: - tx and
+	  rx error counteres were exchanged in /proc/....
+
+2012-07-10 21:00  hjoertel
+
+	* [r129] CHANGELOG, core.c, defs.h, sja1000funcs.c, sysctl.c,
+	  version.inc: - implement CAN error counters :
+	  /proc/sys/dev/Can/TxErrCounter
+	  /proc/sys/dev/Can/RxErrCounter
+	  (for sja1000 up to now)
+
+2012-07-10 07:12  hjoertel
+
+	* [r128] Makefile-standard, version.inc: - included svn release in
+	  Makefile and version string
+
+2012-07-10 06:25  hjoertel
+
+	* [r127] core.c, defs.h, ioctl.c, open.c, sja1000funcs.c: - allow
+	  only the first process opening a device to use
+	  ioctl() functions like CAN_StopChip(), CAN_StartChip()
+	  CAN_ChipReset() or CAn_TxFiFoInit().
+
+2012-07-09 13:53  hjoertel
+
+	* [r126] can4linux.h: - version #define must have a fixed format
+
+2012-07-09 12:11  hjoertel
+
+	* [r125] mcp2515.h: - small addition in the comment section of bit
+	  timing parameters
+
+2012-07-09 12:06  hjoertel
+
+	* [r124] Makefile-standard: - set CPC_PCI as make standard in
+	  Makefile-standard
+
+2012-07-09 12:05  hjoertel
+
+	* [r123] sysctl.c: - every user should be able to set Bitrate or
+	  Acceptance (644 -> 666)
+
+2012-05-09 10:53  hjoertel
+
+	* [r122] sja1000funcs.c: - properly handling of dlc when
+	  transmitting and receiving frames
+	  (dlc > 8 handled according spec)
+
+2012-01-30 09:06  hjoertel
+
+	* [r118] ems_pci2.c: - check for vendor _and_ subvendor id to
+	  identify EMS CPC-PCI2 board
+
+2012-01-30 09:03  hjoertel
+
+	* [r117] imx35funcs.c: - minor spelling error in comment
+
+2012-01-21 20:27  hjoertel
+
+	* [r116] ChangeLog: added target ChangeLog to Makefile
+
+2012-01-04 12:05  hjoertel
+
+	* [r115] Makefile-standard: - removed wrong character (included by
+	  edit accident)
+
+2011-11-25 07:38  hjoertel
+
+	* [r112] target: - added targets to the help description
+
+2011-11-07 08:46  hjoertel
+
+	* [r110] cross-mcp2515spi: added this missing file
+
+2011-11-07 08:44  hjoertel
+
+	* [r109] Makefile-imx28, Makefile-imx35, README.imx, TouCAN.h,
+	  core.c, cross-imx28, defs.h, imx35flexcan.h, imx35funcs.c,
+	  util.c, version.inc, write.c: FlexCAN on i.MX.
+	  Better handling of CAN error status and reporting to user space
+	  removed some spi_lock / unlock calls
+
+2011-10-25 11:27  hjoertel
+
+	* [r108] README.svn: - added more hints to use svn
+
+2011-10-25 08:48  hjoertel
+
+	* [r107] version.inc: - include svn revison number in VERSION
+
+2011-10-20 13:58  hjoertel
+
+	* [r105] TouCAN.h: - changed wording from 'standard' frame to
+	  'base' frame according ISO11898
+
+2011-10-20 13:57  hjoertel
+
+	* [r104] ioctl.c: - changed wording from 'standard' frame to 'base'
+	  frame according
+	  ISO1189
+
+2011-10-20 13:54  hjoertel
+
+	* [r102] bf537funcs.c, can4linux.h, mcp2515funcs.c: - changed
+	  wording from 'standard' frame to 'base' frame according
+	  ISO11898
+
+2011-09-26 10:18  hjoertel
+
+	* [r99] Makefile-imx25, README.imx, core.c, defs.h, imx35.c,
+	  imx35flexcan.h, ioctl.c, sysctl.c, target: support for the
+	  FlexCAN on the Ka-Ro board TX28
+
+2011-07-26 19:28  hjoertel
+
+	* [r87] can4linux.h, cc_pci.c, close.c, defs.h, ioctl.c: - use
+	  enums for LED color and status
+	  - balance pci_request_region/pci_release_region
+
+2011-07-26 13:01  hjoertel
+
+	* [r83] CHANGELOG: - spelling error
+
+2011-07-24 22:15  hjoertel
+
+	* [r81] CHANGELOG:
+
+2011-07-24 22:14  hjoertel
+
+	* [r80] CHANGELOG, INSTALL.pdf, INSTALL.t2, Makefile-standard,
+	  cc_pci.c, cc_pci.h, close.c, core.c, debug, defs.h, ems_pci.c,
+	  sysctl.c: First version with support fort the TARGET=CC_PCI
+
+2011-07-15 15:54  hjoertel
+
+	* [r77] write.c: minor spelling error
+
+2011-07-13 14:28  hjoertel
+
+	* [r76] open.c: - changed to more modern spin-lock initialization
+
+2011-07-12 07:52  hjoertel
+
+	* [r75] ioctl.c, mcp2515funcs.c: - take care with inode cariable
+	  for kernels < 2.6.35
+
+2011-06-07 13:10  hjoertel
+
+	* [r72] at9263funcs.c, defs.h: - Flag error in at9263funcs.c
+	  corrected
+	  - comment in defs.h corrected
+
+2011-05-26 08:56  hjoertel
+
+	* [r71] Makefile, Makefile-standard, core.c, defs.h, ioctl.c,
+	  janz_pcil.h: - integrated the new ioctl() API changes introduced
+	  with kernel 2.6.37
+	  (used on SuSE 11.4.)
+
+2011-05-25 13:09  hjoertel
+
+	* [r70] CHANGELOG, core.c, mcp2515funcs.c: - removed code still
+	  directly acessing the SPI registers in TARGET
+	  MCP2515SPI
+	  - CAN msg buffer overflow correctly set now in mcp2515funcs.c
+
+2011-05-24 13:32  hjoertel
+
+	* [r67] core.c: - added "Revision" key word
+
+2011-05-24 13:24  hjoertel
+
+	* [r66] core.c: added svn keyword "Revision"
+
+2011-05-24 12:25  hjoertel
+
+	* [r65] Makefile, Makefile-at9263, Makefile-imx25, Makefile-imx35,
+	  Makefile-mcp2515, Makefile-mcp2515aur, Makefile-mmc,
+	  Makefile-standard, README.mcp2515, close.c, core.c, defs.h,
+	  ft.html, mcp2515.h, mcp2515funcs.c, open.c, pcm9890.c, target:
+	  Fork of the SPI connected Microchip MCP2515 to TARGET=MCP2515SPI
+	  which is controlled by the kernel SPI sub layer.
+	  Still existing are TARGET=SSV_MCP2515 and AuR_MCP2515
+	  where the SPI controller is directly used by can4linux.
+
+2011-05-17 05:53  hjoertel
+
+	* [r64] CHANGELOG:
+
+2011-05-15 11:25  hjoertel
+
+	* [r63] core.c: Update doc
+	  Update to kernel 2.6.36 - ioctl call
+
+2011-04-28 07:57  hjoertel
+
+	* [r62] README.svn, core.c, ems_pci.h, kvaser_pci.h: corrected
+	  register access Makros for TARGET KVASER_PCICAN
+
+2011-03-28 13:15  hjoertel
+
+	* [r61] Makefile-standard: Help Information for new targets
+	  corrected
+
+2011-03-25 10:14  hjoertel
+
+	* [r59] CHANGELOG, Makefile, README.mcp2515, README.svn, close.c,
+	  core.c, debug.h, mcp2515.h, mcp2515funcs.c: Release of the
+	  updated TARGETS SSV_MCP2515 and AuR_MCP2515
+
+2011-03-24 11:39  hjoertel
+
+	* [r58] Makefile, Makefile-mcp2515, Makefile-mcp2515aur,
+	  README.mcp2515, close.c, core.c, cross-imx25, cross-mcp2515,
+	  cross-mcp2515aur, defs.h, imx35funcs.c, mcp2515.h,
+	  mcp2515funcs.c, target: First working version for
+	  TARGET=AuR_MCP2515, not final!
+
+2011-02-25 14:17  hjoertel
+
+	* [r57] Makefile-standard, Readme: Module name changed to
+	  can4linux.ko, Makefile corrected
+
+2011-02-25 09:28  hjoertel
+
+	* [r55] CHANGELOG, Makefile, Makefile-at9263, Makefile-imx25,
+	  Makefile-imx35, Makefile-mmc, Makefile-standard, README.imx,
+	  core.c, cross-imx25, cross-imx35, defs.h, imx35.c,
+	  imx35flexcan.h, imx35funcs.c, ioctl.c, sysctl.c, target,
+	  version.inc: Support for two channels of Freescales i.MX25
+	  FlexCAN
+
+2011-02-14 12:14  hjoertel
+
+	* [r54] ems_pci.h: - spelling error in comment removed
+
+2010-11-19 11:51  hjoertel
+
+	* [r53] CHANGELOG, Makefile-imx35, README.imx, defs.h, imx35.c,
+	  imx35flexcan.h, imx35funcs.c, sysctl.c: - get FlexCAN working
+	  with the external ckie clock
+
+2010-11-02 12:31  willytate
+
+	* [r52] Makefile-standard: Removed erroneous endif that broke
+	  Makefile-standard.
+
+2010-11-01 15:22  hjoertel
+
+	* [r51] CHANGELOG, Makefile, Makefile-standard, defs.h, ecan1000.c,
+	  ecan1000.h, etc/2-ECAN1000.conf, sysctl.c: new board supported:
+	  RTD ECAN1000 PC104 board
+	  http://www.rtd.com (Will Tate <willytate@users.sourceforge.net>)
+
+2010-10-26 10:21  hjoertel
+
+	* [r50] CHANGELOG, Makefile-standard, defs.h, kvaser_pci.c,
+	  kvaser_pci.h: - update Kvaser CANPCI to use current pci scan
+	  function
+
+2010-09-15 10:01  hjoertel
+
+	* [r49] ft.html: -
+
+2010-09-15 09:58  hjoertel
+
+	* [r48] sja1000funcs.c: Wrong flags settings caused wrong
+	  evaluation of BUS-OFF in some cases
+
+2010-09-15 09:53  hjoertel
+
+	* [r47] ioctl.c: added documentation on ioctl() commands
+
+2010-08-05 10:02  hjoertel
+
+	* [r46] CHANGELOG, README.svn: new option -H in
+	  can4linux-examples/receive.c
+
+2010-07-26 15:21  thecanguru
+
+	* [r45] sysctl.c: correct wrong kernel version compare for syctl
+	  struct components
+
+2010-07-23 09:55  thecanguru
+
+	* [r44] Makefile-standard, ioctl.c, read.c, sja1000funcs.c,
+	  sysctl.c, write.c: Changes in the sysctl interface since kernel
+	  version 2.6.33
+	  testet with kernel 2.6.34 (Suse 11.3)
+	  removed some new compiler warnings with the latest gcc
+
+2010-07-22 07:22  thecanguru
+
+	* [r43] target: Spelling error in imx35 target
+
+2010-07-21 14:25  thecanguru
+
+	* [r40] Makefile-imx35, cross-imx35: Support for a new target, the
+	  FlexCAN module in an Freescale imx35 PDK
+
+2010-07-21 14:19  thecanguru
+
+	* [r39] CHANGELOG, README.imx, README.svn, can4linux.h, core.c,
+	  defs.h, imx35flexcan.h, imx35funcs.c, ioctl.c, open.c, sysctl.c,
+	  target, version.inc: Support for a new target, the FlexCAN module
+	  in an Freescale imx35 PDK
+	  testet under Linux 2.6.31-207-g7286c01 #1 PREEMPT
+
+2010-07-21 14:08  thecanguru
+
+	* [r38] at9263funcs.c: changed the writing back to the global vars
+	  when using ioctl()
+	  to set acceptance code and mask
+
+2010-07-21 14:07  thecanguru
+
+	* [r37] mmc.h: spelling correction
+
+2010-07-21 14:05  thecanguru
+
+	* [r36] bf537funcs.c, i82527funcs.c, mcf5282funcs.c,
+	  mcp2515funcs.c, sja1000funcs.c: changed the writing back to the
+	  global vars when using ioctl()
+	  to set acceptance code and mask
+
+2010-07-21 13:59  thecanguru
+
+	* [r35] imx35funcs.c: Supportfiles for the new FlexCAN module used
+	  in Freescale ARM
+
+2010-07-21 13:48  thecanguru
+
+	* [r34] imx35.c, imx35.h: Board specific files for the imx35 PDK
+
+2010-03-31 14:53  thecanguru
+
+	* [r33] Makefile-standard, core.c, defs.h, janz_pcil.c,
+	  janz_pcil.h: Support for Janz CAN-PCIL/1 and CAN-PCIL/2
+	  Support for Connect Tech CANPro PC104 board
+
+2010-03-31 14:49  thecanguru
+
+	* [r32] port_atcanmini.c: some more parenthesis
+
+2010-03-31 14:48  thecanguru
+
+	* [r31] target: Extended instructions
+
+2010-03-09 07:43  thecanguru
+
+	* [r29] Makefile, Makefile-standard, defs.h, pcm3680.c, pcm9890.c,
+	  version.inc: New Target PCM3680
+
+2010-03-09 07:33  thecanguru
+
+	* [r28] etc/scu-p100.conf, pcm3680.h: New Target PCM3680
+
+2010-03-09 07:30  thecanguru
+
+	* [r27] CHANGELOG: New Target PCM3680
+
+2009-11-10 12:45  thecanguru
+
+	* [r26] readme: Deleted file.
+
+2009-10-01 10:22  bit
+
+	* [r22] CHANGELOG, Makefile, Makefile-k2.4, Makefile-mmc,
+	  Makefile-standard, close.c, core.c, cpc_104.c, cross-standard,
+	  defs.h, ems_pci.c, ems_pci.h, ems_pci2.c, etc,
+	  etc/1-PCM3680.conf, etc/3-at_can_mini.conf, etc/dhcp1.conf,
+	  etc/kolab2.conf, ioctl.c, kvaser_pci.c, kvaser_pci.h, mmc.c,
+	  open.c, pcm9890.c, pcm9890.h, port_atcanmini.c, port_atcanmini.h,
+	  readme, sja1000.h, sja1000funcs.c, sysctl.c, target, util.c,
+	  utils, utils/cansetup, version.inc: new version 3.5.4.
+	  New Targets, PCM9890 and EMS CPC_PCI2
+	  ATCANMINI_PELICAN reactivated
+
+2009-10-01 10:17  bit
+
+	* [r20] CHANGELOG, INSTALL.pdf, INSTALL.t2, Makefile,
+	  Makefile-at9263, Makefile-mcp2515, Makefile-mmc,
+	  Makefile-standard, Readme, at9263.h, at9263funcs.c, atmel_spi.h,
+	  can4linux.h, close.c, core.c, cross-at9263, cross-mcp2515,
+	  cross-mmc, cross-standard, debug, debug.c, debug.h, defs.h,
+	  ems_pci.c, ems_pci.h, ioctl.c, mcp2515.h, mcp2515funcs.c,
+	  mcp251x.h, mmc.c, mmc.h, open.c, read.c, sja1000.h,
+	  sja1000funcs.c, sysctl.c, target, trm816.h, util.c, version.inc,
+	  write.c: new version 3.5.3.
+	  For some reasons, parameter location changed from
+	  /proc/sys/Can/* to /proc/sys/dev/Can/*
+	  support for CAN_MAX_OPEN for the ATMEL AT91SAM9263
+	  common code base now for most CAN chips supported
+	  support for the new CPC_PCI with up to four CAN controllers
+	  still preliminary, need to combine the _old_ and _new_
+	  in any combination
+	  new TARGET=MMC_SJA1000, ARM AT91SAM9269 with 3 external
+	  SJA1000 with multiplexed memory access.
+	  new TARGET=SSV_MCP2515
+
+2009-10-01 10:07  bit
+
+	* [r18] CHANGELOG, Doxyfile.bak, INSTALL_e.pdf, INSTALL_g.pdf,
+	  Kconfig, Makefile, Makefile-uCk2.4, Readme, Readme.vcma9.pdf,
+	  bf537.h, can4linux.h, cc_pci.c, close.c, core.c, debug, defs.h,
+	  ems_pci.c, etc, ft.html, ioctl.c, kvaser_pci.c, lkc-language.txt,
+	  man, mcf5282funcs.c, open.c, port_footer.html, read.c, readme,
+	  select.c, sja1000funcs.c, sysctl.c, trm816, util.c, utils,
+	  write.c: new version 3.5.2.
+	  More than one process can now open the driver
+	  This number is defined at compile time.
+	  Can be set in the Makefile or in defs.h
+	  e.g. CAN_MAX_OPEN=4
+	  This feature is currently on the sja1000 only supported
+	  and only tested with the CPC-PCI interface
+	  ioctl return value changed to 0 on successful return
+	  extended selfreception flag from 'per channel (minor)' to
+	  'per process'
+	  prohibit setting a new bitttime if the channel was already opened
+	  by another process, setting the same bitrate as the first
+	  process is permitted
+	  this version should at least compile up to kernel 2.6.22
+	  testet on 2.6.22 quad core
+
+2009-10-01 09:34  bit
+
+	* [r14] CHANGELOG, Makefile, defs.h, ems_pci.c, sja1000.h,
+	  sja1000funcs.c, sysctl.c, util.c, write.c: new version 3.4.5.
+	  Tested on SMP and 64 Bit X86 machines
+	  made some 64 bit type adoptions
+
+2009-10-01 09:28  bit
+
+	* [r12] CHANGELOG, Makefile, can4linux.h, cpc_104.c, cpc_pcm_104.c,
+	  defs.h, etc/1x-PCM3680.conf, etc/pip.conf,
+	  etc/pip_2cpc104_1pcm3680.conf, etc/pip_3cpc104.conf, ioctl.c,
+	  man/html/annotated.html, man/html/can4linux_8h-source.html,
+	  man/html/close_8c.html, man/html/files.html,
+	  man/html/functions.html, man/html/functions_vars.html,
+	  man/html/globals.html, man/html/globals_func.html,
+	  man/html/index.html, man/html/ioctl_8c.html,
+	  man/html/open_8c.html, man/html/read_8c.html,
+	  man/html/struct_can_status_par.html,
+	  man/html/struct_command__par.html,
+	  man/html/struct_configure_r_t_r__par.html,
+	  man/html/struct_receive__par.html,
+	  man/html/struct_send__par.html, man/html/structcanmsg__t.html,
+	  man/html/write_8c.html, man/man/man3/CanStatusPar.3,
+	  man/man/man3/Command_par.3, man/man/man3/ConfigureRTR_par.3,
+	  man/man/man3/Receive_par.3, man/man/man3/Send_par.3,
+	  man/man/man3/canmsg_t.3, man/man/man3/close.c.3,
+	  man/man/man3/ioctl.c.3, man/man/man3/open.c.3,
+	  man/man/man3/read.c.3, man/man/man3/write.c.3, mcf5282funcs.c,
+	  pcm3680.c, port_footer.html, read.c, write.c: new version 3.4.4
+	  removed Bug in mcf5282 when transmitting from ISR
+	  new version 3.4.3
+	  removed warnings
+	  ignoring return value of 'copy_to_user'
+	  with kernel version 2.6.16.21
+	  introducing general DEFS compiler settings.
+	  used for e.g. -Wno-undef
+
+2009-10-01 09:19  bit
+
+	* [r10] CHANGELOG, Makefile, close.c, core.c, defs.h,
+	  etc/1-PCM3680.conf, etc/1-cpcpci.conf, etc/1-digitec.conf,
+	  etc/canserver3.conf, etc/pc7.conf, etc/ulf.conf, etc/ulli.conf,
+	  etc/ulli_iPC03_AtMini.conf, etc/ulrich.conf, etc/ulrike.conf,
+	  etc/unna.atcanmini.conf, etc/uschi.conf, etc/uwe.conf,
+	  sja1000funcs.c, util.c: new version 3.4.2.
+	  Support for EMS CPC-104 (PC104 containing SJA1000)
+	  changed type of can_base[] to __iomem (contains virtual address)
+
+2009-10-01 09:12  bit
+
+	* [r8] CHANGELOG, Makefile, Makefile-k2.4, Makefile-uCk2.4,
+	  README.mcf, man/html/annotated.html,
+	  man/html/can4linux_8h-source.html, man/html/close_8c.html,
+	  man/html/files.html, man/html/functions.html,
+	  man/html/functions_vars.html, man/html/globals.html,
+	  man/html/globals_func.html, man/html/index.html,
+	  man/html/ioctl_8c.html, man/html/open_8c.html,
+	  man/html/read_8c.html, man/html/struct_can_status_par.html,
+	  man/html/struct_command__par.html,
+	  man/html/struct_configure_r_t_r__par.html,
+	  man/html/struct_receive__par.html,
+	  man/html/struct_send__par.html, man/html/structcanmsg__t.html,
+	  man/html/write_8c.html, man/man/man3/CanStatusPar.3,
+	  man/man/man3/Command_par.3, man/man/man3/ConfigureRTR_par.3,
+	  man/man/man3/Receive_par.3, man/man/man3/Send_par.3,
+	  man/man/man3/canmsg_t.3, man/man/man3/close.c.3,
+	  man/man/man3/ioctl.c.3, man/man/man3/open.c.3,
+	  man/man/man3/read.c.3, man/man/man3/write.c.3, mcf5282funcs.c,
+	  open.c, port_footer.html: new version 3.4.1.
+	  bug in mcf5282 interrupt handling which selfreceived messages
+	  removed
+
+2009-10-01 09:05  bit
+
+	* [r6] CVS, etc/gmon.out, etc/unna.atcanmini.conf, etc/utgard.conf,
+	  man/html/close_8c.html, man/html/core_8c.html,
+	  man/html/ioctl_8c.html, man/html/open_8c.html,
+	  man/html/read_8c.html, man/html/tab_b.gif, man/html/tab_l.gif,
+	  man/html/tab_r.gif, man/html/tabs.css, man/html/write_8c.html,
+	  man/man/man3/close.c.3, man/man/man3/core.c.3,
+	  man/man/man3/ioctl.c.3, man/man/man3/open.c.3,
+	  man/man/man3/read.c.3, man/man/man3/write.c.3: Added missing
+	  files.
+
+2009-10-01 09:00  bit
+
+	* [r5] CHANGELOG, CVS, CVS/Base, CVS/Baserev, CVS/Entries,
+	  CVS/Repository, CVS/Root, Can_debug.c, Can_error.c, Doxyfile,
+	  Doxyfile.bak, INSTALL.t2, INSTALL_e.pdf, INSTALL_g.pdf, Kconfig,
+	  Kvaser, Makefile, Makefile-k2.4, README, README.mcf,
+	  Readme.vcma9.pdf, TouCAN.h, async.c, bf537.h, bf537funcs.c,
+	  can.mod.c, can4linux.h, can_async.c, can_close.c, can_core.c,
+	  can_debug.h, can_defs.h, can_i82527.h, can_i82527funcs.c,
+	  can_ioctl.c, can_open.c, can_read.c, can_select.c, can_sja1000.h,
+	  can_sja1000funcs.c, can_sysctl.c, can_util.c, can_write.c,
+	  cc_pci.c, close.c, core.c, debug, debug.c, debug.h, defs.h,
+	  ems_cpccard.c, ems_pci.c, error.c, etc/1-cpcpci.conf,
+	  etc/ulf.conf, etc/ulrich.conf, etc/unna.conf, ft.html, i82527.h,
+	  i82527funcs.c, ioctl.c, kvaser_pci.c, man/html/annotated.html,
+	  man/html/can4linux_8h-source.html, man/html/can__core_8c.html,
+	  man/html/can__ioctl_8c.html, man/html/can__read_8c.html,
+	  man/html/doxygen.css, man/html/files.html,
+	  man/html/functions.html, man/html/functions_vars.html,
+	  man/html/globals.html, man/html/globals_func.html,
+	  man/html/index.html, man/html/struct_can_status_par.html,
+	  man/html/struct_command__par.html,
+	  man/html/struct_configure_r_t_r__par.html,
+	  man/html/struct_receive__par.html,
+	  man/html/struct_send__par.html, man/html/structcanmsg__t.html,
+	  man/man/man3/CanStatusPar.3, man/man/man3/Command_par.3,
+	  man/man/man3/ConfigureRTR_par.3, man/man/man3/Receive_par.3,
+	  man/man/man3/Send_par.3, man/man/man3/can_close.c.3,
+	  man/man/man3/can_core.c.3, man/man/man3/can_ioctl.c.3,
+	  man/man/man3/can_open.c.3, man/man/man3/can_read.c.3,
+	  man/man/man3/can_write.c.3, man/man/man3/canmsg_t.3, mcf5282.h,
+	  mcf5282funcs.c, mpl_vcma9.c, open.c, port_footer.html, read.c,
+	  select.c, sja1000.h, sja1000funcs.c, sysctl.c, test_can_core.c,
+	  util.c, write.c: new version 3.4.0.
+	  new release with changing the directory structure
+	  all files without can_ prefix, because we are in the can4linux
+	  sub directory
+	  read() and write() are now blocking per default
+	  getting the time stamp information for received messages
+	  in canmsg_t can be switched off if not needed
+	  (saves some us ISR time)
+	  supported controllers and CAN interface boards now additional:
+	  Kvaser PCIcan-Q
+	  MPL VCMA9
+	  Analog Devices BlackFin 537
+	  Freescale 5282
+
+2009-10-01 08:49  bit
+
+	* [r3] CHANGELOG, INSTALL.t2, Makefile, README, can4linux.h,
+	  can_close.c, can_core.c, can_defs.h, can_i82527funcs.c,
+	  can_ioctl.c, can_read.c, can_sja1000funcs.c, can_util.c,
+	  can_write.c, etc/ulrike.conf, man/html/annotated.html,
+	  man/html/can4linux_8h-source.html, man/html/can__close_8c.html,
+	  man/html/can__core_8c.html, man/html/can__ioctl_8c.html,
+	  man/html/can__open_8c.html, man/html/can__read_8c.html,
+	  man/html/can__write_8c.html, man/html/doxygen.css,
+	  man/html/doxygen.png, man/html/files.html,
+	  man/html/functions.html, man/html/functions_vars.html,
+	  man/html/globals.html, man/html/globals_func.html,
+	  man/html/index.html, man/html/struct_can_status_par.html,
+	  man/html/struct_command__par.html,
+	  man/html/struct_configure_r_t_r__par.html,
+	  man/html/struct_receive__par.html,
+	  man/html/struct_send__par.html, man/html/structcanmsg__t.html,
+	  man/man/man3/CanStatusPar.3, man/man/man3/Command_par.3,
+	  man/man/man3/ConfigureRTR_par.3, man/man/man3/Receive_par.3,
+	  man/man/man3/Send_par.3, man/man/man3/can_close.c.3,
+	  man/man/man3/can_core.c.3, man/man/man3/can_ioctl.c.3,
+	  man/man/man3/can_open.c.3, man/man/man3/can_read.c.3,
+	  man/man/man3/can_write.c.3, man/man/man3/canmsg_t.3,
+	  port_footer.html: new version 3.3.4
+	  two new ioctl() configuration commands for sja1000 devices
+	  self reception mode - each message sent is delivered back
+	  in the rx queue
+	  listen only mode (CAN controller doesn't acknowledge frames)
+
+2009-10-01 08:25  bit
+
+	* [r1] ., CHANGELOG, Can_debug.c, Can_error.c, Doxyfile,
+	  INSTALL.t2, Kconfig, Makefile, README, README-Kernel-2.6,
+	  README.trm816, Readme, can.mod.c, can4linux.h, can_async.c,
+	  can_close.c, can_core.c, can_debug.h, can_defs.h, can_i82527.h,
+	  can_i82527funcs.c, can_ioctl.c, can_open.c, can_read.c,
+	  can_select.c, can_sja1000.h, can_sja1000funcs.c, can_sysctl.c,
+	  can_util.c, can_write.c, debug, etc, etc/1-PCM3680.conf,
+	  etc/1-cpcpci.conf, etc/1-digitec.conf, etc/1-iPC03.conf,
+	  etc/1-pcslimline.conf, etc/2-at_can_mini.conf,
+	  etc/3-at_can_mini.conf, etc/canserver3.conf, etc/emscpc.conf,
+	  etc/heinz.conf, etc/pc7.conf, etc/pccan.conf, etc/port.conf,
+	  etc/readme, etc/test.conf, etc/udo.conf, etc/ulf.conf,
+	  etc/ulla.conf, etc/ulli.conf, etc/ulli_cpcpci.conf,
+	  etc/ulli_iPC03_AtMini.conf, etc/ulrich.conf, etc/ulrike.conf,
+	  etc/unna.conf, etc/uschi.conf, etc/uwe.conf, ft.html,
+	  lkc-language.txt, man, man/html, man/html/annotated.html,
+	  man/html/can4linux_8h-source.html, man/html/can__close_8c.html,
+	  man/html/can__core_8c.html, man/html/can__ioctl_8c.html,
+	  man/html/can__open_8c.html, man/html/can__read_8c.html,
+	  man/html/can__write_8c.html, man/html/doxygen.css,
+	  man/html/doxygen.png, man/html/files.html,
+	  man/html/functions.html, man/html/functions_vars.html,
+	  man/html/globals.html, man/html/globals_func.html,
+	  man/html/index.html, man/html/port.png,
+	  man/html/struct_can_status_par.html,
+	  man/html/struct_command__par.html,
+	  man/html/struct_configure_r_t_r__par.html,
+	  man/html/struct_receive__par.html,
+	  man/html/struct_send__par.html, man/html/structcanmsg__t.html,
+	  man/man, man/man/man3, man/man/man3/CanStatusPar.3,
+	  man/man/man3/Command_par.3, man/man/man3/ConfigureRTR_par.3,
+	  man/man/man3/Receive_par.3, man/man/man3/Send_par.3,
+	  man/man/man3/can_close.c.3, man/man/man3/can_core.c.3,
+	  man/man/man3/can_ioctl.c.3, man/man/man3/can_open.c.3,
+	  man/man/man3/can_read.c.3, man/man/man3/can_write.c.3,
+	  man/man/man3/canmsg_t.3, port.png, port_footer.html, readme,
+	  test_can_core.c, trm816, trm816/Makefile, trm816/README,
+	  trm816/SJA1000-custom.pdf, trm816/adnpfunc.c, trm816/cmdline.c,
+	  trm816/cmdline.cli, trm816/cmdline.h, trm816/dnpsetup.1,
+	  trm816/dnpsetup.c, trm816/trm.h, utils, utils/cansetup: initial
+	  import of version 3.3.3
+
+2015-12-06 18:02  hjoertel
+
+	* [r526] write.c: - cast size_t written to unsigned int for display
+	  with printk()
+

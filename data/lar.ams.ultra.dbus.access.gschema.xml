@@ -1,0 +1,48 @@
+<schemalist>
+	<schema id="com.lar.tera.dbus.access" path="/com/lar/tera/dbus/access/" gettext-domain="libmktbus">
+	    <key type='b' name='remote-pc-device'>
+			<default>false</default>
+			<summary>Remote system bus </summary>
+			<description>Remote system bus
+       					 example long deskription.</description>
+		</key>
+	    <key type='b' name='remote-system-bus'>
+			<default>false</default>
+			<summary>Remote system bus </summary>
+			<description>Remote system bus
+       					 example long deskription.</description>
+		</key>
+		<key type='s' name='remote-system-bus-ip'>
+			<default>'192.168.100.26'</default>
+			<summary>Remote system bus ip address </summary>
+			<description>Remote system bus ip address
+        example long deskription.</description>
+		</key>
+		<key type='u' name='remote-system-bus-port'>
+			<default>6666</default>
+			<summary>Remote system bus port</summary>
+			<description>Remote system bus port
+        			example long deskription.</description>
+		</key>
+	</schema>
+	<schema id="com.lar.tera.dbus.access.pc" path="/com/lar/tera/dbus/access/pc/" gettext-domain="libmktbus">
+	    <key type='b' name='remote'>
+			<default>false</default>
+			<summary>Remote system bus </summary>
+			<description>Remote system bus
+       					 example long deskription.</description>
+		</key>
+	  <key type='s' name='bus-ip'>
+			<default>'192.168.100.26'</default>
+			<summary>Remote system bus ip address </summary>
+			<description>Remote system bus ip address
+        example long deskription.</description>
+		</key>
+		<key type='u' name='bus-port'>
+			<default>6666</default>
+			<summary>Remote system bus port</summary>
+			<description>Remote system bus port
+        			example long deskription.</description>
+		</key>
+	</schema>
+</schemalist>

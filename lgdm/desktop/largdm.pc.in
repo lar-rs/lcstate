@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+includedir=@includedir@/largdm
+
+Name: LarGdm
+Description: LAR GDM library.
+Version: @VERSION@
+Requires: 
+Libs: -L${libdir} -llargdm
+Cflags: -I${includedir}

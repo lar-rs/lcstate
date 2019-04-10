@@ -1,0 +1,20 @@
+<node>
+  
+  <interface name="com.lar.tera.lgdm.logbook">
+    <property name="visible" type="b" access="readwrite"/>
+    <property name="Activated" type="b" access="read"/>
+    <property name="PlugId" type="t" access="readwrite"/>
+    <property name="AppId" type="s" access="read"/>
+    
+	
+    
+    <signal name="ShowDesktop">
+	</signal>
+	<signal name="ClickOffline">
+	</signal>
+    <signal name="ClickOnline">
+	</signal>
+	<signal name="ShowStatus">
+	</signal>
+  </interface>
+</node>

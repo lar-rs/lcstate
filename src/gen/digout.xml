@@ -1,0 +1,9 @@
+<node>
+ <interface name="lar.wqm.digout">
+    <property name="State" type="b" access="read"/>
+    <method name="On">
+    </method>
+    <method name="Off">
+    </method>
+    </interface>
+</node>

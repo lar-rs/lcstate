@@ -1,0 +1,35 @@
+#!/bin/sh
+# postinst script for candaemon
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# if [ -d /usr/lib/systemd/system/multi-user.target.wants ]
+# then
+# 	ln -snf /usr/lib/systemd/system/candaemon.service /usr/lib/systemd/system/multi-user.target.wants
+# fi
+
+if [ ! -f "/etc/dbus-1/system.d/com.lar.service.can.conf" ];
+then
+	if [ -f "/usr/etc/dbus-1/system.d/com.lar.service.can.conf" ];
+	then
+			cp /usr/etc/dbus-1/system.d/com.lar.service.can.conf /etc/dbus-1/system.d/com.lar.service.can.conf
+	fi
+fi
+
+if [ -d "/usr/etc/candaemon/eds" ];
+then
+	if [ ! -d "/etc/candaemon/eds"  ];
+	then
+			mkdir -p /etc/candaemon
+	fi
+	cp -R /usr/etc/candaemon/eds /etc/candaemon
+fi
+
+if [ -f "/etc/init/candaemon.conf" ];
+then
+	rm /etc/init/candaemon.conf
+fi
+
+exit 0

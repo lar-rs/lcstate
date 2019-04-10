@@ -1,0 +1,13 @@
+<node>
+
+  <interface name="lar.ams.lgdm.app">
+    <property name="Started" type="b" access="read"/>
+    <property name="Activated" type="b" access="read"/>
+    <property name="PlugId" type="t" access="read"/>
+	<property name="Icon" type="s" access="read"/>
+	<property name="Processed" type="b" access="read"/>
+    <method name="Start">
+		<arg direction="in" type="s" name="layout"/>
+	</method>
+  </interface>
+</node>

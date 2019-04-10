@@ -1,0 +1,21 @@
+<schemalist>
+   <enum id="lar.ams.os.autorestart.type">
+    <value nick="Off" value="0"/>
+    <value nick="Session" value="1"/>
+    <value nick="System" value="2"/>
+    <value nick="Interval" value="3"/>
+   </enum>
+   <schema id="lar.ams.os" path="/lar/ams/os/" gettext-domain="ultra">
+    <key type="s" name="autorestart">
+      <default>"Off"</default>
+      <summary>System emergency auto restart</summary>
+      <description>System emergency auto clean function.The emergency procedure in order to avoid software slowly problem.  </description>
+    </key>
+    <key type="d" name="interval">
+      <default>0.0</default>
+      <range min="0.0" max="36000"/>
+      <summary>Function run interval in minuts</summary>
+      <description>Interval in minuts</description>
+    </key>
+  </schema>
+</schemalist>

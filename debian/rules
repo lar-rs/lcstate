@@ -1,0 +1,54 @@
+#!/usr/bin/make -f
+
+
+DISABLE_UPDATE_UPLOADERS := 1
+
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+# Enable parallel build support
+DEB_BUILD_PARALLEL = 1
+
+# Ensure the build aborts when there are still references to undefined symbols
+LDFLAGS += -Wl,-z,defs
+
+LDFLAGS += -Wl,--no-as-needed
+
+# Make the linker work a bit harder so dynamic loading can be done faster
+LDFLAGS += -Wl,-O1
+
+APIVER := 2.0
+SONAME := 0
+
+# Let's get failing tests' stdout and stderr so we have some information when
+# a build fails
+export VERBOSE=1
+
+# configure flags
+DEB_CONFIGURE_EXTRA_FLAGS := \
+			--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
+			--with-pcre=system
+
+# force full version in shlibs file (so dependants always demand the version they were linked against)
+DEB_DH_MAKESHLIBS_ARGS_ALL += -V
+
+
+common-install-arch::
+	set -e; for file in candaemon.install \
+		        candaemon-doc.install;    \
+	do \
+		sed -e"s,\$${DEB_HOST_MULTIARCH},${DEB_HOST_MULTIARCH},g" \
+		        debian/$${file}.in > debian/$$file; \
+	done
+
+
+
+pre-build::
+	mkdir -p debian/stamp-makefile-check \
+		 debian/tmp-xdg-runtime-dir
+
+reconf:
+	intltoolize --force --copy --automake
+	gtkdocize
+	autoreconf -f -i -v

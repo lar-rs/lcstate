@@ -1,0 +1,18 @@
+candaemon (1.6.5) testing; urgency=medium
+
+  * add support DM2
+        created scan log file for service. ( /var/log/tera/$id-scan-$is_done.adjust_file.eds)
+
+ -- sascha.smolkov <asmolkov@lar.com> Wed, 21 Sep 2016 14:25:01 +0100
+
+candaemon (1.5.4) unstable; urgency=low
+
+  * Initial Migrating to GDBus.
+
+ -- sascha.smolkov <asmolkov@lar.com>  Thu, 05 Feb 2015 09:17:01 +0100
+
+candaemon (1.0.5) unstable; urgency=low
+
+  * Initial Release.
+
+ -- sascha.smolkov <asmolkov@lar.com>  Thu, 05 Feb 2015 09:17:01 +0100

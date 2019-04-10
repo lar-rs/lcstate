@@ -1,0 +1,25 @@
+<node>
+ <interface name="lar.wqm.pump">
+    <property name="State" type="b" access="read"/>
+    <method name="Start">
+    </method>
+    <method name="Stop">
+    </method>
+    <method name="SetMode">
+      <arg direction="in" type="u" name="mode"/>
+    </method>
+    <method name="Left">
+    </method>
+    <method name="Right">
+    </method>
+    <method name="SetSpeed">
+      <arg direction="in" type="u" name="speed"/>
+    </method>
+    <method name="SetIntervalPulse">
+      <arg direction="in" type="u" name="speed"/>
+    </method>
+    <method name="SetIntervalTime">
+      <arg direction="in" type="u" name="speed"/>
+    </method>
+  </interface>
+</node>

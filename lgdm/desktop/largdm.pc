@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include/largdm
+
+Name: LarGdm
+Description: LAR GDM library.
+Version: 1.4.1
+Requires: 
+Libs: -L${libdir} -llargdm
+Cflags: -I${includedir}

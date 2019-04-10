@@ -1,0 +1,5 @@
+#!/bin/sh -e
+sleep 1 
+export DISPLAY=:0.0
+xfconf-query -c xfwm4 -p /general/use_compositing -s true || true
+rm -f ~/.xinitrc.d/01-firstrun

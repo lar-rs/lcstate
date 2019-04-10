@@ -1,0 +1,112 @@
+#!/bin/sh
+
+#!/bin/bash
+# creat : 2013-05-17
+# autor : asmolkov.
+
+echo "test 1:$1 2:$2 3:$3 4:$4"
+
+    case "$1" in
+###########################
+        state)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.App' '/com/lar/CanBus/App' com.lar.AppInterface.get_state 
+        ;;
+###########################
+        set_dout)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Digital18' '/com/lar/CanBus/Digital18' com.lar.NodeDigitalOut16Interface.set_digout$2 boolean:$3
+        ;;
+###########################
+        get_dout)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Digital18' '/com/lar/CanBus/Digital18' com.lar.NodeDigitalOut16Interface.get_digout$2
+        ;;
+###########################
+        dig_get_index)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Digital18' '/com/lar/CanBus/Digital18' com.lar.NodeInterface.get_index_value string:$2
+        ;;
+###########################
+        dig_set_index)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Digital18' '/com/lar/CanBus/Digital18' com.lar.NodeInterface.set_index_value string:$2 string:$3
+        ;;
+###########################
+        get_in)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Digital18' '/com/lar/CanBus/Digital18' com.lar.NodeDigitalIn16Interface.get_digin$2
+        ;;
+###########################
+        device_is_open)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Device0' '/com/lar/CanBus/Device0' com.lar.NodeDeviceInterface.is_open
+        ;;
+###########################
+        device_reopen)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Device0' '/com/lar/CanBus/Device0' com.lar.NodeDeviceInterface.reopen int32:$2 int32:$3 string:'$4'
+        ;;
+###########################
+        device_is_init)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Device0' '/com/lar/CanBus/Device0' com.lar.NodeDeviceInterface.is_init
+        ;;
+###########################
+		device_reinit)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Device0' '/com/lar/CanBus/Device0' com.lar.NodeDeviceInterface.reinit
+        ;;
+###########################
+	device_scann)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Device0' '/com/lar/CanBus/Device0' com.lar.NodeDeviceInterface.scann_id uint32:$2
+        ;;
+###########################
+	analog_in)
+	    echo "Analog In methods "
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Analog2' '/com/lar/CanBus/Analog2' com.lar.NodeAnalogInInterface.get_in$2
+        ;;
+###########################
+	analog_uart)
+	    echo "Analog Uart methods "
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Analog2' '/com/lar/CanBus/Analog2' com.lar.NodeUartDataInterface.get_data$2
+        ;;
+###########################
+	analog_set_uart)
+	    echo "Analog In methods "
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Analog2' '/com/lar/CanBus/Analog2' com.lar.NodeUartDataInterface.set_data$2 string:$3
+        ;;
+###########################
+	motor1_pump)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor12' com.lar.NodeMotorPumpInterface.$2
+        ;;
+###########################
+	motor1_stepper)
+	    echo "GET mottor 12 stepper method"
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor12' com.lar.NodeMotorStepperInterface.$2
+        ;;
+###########################
+	motor1_pump_set)
+	    echo "SET mottor1 pump method $2 $3:$4"
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor12' com.lar.NodeMotorPumpInterface.$2 $3:$4
+        ;;
+###########################
+	motor1_stepper_set)
+	    echo "SET mottor1 stepper method $2 $3:$4"
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor12' com.lar.NodeMotorStepperInterface.$2 $3:$4
+        ;;
+###########################
+	motor2_pump)
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor14' com.lar.NodeMotorPumpInterface.$2
+        ;;
+###########################
+	motor2_stepper)
+	    echo "GET mottor 12 stepper method"
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor14' com.lar.NodeMotorStepperInterface.$2
+        ;;
+###########################
+	motor_uart)
+	    echo "Motor Uart methods "
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor12' com.lar.NodeUartDataInterface.get_data$2
+        ;;
+###########################
+	motor_uart_Set)
+	    echo "Motor Uart methods "
+	    dbus-send --system --print-reply --reply-timeout=120000 --type=method_call --dest='com.lar.CanBus.Doppelmotor12' '/com/lar/CanBus/Doppelmotor12' com.lar.NodeUartDataInterface.set_data$2 string:$3
+        ;;
+###########################
+        *)  exit 1
+        ;;
+    esac
+
+

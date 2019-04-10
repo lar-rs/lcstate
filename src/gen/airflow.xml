@@ -1,0 +1,52 @@
+<node>
+  <interface name="lar.wqm.airflow">
+    <property name="SollValue" type="d" access="readwrite"/>
+    <property name="Correction" type="d" access="readwrite"/>
+    <property name="Deviation" type="d" access="readwrite"/>
+    <property name="InjectionErrorThreshold" type="d" access="readwrite"/>
+    <property name="CriticalError" type="b" access="readwrite"/>
+
+    <property name="OutOfRange" type="b" access="read"/>
+    <property name="AdjustmentFactor" type="d" access="read"/>
+    <property name="AirIn" type="d" access="read"/>
+    <property name="AirOut" type="d" access="read"/>
+    <property name="FurnaceWay" type="b" access="readwrite"/>
+    <property name="Smooth" type="b" access="readwrite"/>
+
+    <!-- Reset:
+	    @started: Reset last calibration started
+	    @since: 2.30 Reset. -->
+    <method name="GetIn">
+      <arg direction="out" type="d" name="started"/>
+    </method>
+    <method name="GetOut">
+      <arg direction="out" type="d" name="started"/>
+    </method>
+
+
+    <!-- Calibration:
+	    @started: Calibration started
+	    @since: 2.30 Calibration. -->
+    <method name="Calibration">
+      <arg direction="out" type="b" name="started"/>
+    </method>
+    <!-- Reset:
+	    @started: Reset last calibration started
+	    @since: 2.30 Reset. -->
+    <method name="Reset">
+      <arg direction="out" type="b" name="started"/>
+    </method>
+    <!-- InjectionAnalyse:
+	    @started: Injection analyse started
+	    @since: 2.30 Injection analyse. -->
+    <method name="InjectionAnalyseIn">
+      <arg direction="out" type="b" name="result"/>
+    </method>
+    <!-- InjectionAnalyse:
+	    @started: Injection analyse started
+	    @since: 2.30 Injection analyse. -->
+    <method name="InjectionAnalyseOut">
+      <arg direction="out" type="b" name="result"/>
+    </method>
+  </interface>
+</node>

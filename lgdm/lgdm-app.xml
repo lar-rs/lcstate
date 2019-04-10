@@ -1,0 +1,19 @@
+<node>
+  <interface name="lar.ams.lgdm.app">
+    <property name="Started" type="b" access="readwrite"/>
+    <property name="Activated" type="b" access="read"/>
+    <property name="PlugId" type="t" access="readwrite"/>
+    <property name="AppId" type="s" access="read"/>
+    <property name="Icon" type="s" access="readwrite"/>
+    <method name="StopApp">
+      <arg direction="out" type="b" name="is_stop"/>
+    </method>
+    <signal name="Stopped"></signal>
+    <method name="StartLayout">
+      <arg direction="in" type="s" name="layout"/>
+    </method>
+    <signal name="Start">
+      <arg direction="in" type="s" name="layout"/>
+    </signal>
+  </interface>
+</node>

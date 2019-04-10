@@ -1,0 +1,1 @@
+#define CAN_RANGE 0x2000

@@ -1,0 +1,21 @@
+<node>
+  <interface name="lar.wqm.furnace">
+    <property name="OutOfRange" type="b" access="read"/>
+    <property name="CoolerOutOfRange" type="b" access="read"/>
+    <property name="IsDead" type="b" access="read"/>
+    <property name="IsOpen" type="b" access="read"/>
+    <property name="IsOn" type="b" access="read"/>
+    <method name="Open">
+      <arg direction="out" type="b" name="is_done"/>
+    </method>
+    <method name="Close">
+      <arg direction="out" type="b" name="is_activated"/>
+    </method>
+    <method name="On">
+      <arg direction="out" type="b" name="is_activated"/>
+    </method>
+    <method name="Off">
+      <arg direction="out" type="b" name="is_activated"/>
+    </method>
+  </interface>
+</node>

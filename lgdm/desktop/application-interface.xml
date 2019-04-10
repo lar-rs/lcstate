@@ -1,0 +1,13 @@
+<node>
+  
+  <interface name="com.lar.tera.lgdm.application">
+    <signal name="ShowDesktop">
+	</signal>
+	<signal name="ClickOffline">
+	</signal>
+    <signal name="ClickOnline">
+	</signal>
+	<signal name="ShowStatus">
+	</signal>
+  </interface>
+</node>

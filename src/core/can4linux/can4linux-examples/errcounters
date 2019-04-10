@@ -1,0 +1,107 @@
+# display CAN error counter
+# Read out info provided by can4linux in /proc/sys/dev/Can/[RT]xErrCounter
+# vi: set filetype=tcl :
+# \
+exec wish "$0" ${1+"$@"}
+#
+# display CAN controller error counters using the scale widget
+#
+
+
+# 4 CAN channels
+set CANc 4
+set cycletime 500			;# check every so ms
+
+package require Tk
+
+
+
+for { set i 0 } { $i < $CANc } { incr i } {
+
+    scale .txerr$i -label "TxErr $i" -variable txerr$i \
+    	-length 12c -width .25c -from 0 -to 255 \
+	-resolution 1 -tickinterval 20 -showvalue 0 \
+	-sliderlength 10 -orient horizontal
+
+    scale .rxerr$i -label "RxErr $i" -variable rxerr$i \
+    	-length 12c -width .25c -from 0 -to 255 \
+	-resolution 1 -tickinterval 20 -showvalue 0 \
+	-sliderlength 10 -orient horizontal \
+	-background grey
+
+}
+
+for { set i 0 } { $i < $CANc } { incr i } {
+	grid .txerr$i
+	grid .rxerr$i
+}
+
+
+proc weg {} {
+    global CANc
+    for { set i 0 } { $i < $CANc } { incr i } {
+	    destroy .txerr$i
+	    destroy .rxerr$i
+    }
+}
+
+
+
+.txerr0 configure -troughcolor lightgreen
+.txerr0 configure -troughcolor red
+
+
+# an event handler can not be used
+# because the entry is always readable, we can not wait for new data.
+# the only chance we have, is a cyclic check for the values
+
+proc ReadLine {fd} {
+	chan seek $fd 0
+	gets $fd line
+	# puts $line
+	return $line
+}
+
+
+set stop 0
+
+proc run {} {
+    global CANc
+    global stop cycletime
+
+    # Open the two files
+    set fdrx [open /proc/sys/dev/Can/RxErrCounter]
+    set fdtx [open /proc/sys/dev/Can/TxErrCounter]
+
+    while true {
+	after $cycletime 
+	update
+	# read tx error line
+	set line [ReadLine $fdtx]
+	for { set i 0 } { $i < $CANc } { incr i } {
+	    set cnt [lindex $line $i]
+	    .txerr$i set $cnt
+	    # If the err counter is going above 96
+	    if { $cnt > 95 } {
+		    .txerr$i configure -troughcolor red
+		} else {
+		    .txerr$i configure -troughcolor lightgreen
+		}
+	}
+	# read rx error line
+	set line [ReadLine $fdrx]
+	for { set i 0 } { $i < $CANc } { incr i } {
+	    set cnt [lindex $line $i]
+	    .rxerr$i set $cnt
+	    if { $cnt > 95 } {
+		    .rxerr$i configure -troughcolor red
+		} else {
+		    .rxerr$i configure -troughcolor lightgreen
+		}
+	}
+
+	if { $stop == 1 } break
+    }
+}
+# start the loop
+run

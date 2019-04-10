@@ -1,0 +1,8 @@
+<node>
+ <interface name="lar.wqm.digin">
+    <property name="State" type="b" access="read"/>
+    <method name="Get">
+      <arg direction="out" type="b" name="res"/>
+    </method>
+  </interface>
+</node>

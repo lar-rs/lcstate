@@ -1,0 +1,116 @@
+#!/bin/sh
+# switch bitrate
+# currently parameter one, the device name is not implemented
+# and all devices are set the same values
+
+usage() {
+    echo "switch bitrate" 
+    echo " arg1 device (e.g. can0 ,or all)"
+    echo " arg2 bitrate  (e.g. 125)"
+    echo " optional [arg3 speedfactor for CAN FD (e.g. 2  of 1,2,3,4,5)]"
+    echo " arg4 trasmitter delay (e.g. 100)"
+}
+
+socketcan() {
+    if [ "$1" = "" ]; then
+	return
+    fi
+    local num=$(ip link show | cut --fields=2 --delimiter=: | grep  'can[[:digit:]+]' | wc -l)
+    local count
+    ((count=num-1))
+    if [ "$1" = "-h" ]; then
+	echo "$num CAN channels"
+	for i in $(seq 0 $count);do
+	ip  --details link show can$i
+	done
+
+    else
+	# use loop over $num ...
+	for i in $(seq 0 $count);do
+	    ip  --details link show can$i
+	    sudo ip link set can$i down
+	    sudo ip link set can$i up type can bitrate ${2}000 restart-ms 100
+	    ip  --details link show can$i
+	    echo "=================================================="
+	done
+    fi
+}
+
+devices=0
+result=""
+
+if lsmod | grep ^can > /dev/null
+then
+    echo SocketCAN loaded
+    socketcan $1 $2
+    exit
+fi
+
+
+
+if lsmod | grep ^can4linux > /dev/null
+then
+   echo can4linux loaded
+fi
+
+
+if [ "$1" = "-h" ]; then
+    usage
+	echo "current settings:"
+	echo "------------------------------------------------"
+    ./debug
+    exit
+fi
+
+if [ "$1" = "all" ]
+then
+	devices=$(ls -1 /dev/can* | wc -l)
+	echo "using \"all\" $devices devices"
+else
+	echo "using \"$1\""
+	echo "This doesnt work yet, specifying a single device"
+	echo "Using the given values for \"all\" devices"
+	devices=$(ls -1 /dev/can* | wc -l)
+fi
+
+# expands its parameter for all number of devices
+# the function should take care if only one device was selected
+# on the command line. In this case read out the current values
+# from /proc/sys/dev/Can and change only the requested
+adda() {
+	counter=$devices
+	result=""
+         while [ $counter -gt 0 ]; do
+			result="$result $1"             
+			counter=$(($counter-1))
+         done
+}
+
+if [ $# -eq 2 ]
+then
+	adda $2
+    echo "$result" > /proc/sys/dev/Can/Baud
+    exit
+fi
+if [ $# -eq 3 ]
+then
+	adda $2
+    echo "$result" > /proc/sys/dev/Can/Baud
+	adda $3
+    echo "$result" > /proc/sys/dev/Can/Speedfactor
+    exit
+fi
+
+if [ $# -eq 4 ]
+then
+	adda $2
+    echo "$result" > /proc/sys/dev/Can/Baud
+	adda $3
+    echo "$result" > /proc/sys/dev/Can/Speedfactor
+	adda $4
+    echo "$result" > /proc/sys/dev/Can/Transmitterdelay
+    exit
+fi
+
+# if nothing else but
+usage

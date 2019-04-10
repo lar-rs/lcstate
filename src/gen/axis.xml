@@ -1,0 +1,20 @@
+<node>
+  <interface name="lar.wqm.axis">
+    <property name="Max" type="u" access="readwrite"/>
+    <property name="IsBusy" type="b" access="readwrite"/>
+    <property name="Hold" type="u" access="readwrite"/>
+    <property name="Current" type="u" access="readwrite"/>
+    <property name="Parameter" type="u" access="readwrite"/>
+    <property name="Position" type="u" access="read"/>
+    <property name="GoToPos" type="u" access="read"/>
+    <property name="FinalPosition" type="b" access="read"/>
+    <method name="Move">
+      <arg direction="in" type="u" name="move"/>
+      <arg direction="in" type="u" name="parameter"/>
+      <arg direction="out" type="u" name="position"/>
+    </method>
+    <method name="Sensor">
+      <arg direction="out" type="b" name="position"/>
+    </method>
+   </interface>
+</node>

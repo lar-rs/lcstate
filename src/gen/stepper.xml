@@ -1,0 +1,65 @@
+<node>
+  <interface name="lar.wqm.stepper">
+    <method name="SetMode">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+
+    <method name="GetFinalPosition">
+      <arg direction="out" type="b" name="value"/>
+    </method>
+
+    <method name="SetEndschalterInvert">
+    </method>
+
+    <method name="GetDiagnoseByte">
+      <arg direction="out" type="u" name="value"/>
+    </method>
+
+    <method name="SetParameter">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+
+    <method name="Command">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+
+    <method name="GetPos">
+      <arg direction="out" type="u" name="value"/>
+    </method>
+
+    <method name="GoPos">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+
+    <method name="PosOld">
+      <arg direction="out" type="u" name="value"/>
+    </method>
+
+    <method name="SetMaxPos">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+
+    <method name="StallGuardFlag">
+      <arg direction="out" type="u" name="value"/>
+    </method>
+
+    <method name="Start">
+    </method>
+    <method name="SetDelay">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+    <method name="SetCurrent">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+    <method name="SetHoldCurrent">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+    <method name="SetCurrentDigit">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+    </method>
+    <method name="SetHoldCurrentDigit">
+      <arg direction="in" type="u" name="value"/>
+    </method>
+  </interface>
+</node>
