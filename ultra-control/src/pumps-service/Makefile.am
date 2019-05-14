@@ -1,0 +1,42 @@
+## Process this file with automake to produce Makefile.in
+
+## Author Sascha.Smolkov
+
+
+AM_CPPFLAGS = \
+	-DPACKAGE_LOCALE_DIR=\""$(localedir)"\" \
+	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+	-DPACKAGE_DATA_DIR=\""$(pkgdatadir)"\" \
+	-DDATA_DIR=\""$(datadir)"\" \
+	$(GLIB_CFLAGS) \
+	$(MKT_CFLAGS)
+
+AM_CFLAGS =$(WARN_CFLAGS) \
+	 -Wall\
+	 -g   \
+	 -lm
+
+
+bin_PROGRAMS =          \
+	ultra_pumps_service
+
+ultra_pumps_service_SOURCES =          \
+	pumps-application-object.c         \
+	pumps-service.c 
+	
+
+
+EXTRA_DIST =    \
+	pumps-application-object.h
+	
+	
+
+
+
+
+ultra_pumps_service_LDFLAGS = 
+ultra_pumps_service_LDADD = $(MKT_LIBS)  $(GLIB_LIBS)
+
+dbusservicedir = $(datadir)/dbus-1/services
+dbusservice_DATA = com.lar.tera.pumps.service
+

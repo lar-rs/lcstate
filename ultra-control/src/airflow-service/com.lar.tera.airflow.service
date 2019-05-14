@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.lar.tera.airflow
+Exec=/usr/bin/ultra_airflow_service

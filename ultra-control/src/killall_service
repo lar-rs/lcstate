@@ -1,0 +1,16 @@
+#!/bin/sh
+# Run this to generate all the initial makefiles, etc.
+
+killall ultra_measurement_service
+killall tera-security
+killall ultra_axis_service
+killall ultra_analogs_service
+killall ultra_monitoring_service
+killall ultra_airflow_service
+killall ultra_pumps_service
+killall ultra_sequence_workers_service
+killall ultra_stirrers_service
+killall ultra_valves_service
+killall ultra_vessels_service
+killall lar_sensors_plug_server
+killall lar_sensors_signal_server

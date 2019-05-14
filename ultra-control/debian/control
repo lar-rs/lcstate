@@ -1,0 +1,73 @@
+Source: ultracontrol
+Section: ultra
+Priority: optional
+Maintainer: sascha.smolkov <asmolkov@lar.com>
+Uploaders: sascha.smolkov <asmolkov@lar.com>
+Build-Depends: debhelper (>= 8.0.0),
+               autotools-dev,
+               dh-autoreconf,
+               cdbs,
+               gcc-4.8 [sparc],
+               pkg-config (>= 0.16.0),
+               gettext,
+               autotools-dev,
+               gnome-pkg-tools (>= 0.11),
+               dpkg-dev (>= 1.16.0),
+               libglib2.0-dev (>= 2.32.2),
+               libhiredis-dev,
+               libjson-glib-dev,
+               libmktlib-2.0-dev,
+               libmktbus-1.0-dev,
+               libultimate-1.0-dev,
+               libsqlite3-dev (>= 3.8),
+               python:any (>= 2.6.6-3~), 
+Standards-Version: 3.9.5
+Homepage: http://www.lar.com/
+Vcs-Browser: 
+Vcs-Svn: https://sort.lar.com/svn/lar/LC/lc_tera/ultra-control 
+XS-Testsuite:
+
+Package: ultracontrol
+Section: ultra
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         atompc,
+         candaemon,
+         lar-analogs,
+         terasecurity,
+         lar-humidity,
+         lar-pressure,
+         lar-relays,
+         larprotocol,
+         sensors,
+         largdm,
+         aptmanager,
+         measurementscreen,
+         ultracalibration,
+         database,
+         diurnal,
+         logbook,
+         ultrasettings,
+         ultraserviceactions,
+         ultimatesignalcurve,
+         ultrasinglemeasurement,
+         ultrastatus,
+         lar-language-en,
+         lar-language-de
+Recommends: shared-mime-info
+Multi-Arch: same
+Pre-Depends:
+Description: Mkt library description.
+             This package contains the shared libraries.
+
+Package: ultracontrol-doc
+Section: ultra
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: devhelp
+Multi-Arch: foreign
+Description: Documentation files for the Mkt library
+ .
+ This package contains the HTML documentation for the Mkt library
+ in /usr/share/doc/ultracontrol-doc/ .

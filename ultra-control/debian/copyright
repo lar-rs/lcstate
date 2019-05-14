@@ -1,0 +1,10 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ultracontrol
+Source: 
+
+Files: *
+Copyright: 2017 LAR Sascha Smolkov
+
+Files: debian/*
+Copyright:  2017 LAR Sascha Smolkov
+License: 

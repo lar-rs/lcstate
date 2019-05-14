@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.lar.tera.sequence.workers
+Exec=/usr/bin/ultra_sequence_workers_service

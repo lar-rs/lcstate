@@ -1,0 +1,20 @@
+#!/bin/sh
+# Run this to generate all the initial makefiles, etc.
+
+tera-security > /dev/null 2> /dev/null &
+ultra_monitoring_service > /dev/null 2> /dev/null &
+ultra_airflow_service > /dev/null 2> /dev/null &
+ultra_analogs_service > /dev/null 2> /dev/null &
+ultra_pumps_service > /dev/null 2> /dev/null &
+sleep 4
+ultra_valves_service > /dev/null 2> /dev/null &
+ultra_stirrers_service > /dev/null 2> /dev/null &
+ultra_vessels_service > /dev/null 2> /dev/null &
+lar_sensors_plug_server > /dev/null 2> /dev/null &
+sleep 4
+lar_sensors_signal_server > /dev/null 2> /dev/null &
+ultra_axis_service > /dev/null 2> /dev/null &
+ultra_measurement_service > /dev/null 2> /dev/null &
+ultra_sequence_workers_service > /dev/null 2> /dev/null &
+sleep 4
+ultra_measurement_process_service > /dev/null 2> /dev/null &

@@ -1,0 +1,34 @@
+<schemalist>
+  <schema id="ultra.stirrer" path="/ultra/stirrer/" gettext-domain="ultra-stirrer">
+		<key type="i" name="delay1">
+      <default>50</default>
+      <range min="20" max="240"/>
+      <summary>Delay normal</summary>
+      <description>Delay normal mode</description>
+    </key>
+		<key type="i" name="delay2">
+      <default>50</default>
+      <range min="20" max="240"/>
+      <summary>Delay dilution mode</summary>
+      <description>Delay dilution mode</description>
+    </key>
+		<key type="i" name="current1">
+      <default>70</default>
+      <range min="0" max="2000"/>
+      <summary>Current normal</summary>
+      <description>Current in normal mode pro stirrer</description>
+    </key>
+		<key type="i" name="current2">
+      <default>200</default>
+      <range min="0" max="2000"/>
+      <summary>Current dilution</summary>
+      <description>Current dilution mode pro stirrer</description>
+    </key>
+		<key type="i" name="count">
+      <default>1</default>
+      <range min="1" max="8"/>
+      <summary>Current normal</summary>
+      <description>Current in normal mode pro stirrer</description>
+    </key>
+	</schema>
+</schemalist>

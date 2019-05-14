@@ -1,0 +1,64 @@
+<schemalist>
+	<schema id="com.lar.tera.airflow" path="/com/lar/tera/airflow/" gettext-domain="ultracontrol">
+		<key type='s' name='sensor-name'>
+			<default>'Airfow IN'</default>
+			<summary>Airflow sensor name </summary>
+			<description>Airflow sensor name
+        example long deskription.</description>
+		</key>
+		<key type='s' name='sensor-unit'>
+			<default>'[l/h]'</default>
+			<summary>Airflow sensor unit </summary>
+			<description>Airflow sensor unit
+        			example long deskription.</description>
+		</key>
+		<key type='d' name='soll-value'>
+			<range min="0.0" max="60.0"/>
+     		<default>30.0</default>
+			<summary>Airflow soll value</summary>
+			<description>Airflow soll value
+        			example long deskription.</description>
+		</key>
+		<key type='d' name='correction-value'>
+			<range min="0.0" max="100.0"/>
+     		<default>10.0</default>
+			<summary>Airflow correction value</summary>
+			<description>Airflow correction value
+       					 example long deskription.</description>
+		</key>
+		<key type='d' name='deviation-value'>
+			<range min="4.0" max="100.0"/>
+     		<default>5.0</default>
+			<summary>Airflow deviation value</summary>
+			<description>Airflow deviation value
+       					 example long deskription.</description>
+		</key>
+		<key type='d' name='injection-error-threshold'>
+			<range min="4.0" max="100.0"/>
+     		<default>5.0</default>
+			<summary>Airflow injection error threshold value</summary>
+			<description>Airflow injection error threshold value
+       					 example long deskription.</description>
+		</key>
+		<key type='d' name='adjustment-factor'>
+			<default>0.0</default>
+			<summary>Airflow adjustment factor value</summary>
+			<description>Airflow adjustment- factor value
+       					 example long deskription.</description>
+		</key>
+		
+		<key type='b' name='critical-error'>
+			<default>true</default>
+			<summary>Airflow sensor name </summary>
+			<description>Airflow sensor name
+      				   example long deskription.</description>
+		</key>
+		<key type='d' name='inj-analyse-time'>
+			<range min="1.0" max="20.0"/>
+     		<default>2.0</default>
+			<summary>Airflow injection analyse time</summary>
+			<description>Airflow injection analyse time
+       					 example long deskription.</description>
+		</key>
+	</schema>
+</schemalist>

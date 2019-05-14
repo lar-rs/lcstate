@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.lar.tera.axis
+Exec=/usr/bin/ultra_axis_service

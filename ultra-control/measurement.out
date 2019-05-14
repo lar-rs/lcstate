@@ -1,0 +1,196 @@
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktErrorInterface
+** (process:22371): DEBUG: Set tablename MktErrorMessage for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktLogInterface
+** (process:22371): DEBUG: init interface MktLog
+** (process:22371): DEBUG: Set tablename MktLogMessage for model 
+** (process:22371): DEBUG: mkt_connection_new_default_parameter
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: Set tablename MktParamObject for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktLimitInterface
+** (process:22371): DEBUG: Set tablename MktLimitMessage for model 
+** (process:22371): DEBUG: mkt_connection_new_default_parameter
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktDataInterface
+** (process:22371): DEBUG: Set tablename MktSensorData for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktAxisInterface
+** (process:22371): DEBUG: Set tablename MktAxisModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktInjectionInterface
+** (process:22371): DEBUG: Set tablename MktInjectionModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktStreamInterface
+** (process:22371): DEBUG: Set tablename MktStreamModel for model 
+** (process:22371): DEBUG: mkt_connection_new_default_parameter
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktMeasurementInterface
+** (process:22371): DEBUG: Set tablename MktMeasurementData for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktChannelInterface
+** (process:22371): DEBUG: Set tablename MktChannelModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktAnalogInterface
+** (process:22371): DEBUG: Set tablename MktAnalogModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktVesselInterface
+** (process:22371): DEBUG: Set tablename MktVesselModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktCategoryInterface
+** (process:22371): DEBUG: Set tablename MktCategoryModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktStatisticInterface
+** (process:22371): DEBUG: Set tablename MktStatisticModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=UltimateMessparmInterface
+** (process:22371): DEBUG: Set tablename UltimateMessparmObject for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=UltimatePosparmInterface
+** (process:22371): DEBUG: Set tablename UltimatePosparmObject for model 
+** (process:22371): DEBUG: mkt_connection_new_default_parameter
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktCalInterface
+** (process:22371): DEBUG: Set tablename MktCalModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktCalPointInterface
+** (process:22371): DEBUG: Set tablename MktCalPointModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktCalDataInterface
+** (process:22371): DEBUG: Set tablename MktCalDataModel for model 
+** (process:22371): DEBUG: load interface[0]=MktIModelInterface
+** (process:22371): DEBUG: load interface[1]=MktParamInterface
+** (process:22371): DEBUG: load interface[2]=MktCalibrationInterface
+** (process:22371): DEBUG: Set tablename MktCalibrationModel for model 
+** (process:22371): DEBUG: 
+======================================================================================================================
+
+** (com.lar.tera.measurement:22371): DEBUG: set prop = stream-number
+** (com.lar.tera.measurement:22371): DEBUG: set prop =stream-number done
+Object manager at /com/lar/tera/security
+ - Object at /com/lar/tera/security/Guard
+   - Interface com.lar.security.device
+** (com.lar.tera.measurement:22371): DEBUG: set prop = stream-number
+** (com.lar.tera.measurement:22371): DEBUG: set prop =stream-number done
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_new_integrations 1
+** (com.lar.tera.measurement:22371): DEBUG: Load integration /com/lar/tera/integrations/13 integration data models
+** (com.lar.tera.measurement:22371): DEBUG: load interface[0]=MktIModelInterface
+** (com.lar.tera.measurement:22371): DEBUG: load interface[1]=MktParamInterface
+** (com.lar.tera.measurement:22371): DEBUG: load interface[2]=UltimateIntegrationInterface
+** (com.lar.tera.measurement:22371): DEBUG: Set tablename UltimateIntegrationObject for model 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_measurement_channels 1
+** (com.lar.tera.measurement:22371): DEBUG: ultra_channel_object_constructed
+** (com.lar.tera.measurement:22371): DEBUG: Load channel /com/lar/tera/streams/2/channels/13 data models
+** (com.lar.tera.measurement:22371): DEBUG: mkt_channel_model_init
+** (com.lar.tera.measurement:22371): DEBUG: Details cal->priv->last = 1
+** (com.lar.tera.measurement:22371): DEBUG: calibration test id=1
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: ultra_channel_object_constructed
+** (com.lar.tera.measurement:22371): DEBUG: Load channel /com/lar/tera/streams/1/channels/13 data models
+** (com.lar.tera.measurement:22371): DEBUG: mkt_channel_model_init
+** (com.lar.tera.measurement:22371): DEBUG: Details cal->priv->last = 3
+** (com.lar.tera.measurement:22371): DEBUG: calibration test id=2
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_measurement_channels 2
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_new_integrations 2
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_new_integrations 1
+** (com.lar.tera.measurement:22371): DEBUG: Load integration /com/lar/tera/integrations/1 integration data models
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_measurement_channels 1
+** (com.lar.tera.measurement:22371): DEBUG: ultra_channel_object_constructed
+** (com.lar.tera.measurement:22371): DEBUG: Load channel /com/lar/tera/streams/2/channels/1 data models
+** (com.lar.tera.measurement:22371): DEBUG: mkt_channel_model_init
+** (com.lar.tera.measurement:22371): DEBUG: Details cal->priv->last = 5
+** (com.lar.tera.measurement:22371): DEBUG: calibration test id=3
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: ultra_channel_object_constructed
+** (com.lar.tera.measurement:22371): DEBUG: Load channel /com/lar/tera/streams/2/channels/2 data models
+** (com.lar.tera.measurement:22371): DEBUG: mkt_channel_model_init
+** (com.lar.tera.measurement:22371): DEBUG: Details cal->priv->last = 7
+** (com.lar.tera.measurement:22371): DEBUG: calibration test id=4
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: ultra_channel_object_constructed
+** (com.lar.tera.measurement:22371): DEBUG: Load channel /com/lar/tera/streams/1/channels/1 data models
+** (com.lar.tera.measurement:22371): DEBUG: mkt_channel_model_init
+** (com.lar.tera.measurement:22371): DEBUG: Details cal->priv->last = 9
+** (com.lar.tera.measurement:22371): DEBUG: calibration test id=5
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: ultra_channel_object_constructed
+** (com.lar.tera.measurement:22371): DEBUG: Load channel /com/lar/tera/streams/1/channels/2 data models
+** (com.lar.tera.measurement:22371): DEBUG: mkt_channel_model_init
+** (com.lar.tera.measurement:22371): DEBUG: Details cal->priv->last = 11
+** (com.lar.tera.measurement:22371): DEBUG: calibration test id=6
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_measurement_channels 2
+** (com.lar.tera.measurement:22371): DEBUG: ultra_integration_create_new_integrations 2
+** (com.lar.tera.measurement:22371): DEBUG: measurement_application_object_startup
+** (com.lar.tera.measurement:22371): DEBUG: Start stream /com/lar/tera/streams/1 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 next measurement 
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 start calibration 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: Last CAL = 9
+** (com.lar.tera.measurement:22371): DEBUG: Point 9 solution 500.000000
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_PREPARE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_HOLD
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_FILL_SAMPLE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_HOLD_DONE_PRE_RINSING
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_measurement_ready
+** (com.lar.tera.measurement:22371): DEBUG: Start stream /com/lar/tera/streams/1 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 next measurement 
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 start calibration 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: Last CAL = 9
+** (com.lar.tera.measurement:22371): DEBUG: Point 9 solution 500.000000
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_PREPARE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_HOLD
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_FILL_SAMPLE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_HOLD_DONE_PRE_RINSING
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_measurement_ready
+** (com.lar.tera.measurement:22371): DEBUG: HOLD_PROCESS_DONE_stop_all
+** (com.lar.tera.measurement:22371): DEBUG: Start stream /com/lar/tera/streams/1 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 next measurement 
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 start calibration 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: Last CAL = 9
+** (com.lar.tera.measurement:22371): DEBUG: Point 9 solution 500.000000
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_PREPARE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_HOLD
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_FILL_SAMPLE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_HOLD_DONE_PRE_RINSING
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_measurement_ready
+** (com.lar.tera.measurement:22371): DEBUG: Start stream /com/lar/tera/streams/1 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 next measurement 
+** (com.lar.tera.measurement:22371): DEBUG: Channel /com/lar/tera/streams/1/channels/1 start calibration 
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_get_ready_channels22
+** (com.lar.tera.measurement:22371): DEBUG: Last CAL = 9
+** (com.lar.tera.measurement:22371): DEBUG: Point 9 solution 500.000000
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_run_PREPARE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_HOLD
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_ultra_stream_run_FILL_SAMPLE
+** (com.lar.tera.measurement:22371): DEBUG: PREPARE_HOLD_DONE_PRE_RINSING
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_reset_measurement
+** (com.lar.tera.measurement:22371): DEBUG: ultra_stream_measurement_ready

@@ -1,0 +1,103 @@
+<schemalist>
+  <schema id="ultra.measurement" path="/ultra/measurement/" gettext-domain="UltraMeasurement">
+    <key type='b' name='auto-start'>
+      <default>false</default>
+      <summary>Device need autostart</summary>
+      <description>
+        Default description example.
+      </description>
+    </key>
+    <key type='d' name='justification'>
+      <range min="5.0" max="1500.0"/>
+      <default>20.0</default>
+      <summary>Justification time</summary>
+      <description>
+        Default description example.
+      </description>
+    </key>
+    <key type='d' name='last-injection'>
+      <default>0.0</default>
+      <summary>Last injection time</summary>
+      <description>
+        Last injection Time.
+      </description>
+    </key>
+    <key type='d' name='stabilization-time'>
+      <default>0.0</default>
+      <summary>Stabilization wait time</summary>
+      <description>
+        Stabilization wait time in seconds
+      </description>
+    </key>
+    <key type="i" name="relays">
+      <default>4</default>
+      <range min="4" max="8"/>
+      <summary>Relay counter</summary>
+      <description>The Counter of Relays</description>
+    </key>
+    <key type='d' name='dilution-fill-time'>
+      <default>0.0</default>
+      <range min="0.0" max="100.0"/>
+      <summary>dilution fill time</summary>
+      <description>
+        Last injection Time.
+      </description>
+    </key>
+    <key type='d' name='dilution-time'>
+      <default>0.0</default>
+      <range min="0.0" max="100.0"/>
+      <summary>dilution fill time</summary>
+      <description>
+        Last injection Time.
+      </description>
+    </key>
+    <key type='d' name='dilution-proportion'>
+      <default>0.0</default>
+      <range min="0.0" max="100.0"/>
+      <summary>dilution fill time</summary>
+      <description>
+        Last injection Time.
+      </description>
+    </key>
+    <key type='b' name='is-allow'>
+      <default>false</default>
+      <summary>Range switching is allow</summary>
+      <description>
+        Default description example.
+      </description>
+    </key>
+    <key type='b' name='range-switching'>
+      <default>false</default>
+      <summary>Range switching</summary>
+      <description>
+        Default description example.
+      </description>
+    </key>
+    <key type="d" name="range-max">
+      <default>100.0</default>
+      <range min="0.0" max="200000.0"/>
+      <summary>Range limit</summary>
+      <description></description>
+    </key>
+    <key type="d" name="range-min">
+      <default>150.0</default>
+      <range min="0.0" max="200000.0"/>
+      <summary>Range limit</summary>
+      <description></description>
+    </key>
+    <key name="range-max-channel" type="s">
+      <default >"empty"</default>
+      <summary>A greeting</summary>
+      <description>
+        Channel to check in low range
+      </description>
+    </key>
+    <key name="range-min-channel" type="s">
+      <default >"empty"</default>
+      <summary>A greeting</summary>
+      <description>
+        Channel to check in hight range
+      </description>
+    </key>
+  </schema>
+</schemalist>

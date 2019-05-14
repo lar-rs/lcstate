@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=ultra.measurement
+Exec=/usr/bin/ultra_measurement_service

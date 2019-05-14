@@ -1,0 +1,20 @@
+<node>
+  <interface name="lar.wqm.pressure">
+    <property name="Min" type="d" access="readwrite"/>
+    <property name="Max" type="d" access="readwrite"/>
+    <property name="CheckMax" type="b" access="readwrite"/>
+    <property name="CheckMin" type="b" access="readwrite"/>
+    <property name="Sollwert" type="d" access="readwrite"/>
+    <property name="Deviation" type="d" access="readwrite"/>
+    <property name="Correction" type="d" access="readwrite"/>
+    <property name="OutOfRange" type="b" access="read"/>
+    <property name="Broked" type="b" access="read"/>
+    <property name="Value" type="d" access="read"/>
+    <!-- Read:
+	    @temperatur: Temperatur
+	    @since: 2.31 Read. -->
+    <method name="Get">
+      <arg direction="out" type="d" name="humidity"/>
+    </method>
+  </interface>
+</node>

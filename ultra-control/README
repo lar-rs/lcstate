@@ -1,0 +1,40 @@
+
+
+
+ * VNC 
+      1 .Mick rtsp://192.168.10.167/h264 
+              rtsp://192.168.10.167/mjpeg
+
+ * Errors: 
+ 	
+ 	* Furnace:
+ 		1. mkt_error_create(1805,MKT_ERROR_CRITICAL,_("Can connection fail"));
+		2. mkt_error_create(1810,MKT_ERROR_CRITICAL,_("Emergency shutdown furnace"));
+		3. mkt_error_create(1820,MKT_ERROR_CRITICAL,_("Furnace temperature not yet reached"));
+		4. mkt_error_create(1821,MKT_ERROR_CRITICAL,_("Close the furnace: destination was not reached (at time)."));
+		5. mkt_error_create(1822,MKT_ERROR_CRITICAL,_("Open the furnace: destination was not reached (at time)."));
+		6. mkt_error_create(1830,MKT_ERROR_CRITICAL,_("Cooler temperature not yet reached"));
+	
+	* Tic port:
+		
+		1. mkt_error_create(1806,MKT_ERROR_CRITICAL,_("TIC Port - can connection fail"));
+		2. mkt_error_create(1826,MKT_ERROR_CRITICAL,_("Close the TIC-port: destination was not reached (at time)."));
+		3. mkt_error_create(1827,MKT_ERROR_CRITICAL,_("Open the TIC-port: destination was not reached (at time)."));
+		
+	* X-Achse
+	
+	    1. mkt_error_create(2100,MKT_ERROR_CRITICAL,_("Hardware connection fail : Doppelmotor3 object on path /com/lar/nodes/Doppelmotor1 not found"));
+		2. mkt_error_create(2101,MKT_ERROR_CRITICAL,_("Hardware connection fail : Axis object on path /com/lar/achsen/Y not found"));
+		3. mkt_error_create(2110,MKT_ERROR_WARNING,_("In x direction sensor: destination was not reached (at time)"));
+		4. mkt_error_create(2111,MKT_ERROR_WARNING,_("In x direction sensor: command status was not set"));
+		5. mkt_error_create(2120,MKT_ERROR_WARNING,_("In x direction go position : destination was not reached (at time)"));
+		6. mkt_error_create(2121,MKT_ERROR_WARNING,_("In x direction go position : go position was not set"));
+	    
+	    
+	* Y-Achse
+	    1. mkt_error_create(2200,MKT_ERROR_CRITICAL,_("Hardware connection fail : Doppelmotor3 object on path /com/lar/nodes/Doppelmotor1 not found"));
+		3. mkt_error_create(2210,MKT_ERROR_WARNING,_("In x direction sensor: destination was not reached (at time)"));
+		4. mkt_error_create(2211,MKT_ERROR_WARNING,_("In x direction sensor: command status was not set"));
+		5. mkt_error_create(2220,MKT_ERROR_WARNING,_("In x direction go position : destination was not reached (at time)"));
+		6. mkt_error_create(2221,MKT_ERROR_WARNING,_("In x direction go position : go position was not set"));
+	    

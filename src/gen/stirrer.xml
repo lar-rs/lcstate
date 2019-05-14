@@ -1,18 +1,13 @@
 <node>
   <interface name="lar.wqm.stirrer">
-    <property name="state" type="b" access="reade"/>
+    <property name="State" type="b" access="read"/>
     <property name="Delay" type="u" access="read"/>
     <property name="Current" type="u" access="read"/>
     <method name="Stop">
-      <arg direction="out" type="b" name="is_done"/>
     </method>
     <method name="Start">
       <arg direction="in" type="u" aname="curent"/>
       <arg direction="in" type="u" aname="delay"/>
-      <arg direction="out" type="b" name="done"/>
-    </method>
-    <method name="Delay">
-      <arg direction="out" type="b" name="is_done"/>
     </method>
   </interface>
 </node>

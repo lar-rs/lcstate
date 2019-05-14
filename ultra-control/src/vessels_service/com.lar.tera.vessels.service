@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.lar.tera.vessels
+Exec=/usr/bin/ultra_vessels_service

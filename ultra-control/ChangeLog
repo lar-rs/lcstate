@@ -1,0 +1,4594 @@
+2016-10-10  sascha  <sascha@sascha>
+
+	* src/airflow-service/ultra-airflow-object.c (ultra_airflow_out_monitoring): 
+
+2016-07-07 07:29  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-07-06 14:11  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-07-06 13:50  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-07-06 11:58  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-07-05 13:32  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-07-05 11:20  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-07-05 07:26  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-07-01 13:33  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-07-01 10:55  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-07-01 10:54  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-07-01 09:27  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-06-30 12:15  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-06-30 11:38  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-06-29 13:20  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-06-28 13:19  asmolkov
+
+	* src/airflow-service/airflow-application-object.c,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/axis-service/axis-application-object.c,
+	  src/axis-service/axis-object.c,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/rinsing-task.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/pumps-service/pumps-application-object.c,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-axisinit-process.c,
+	  src/sequence-workings-service/ultra-dilution-process.c,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-injectioncod-process.c,
+	  src/sequence-workings-service/ultra-injectiontic-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c,
+	  src/sequence-workings-service/ultra-samplingcod-process.c,
+	  src/sequence-workings-service/ultra-sequence-process.c,
+	  src/stirrers-service/stirrers-application-object.c,
+	  src/valves-service/valves-application-object.c,
+	  src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c,
+	  src/vessels_service/vessels-application-object.c:
+
+2016-06-28 10:58  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-06-28 10:33  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-06-28 10:26  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-06-28 10:13  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-06-28 10:12  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-06-28 09:51  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-06-27 08:51  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-24 14:28  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-06-24 14:10  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-06-23 14:40  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-23 11:32  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c: : Fix MktModel
+	  
+	  Task-Url:
+
+2016-06-09 09:19  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-06-09 09:15  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-09 09:12  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-06-08 13:25  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h:
+
+2016-06-07 09:23  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-06-07 09:15  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-07 09:11  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-07 09:10  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-07 09:01  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-06-02 14:09  asmolkov
+
+	* src/sequence-workings-service/ultra-injectiontic-process.c:
+
+2016-06-01 10:00  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-05-31 08:14  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c:
+
+2016-05-31 07:57  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-05-17 12:39  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/sequence-workings-service/ultra-allhold-process.c:
+
+2016-05-12 08:00  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-05-12 07:29  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-05-12 07:26  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-05-11 14:29  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-05-11 14:24  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-05-11 14:23  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-05-11 13:51  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-05-11 12:37  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c:
+
+2016-05-11 12:28  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-05-11 12:21  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c:
+
+2016-05-11 11:07  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2016-05-10 09:33  asmolkov
+
+	* src/airflow-service/airflow-service.c,
+	  src/axis-service/ultra-axis-service.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/sequence-workings-service/sequence-workers-service.c,
+	  src/stirrers-service/stirrers-service.c,
+	  src/valves-service/valves-service.c,
+	  src/vessels_service/vessels-service.c: remove debug.
+
+2016-05-10 09:31  asmolkov
+
+	* src/pumps-service/pumps-service.c:
+
+2016-05-03 13:30  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-05-03 08:33  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-05-02 14:11  asmolkov
+
+	* debian/control:
+
+2016-05-02 11:09  asmolkov
+
+	* src/airflow-service/airflow-service.c,
+	  src/pumps-service/pumps-service.c,
+	  src/sequence-workings-service/sequence-workers-service.c,
+	  src/stirrers-service/stirrers-service.c,
+	  src/valves-service/valves-service.c,
+	  src/vessels_service/vessels-service.c:
+
+2016-04-28 12:02  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-04-25 13:05  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-04-25 12:28  asmolkov
+
+	* src/axis-service/d3go2-object.c, src/axis-service/move-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c,
+	  src/sequence-workings-service/ultra-samplingcod-process.c,
+	  src/sequence-workings-service/ultra-samplingcod-process.h:
+
+2016-04-22 14:30  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-04-22 12:06  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-injectioncod-process.c,
+	  src/sequence-workings-service/ultra-samplingcod-process.c:
+
+2016-04-22 09:51  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-samplingcod-process.c,
+	  src/sequence-workings-service/ultra-samplingcod-process.h:
+
+2016-04-21 09:43  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-04-19 08:46  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-04-18 11:56  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-04-15 13:00  asmolkov
+
+	* src/axis-service/axis-object.c:
+
+2016-04-14 14:12  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-04-14 13:17  asmolkov
+
+	* src/sequence-workings-service/ultra-dilution-process.c:
+
+2016-04-14 11:26  asmolkov
+
+	* po/POTFILES.in:
+
+2016-04-14 11:05  asmolkov
+
+	* src/sequence-workings-service/ultra-dilution-process.c:
+
+2016-04-14 09:24  asmolkov
+
+	* src/archive, src/axis-service/axis-application-object.c,
+	  src/axis-service/axis-object.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisX-object.h,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisY-object.h,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/archiv,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/rinsing-task.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultimate-process-rinsing.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-dilution-process.c,
+	  src/vessels_service/ultra-dilution-object.c,
+	  src/vessels_service/ultra-vessel-object.c:
+
+2016-04-12 10:59  asmolkov
+
+	* src/measurement-service/prepare-task.c:
+
+2016-04-12 09:51  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/ultra-dilution-process.c,
+	  src/vessels_service/Makefile.am,
+	  src/vessels_service/ultra-dilution-object.c,
+	  src/vessels_service/ultra-dilution-object.h,
+	  src/vessels_service/vessels-application-object.c:
+
+2016-04-12 08:12  asmolkov
+
+	* src/sequence-workings-service/ultra-dilution-process.c:
+
+2016-04-11 12:20  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2016-04-11 12:04  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2016-04-11 10:25  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c:
+
+2016-04-11 10:23  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c:
+
+2016-04-07 14:14  asmolkov
+
+	* src/sequence-workings-service/sequence-workers-service.c,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-dilution-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c:
+
+2016-04-07 13:21  asmolkov
+
+	* src/axis-service/axis-object.c, src/axis-service/d3go1-object.c,
+	  src/axis-service/d3go2-object.c,
+	  src/axis-service/d3sensor1-object.c,
+	  src/axis-service/d3sensor2-object.c,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/sequence-workings-service/ultra-dilution-process.c:
+
+2016-04-07 11:40  asmolkov
+
+	* po/POTFILES.in:
+
+2016-04-06 13:50  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-04-06 10:17  asmolkov
+
+	* src/sequence-workings-service/ultra-dilution-process.c:
+
+2016-04-05 15:11  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/ultra-dilution-process.c:
+
+2016-04-05 14:43  asmolkov
+
+	* src/axis-service/Makefile.am,
+	  src/axis-service/axis-application-object.c,
+	  src/axis-service/axis-object.c, src/axis-service/axis-object.h,
+	  src/axis-service/d3go1-object.c, src/axis-service/d3go1-object.h,
+	  src/axis-service/d3go2-object.c, src/axis-service/d3go2-object.h,
+	  src/axis-service/d3sensor1-object.c,
+	  src/axis-service/d3sensor1-object.h,
+	  src/axis-service/d3sensor2-object.c,
+	  src/axis-service/d3sensor2-object.h,
+	  src/axis-service/move-axis.c, src/axis-service/move-axis.h,
+	  src/axis-service/move-object.c, src/axis-service/move-object.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/axis-service/ultra-axisZ-object.h,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/com.lar.tera.measurement.gschema.xml,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-dilution-process.c,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-injectioncod-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c:
+
+2016-04-01 08:06  asmolkov
+
+	* src/sequence-workings-service/ultra-dilution-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c:
+
+2016-04-01 07:33  asmolkov
+
+	* src/archive/measurement_processes/online-process.c,
+	  src/archive/measurement_processes/online-process.h,
+	  src/archive/measurement_processes/single-process.c,
+	  src/archive/measurement_processes/single-process.h,
+	  src/axis-service/axis-object.c, src/axis-service/axis-object.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/measurement-service/com.lar.tera.measurement.gschema.xml,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/online-process.h,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/single-process.h,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/sequence-process.c,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-allhold-process.h,
+	  src/sequence-workings-service/ultra-axishold-process.c,
+	  src/sequence-workings-service/ultra-axishold-process.h,
+	  src/sequence-workings-service/ultra-axisinit-process.c,
+	  src/sequence-workings-service/ultra-axisinit-process.h,
+	  src/sequence-workings-service/ultra-dilution-process.c,
+	  src/sequence-workings-service/ultra-dilution-process.h,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-injection-process.h,
+	  src/sequence-workings-service/ultra-injectioncod-process.c,
+	  src/sequence-workings-service/ultra-injectioncod-process.h,
+	  src/sequence-workings-service/ultra-injectiontic-process.c,
+	  src/sequence-workings-service/ultra-injectiontic-process.h,
+	  src/sequence-workings-service/ultra-rinsing-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.h,
+	  src/sequence-workings-service/ultra-sampling-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.h,
+	  src/sequence-workings-service/ultra-sequence-process.c,
+	  src/sequence-workings-service/ultra-sequence-process.h:
+
+2016-03-29 09:24  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-23 12:29  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-22 17:00  asmolkov
+
+	* src/archive/ultra-ticport-object.c,
+	  src/vessels_service/ultra-ticport-object.c,
+	  src/vessels_service/vessels-service.c:
+
+2016-03-22 16:35  asmolkov
+
+	* src/measurement-service/ultimate-process-hold.c:
+
+2016-03-22 16:19  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-03-22 15:18  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-03-22 14:51  asmolkov
+
+	* src/vessels_service/ultra-ticport-object.c:
+
+2016-03-22 12:41  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-03-22 10:58  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c:
+
+2016-03-21 16:31  asmolkov
+
+	* src/vessels_service/ultra-ticport-object.c:
+
+2016-03-11 13:08  asmolkov
+
+	* src/measurement-service/ultimate-channel.c:
+
+2016-03-11 10:27  asmolkov
+
+	* src/measurement-service/ultimate-channel.c:
+
+2016-03-11 09:11  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c:
+
+2016-03-10 11:47  asmolkov
+
+	* ltmain.sh, src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-03-08 14:09  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-03-08 14:07  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-03-08 13:39  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2016-03-08 13:36  asmolkov
+
+	* debian/control:
+
+2016-03-08 12:44  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/prepare-task.c:
+
+2016-03-08 09:01  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-08 08:48  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-03-07 16:43  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-03-07 16:34  asmolkov
+
+	* po, src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-07 15:58  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c:
+
+2016-03-07 14:50  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-03-07 14:50  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-07 13:40  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-07 09:49  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2016-03-07 08:24  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-03-04 16:25  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-04 16:06  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-03-04 16:05  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c:
+
+2016-03-04 14:21  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-03-04 14:17  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h:
+
+2016-03-04 13:53  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h:
+
+2016-03-04 13:47  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-03-04 13:12  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-03-04 12:57  asmolkov
+
+	* src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/ultra-channel-diff.c:
+
+2016-03-04 12:42  asmolkov
+
+	* src/axis-service/ultra-axis-service.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-04 12:04  asmolkov
+
+	* po/POTFILES.in, src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-03-03 09:38  asmolkov
+
+	* src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-03-03 08:57  asmolkov
+
+	* src/sequence-workings-service/ultra-injectioncod-process.c:
+
+2016-03-03 08:53  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-injectioncod-process.c,
+	  src/sequence-workings-service/ultra-injectioncod-process.h,
+	  src/sequence-workings-service/ultra-injectioncodo-process.c,
+	  src/sequence-workings-service/ultra-injectioncodo-process.h:
+
+2016-03-03 08:23  asmolkov
+
+	* src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/ultra-injectioncodo-process.c,
+	  src/sequence-workings-service/ultra-injectioncodo-process.h:
+
+2016-03-02 10:38  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-02 10:22  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-03-02 10:10  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-03-02 09:56  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-channel-diff.c:
+
+2016-03-01 13:27  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-03-01 13:23  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-03-01 11:14  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-03-01 10:45  asmolkov
+
+	* src/axis-service/ultra-axis.c, src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-29 17:10  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-02-29 15:49  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-02-29 14:52  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-02-29 13:27  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-02-29 12:47  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-02-29 09:45  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-25 16:07  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-02-25 16:03  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-02-25 14:03  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-process.c:
+
+2016-02-25 13:29  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/axis-service/ultra-axis.c, src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-02-25 13:14  asmolkov
+
+	* src/axis-service/ultra-axis.c, src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/vessels_service/ultra-furnace-object.c:
+
+2016-02-25 13:01  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-02-25 12:59  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-02-25 12:47  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-02-25 09:58  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-02-25 09:45  asmolkov
+
+	* src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-02-23 08:51  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-23 08:25  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c:
+
+2016-02-19 13:28  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c:
+
+2016-02-19 13:22  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-02-19 12:32  gstuetzer
+
+	* src/archive/ultimate-humidity-object.c:
+	  MALFUNC_ULTIMATE_HUMIDITY_LIMIT_EXCEEDED = 1815
+
+2016-02-19 12:25  gstuetzer
+
+	* src/vessels_service/ultra-ticport-object.c:
+	  MALFUNC_ULTRA_TICPORT_CAN = 1806
+
+2016-02-19 12:23  gstuetzer
+
+	* src/archive/ultra-furnace-object.c,
+	  src/archive/ultra-ticport-object.c: MALFUNC_ULTRA_TICPORT_CAN =
+	  1806
+
+2016-02-19 12:20  gstuetzer
+
+	* src/axis-service/ultra-axisZ-object.c:
+	  MALFUNC_ULTRA_Z_AXIS_VOLUME = 1732
+
+2016-02-19 12:16  gstuetzer
+
+	* src/axis-service/ultra-axisZ-object.c:
+	  MALFUNC_ULTRA_Z_AXIS_MOVEMENT = 1730
+
+2016-02-19 12:12  gstuetzer
+
+	* src/axis-service/ultra-axisY-object.c:
+	  MALFUNC_ULTRA_Y_AXIS_MOVEMENT = 1720
+
+2016-02-19 12:08  gstuetzer
+
+	* src/axis-service/ultra-axisX-object.c:
+	  MALFUNC_ULTRA_X_AXIS_MOVEMENT = 1710
+
+2016-02-19 12:01  gstuetzer
+
+	* src/vessels_service/ultra-furnace-object.c:
+	  MALFUNC_ULTRA_XY_SYSTEM = 1700
+
+2016-02-19 11:54  gstuetzer
+
+	* src/archive/measurement_processes/ultra-calibration-process.c,
+	  src/archive/measurement_processes/ultra-measurement-process.c:
+	  MALFUNC_ULTRA_MEASUREMENT_PROCESS = 1300
+
+2016-02-19 11:03  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c:
+
+2016-02-18 11:04  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-02-18 09:49  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-02-12 11:37  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-12 08:58  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c,
+	  src/vessels_service/ultra-vessel-object.c:
+
+2016-02-11 13:19  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h:
+
+2016-02-11 10:50  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-02-11 10:43  asmolkov
+
+	* src/airflow-service/com.lar.tera.airflow.gschema.xml,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/com.lar.tera.measurement.gschema.xml,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-02-11 09:16  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultimate-channel.c:
+
+2016-02-11 08:30  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-02-10 15:07  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-02-10 11:38  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2016-02-10 10:44  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-02-09 15:19  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-02-08 14:37  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-02-08 14:01  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-08 13:16  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-08 10:53  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-08 09:00  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-02-08 08:45  asmolkov
+
+	* src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2016-02-08 08:42  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-02-08 08:42  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2016-02-05 14:29  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-05 13:24  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-05 12:39  asmolkov
+
+	* src/analogout-service, src/measurement-service/analyze-task.c,
+	  src/measurement-service/analyze-task.h,
+	  src/measurement-service/calibration-process.c:
+
+2016-02-05 08:26  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-04 16:45  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-04 15:26  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-04 14:46  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-04 13:52  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c,
+	  src/vessels_service/ultra-vessel-object.c:
+
+2016-02-04 09:36  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-02-03 10:37  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-03 08:31  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-02 15:20  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-02 14:56  asmolkov
+
+	* src/measurement-service/com.lar.tera.rangeswitching.gschema.valid,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-02 13:40  asmolkov
+
+	* src/measurement-service/com.lar.tera.rangeswitching.gschema.xml,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-02-02 12:57  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-02-02 12:34  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/com.lar.tera.measurement.gschema.xml,
+	  src/measurement-service/com.lar.tera.rangeswitching.gschema.xml,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-process.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-02-01 15:31  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-02-01 13:15  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-02-01 09:25  asmolkov
+
+	* configure.ac, debian/control, src/Makefile.am,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/analogout-service/analogs-application-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c:
+
+2016-01-29 10:03  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-01-29 09:36  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-29 09:18  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-29 09:14  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/ultra-allhold-process.c:
+
+2016-01-28 14:50  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-01-28 14:14  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-01-28 13:56  asmolkov
+
+	* debian/control, src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-01-28 13:03  asmolkov
+
+	* src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-01-28 12:50  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultimate-channel.c:
+
+2016-01-28 10:02  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-28 09:33  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/analyze-task.c:
+
+2016-01-28 09:25  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-26 14:51  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-26 14:51  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-26 13:03  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-26 12:34  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/vessels_service/ultra-furnace-object.c:
+
+2016-01-26 11:50  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/hold-task.h,
+	  src/measurement-service/rinsing-task.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-01-25 15:01  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2016-01-25 14:18  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-01-25 10:01  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-25 09:56  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-25 09:56  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-25 09:48  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-25 08:07  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-21 09:19  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-21 08:28  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-20 10:32  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c:
+
+2016-01-20 09:44  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-19 12:46  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c:
+
+2016-01-19 10:28  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-01-19 10:26  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-01-19 10:19  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-01-18 08:20  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c:
+
+2016-01-15 10:26  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-14 17:53  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-14 14:33  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-01-14 14:29  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2016-01-14 14:12  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-01-13 15:56  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-01-13 14:42  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c:
+
+2016-01-13 11:52  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2016-01-12 15:46  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 15:24  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 13:25  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 12:30  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 10:59  asmolkov
+
+	* ChangeLog, src/measurement-service/ultra-control-process.c:
+
+2016-01-12 10:57  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 10:13  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 09:43  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-12 09:20  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-11 16:25  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-11 16:13  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2016-01-11 15:35  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-01-11 15:32  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2016-01-11 15:17  asmolkov
+
+	* src/airflow-service/airflow-service.c,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-01-11 12:53  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2016-01-08 08:30  asmolkov
+
+	* src/com.lar.device.gschema.valid,
+	  src/vessels_service/ultra-furnace-object.c:
+
+2016-01-07 15:28  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c:
+
+2016-01-07 14:04  asmolkov
+
+	* debian/control:
+
+2016-01-07 13:52  asmolkov
+
+	* configure.ac, src/monitoring-service:
+
+2016-01-07 11:11  asmolkov
+
+	* debian/control, src/Makefile.am,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/valves-service/valves-application-object.c:
+
+2016-01-07 10:35  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-01-06 16:25  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2016-01-06 14:55  asmolkov
+
+	* src/airflow-service/airflow-service.c,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/analyze-task.c,
+	  src/sequence-workings-service/ultra-allhold-process.c:
+
+2016-01-06 12:46  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2016-01-06 12:44  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2016-01-06 12:39  asmolkov
+
+	* src/Makefile.am, src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/relays-service:
+
+2016-01-05 09:02  asmolkov
+
+	* src/measurement-service/measurement-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-12-10 13:15  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-12-10 09:54  asmolkov
+
+	* src/measurement-service/measurement-process.c:
+
+2015-12-09 12:28  asmolkov
+
+	* ChangeLog, src/measurement-service/ultra-integration-object.c:
+
+2015-12-09 09:25  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-11-27 08:35  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-11-26 16:53  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-process.h,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-11-19 12:39  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-11-19 11:15  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-11-19 08:58  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c:
+
+2015-11-18 15:06  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-11-18 15:04  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-11-18 14:54  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/sequence-workings-service/ultra-injection-process.c:
+
+2015-11-18 13:30  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-18 13:29  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-stream-object.h:
+
+2015-11-18 13:29  asmolkov
+
+	* src/sequence-workings-service/sequence-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c:
+
+2015-11-18 13:21  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c:
+
+2015-11-18 12:36  asmolkov
+
+	* src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c:
+
+2015-11-18 11:57  asmolkov
+
+	* src/measurement-service/online-process.c:
+
+2015-11-18 10:15  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-11-18 10:13  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-11-17 14:14  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-17 14:10  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-11-16 16:15  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2015-11-16 14:41  asmolkov
+
+	* src/sequence-workings-service/ultra-injectiontic-process.c:
+
+2015-11-16 14:28  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c:
+
+2015-11-16 14:07  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c:
+
+2015-11-16 13:25  asmolkov
+
+	* src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-11-16 13:04  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-11-16 12:23  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-11-16 10:36  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/stirrers-service/stirrers-application-object.c,
+	  src/stirrers-service/stirrers-service.c:
+
+2015-11-13 16:28  asmolkov
+
+	* src/measurement-service/ultra-control-process.c: Status update
+
+2015-11-13 14:26  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-11-13 14:20  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-11-13 13:53  asmolkov
+
+	* src/axis-service/ultra-axis.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-11-13 13:29  asmolkov
+
+	* src/measurement-service/online-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-11-13 13:23  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/rinsing-task.c,
+	  src/measurement-service/ultimate-process-rinsing.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-11-13 11:09  asmolkov
+
+	* src/measurement-service/rinsing-task.c,
+	  src/measurement-service/rinsing-task.h,
+	  src/measurement-service/ultimate-process-rinsing.c:
+
+2015-11-12 11:02  asmolkov
+
+	* src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h:
+
+2015-11-12 09:09  asmolkov
+
+	* src/airflow-service/airflow-application-object.c,
+	  src/airflow-service/airflow-application-object.h,
+	  src/airflow-service/airflow-service.c,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/analogout-service/analogs-application-object.c,
+	  src/analogout-service/analogs-application-object.h,
+	  src/analogout-service/ultra-analogs-service.c,
+	  src/archive/measurement_processes,
+	  src/archive/measurement_processes/ultra-calibration-process.c,
+	  src/axis-service/axis-application-object.c,
+	  src/axis-service/axis-application-object.h,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c, src/measurement-service,
+	  src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/archiv/measurement-process.c,
+	  src/measurement-service/archiv/ultimate-process.c,
+	  src/measurement-service/archiv/ultimate-process.h,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/com.lar.tera.measurement.gschema.xml,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-application-object.h,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultimate-process-object.h,
+	  src/measurement-service/ultimate-process-rinsing.c,
+	  src/measurement-service/ultimate-process-rinsing.h,
+	  src/measurement-service/ultimate-process.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/measurement_processes,
+	  src/monitoring-service/monitoring-application-object.c,
+	  src/monitoring-service/monitoring-application-object.h,
+	  src/monitoring-service/monitoring-service.c,
+	  src/pumps-service/pumps-application-object.c,
+	  src/pumps-service/pumps-application-object.h,
+	  src/pumps-service/pumps-service.c,
+	  src/relays-service/relays-application-object.c,
+	  src/relays-service/relays-application-object.h,
+	  src/relays-service/ultra-relays-service.c,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/sequence-workers-application-object.h,
+	  src/sequence-workings-service/sequence-workers-service.c,
+	  src/sequence-workings-service/ultra-sampling-process.c,
+	  src/stirrers-service/stirrers-application-object.c,
+	  src/stirrers-service/stirrers-application-object.h,
+	  src/stirrers-service/stirrers-service.c,
+	  src/valves-service/valves-application-object.c,
+	  src/valves-service/valves-application-object.h,
+	  src/valves-service/valves-service.c,
+	  src/vessels_service/vessels-application-object.c,
+	  src/vessels_service/vessels-application-object.h,
+	  src/vessels_service/vessels-service.c:
+
+2015-11-10 14:48  asmolkov
+
+	* src/measurement-service/single-process.c:
+
+2015-11-05 13:41  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2015-11-04 13:05  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-04 12:37  asmolkov
+
+	* src/sequence-workings-service/ultra-rinsing-process.c:
+
+2015-11-04 12:36  asmolkov
+
+	* src/sequence-workings-service/ultra-rinsing-process.c:
+
+2015-11-04 12:30  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2015-11-04 12:28  asmolkov
+
+	* src/measurement-service/ultimate-process-hold.c:
+
+2015-11-04 12:27  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultimate-process-hold.c:
+
+2015-11-04 10:34  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-04 10:21  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/analyze-task.c:
+
+2015-11-03 16:02  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-03 15:52  asmolkov
+
+	* src/analogout-service/ultra-analogs-service.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/analyze-task.c:
+
+2015-11-03 14:29  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-03 13:10  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c:
+
+2015-11-03 13:07  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-03 10:39  asmolkov
+
+	* src/measurement-service/analyze-task.c:
+
+2015-11-03 10:27  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2015-11-02 13:14  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2015-11-02 12:58  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c:
+
+2015-11-02 11:02  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-10-28 16:00  asmolkov
+
+	* src/analogout-service/analogs-application-object.c:
+
+2015-10-27 13:33  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-10-27 10:34  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-10-26 16:11  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/vessels_service/vessels-application-object.c:
+
+2015-10-26 14:04  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2015-10-21 14:15  asmolkov
+
+	* src/measurement-service/online-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-10-19 09:43  asmolkov
+
+	* src/analogout-service/analogs-application-object.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h:
+
+2015-10-19 07:15  asmolkov
+
+	* src/analogout-service/analogs-application-object.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-10-15 09:43  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/sequence-workings-service/sequence-process.h,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-axishold-process.c,
+	  src/sequence-workings-service/ultra-axisinit-process.c,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-injectiontic-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c:
+
+2015-10-15 09:27  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/sequence-process.c,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-axishold-process.c,
+	  src/sequence-workings-service/ultra-axisinit-process.c,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-injectiontic-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.c:
+
+2015-10-09 14:03  gstuetzer
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c: Sprache deutsch ...
+
+2015-10-02 10:12  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-09-30 10:21  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2015-09-30 10:20  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-29 15:11  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-29 12:06  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-29 08:00  asmolkov
+
+	* src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-28 15:59  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-28 15:39  asmolkov
+
+	* src/Makefile.am, src/analyse.sm.c, src/archive,
+	  src/archive/analyse.sm.c, src/archive/axis_service,
+	  src/archive/com.lar.Ultra.AxisX.gschema.xml,
+	  src/archive/com.lar.Ultra.AxisY.gschema.xml,
+	  src/archive/com.lar.Ultra.AxisZ.gschema.xml,
+	  src/archive/com.lar.Ultra.Control.gschema.xml,
+	  src/archive/com.lar.lgdm.app.ultraserviceactions.desktop,
+	  src/archive/com.lar.monotoring.ultra.gschema.xml,
+	  src/archive/com.lar.service.axis.service,
+	  src/archive/com.lar.streams.stream1.gschema.xml,
+	  src/archive/com.lar.tera.services.gschema.xml,
+	  src/archive/control.sm.c, src/archive/prepare.sm.c,
+	  src/archive/ultimate-airflow.c, src/archive/ultimate-airflow.h,
+	  src/archive/ultimate-humidity-object.c,
+	  src/archive/ultimate-humidity-object.h,
+	  src/archive/ultimate-monitoring.c,
+	  src/archive/ultimate-monitoring.h,
+	  src/archive/ultimate-pressure-object.c,
+	  src/archive/ultimate-pressure-object.h,
+	  src/archive/ultimate-process-manager.c,
+	  src/archive/ultimate-process-manager.h,
+	  src/archive/ultimate-stream-manager.c,
+	  src/archive/ultimate-stream-manager.h,
+	  src/archive/ultimate-stream.c, src/archive/ultimate-stream.h,
+	  src/archive/ultra-airflow-object.c,
+	  src/archive/ultra-airflow-object.h, src/archive/ultra-axis.c,
+	  src/archive/ultra-axis.h, src/archive/ultra-axishold-process.c,
+	  src/archive/ultra-axishold-process.h,
+	  src/archive/ultra-axisinit-process.c,
+	  src/archive/ultra-axisinit-process.h,
+	  src/archive/ultra-control.c, src/archive/ultra-furnace-object.c,
+	  src/archive/ultra-furnace-object.h,
+	  src/archive/ultra-hardware-object.c,
+	  src/archive/ultra-hardware-object.h,
+	  src/archive/ultra-hold-process.c,
+	  src/archive/ultra-hold-process.h,
+	  src/archive/ultra-injection-process.c,
+	  src/archive/ultra-injection-process.h,
+	  src/archive/ultra-injectiontic-process.c,
+	  src/archive/ultra-injectiontic-process.h,
+	  src/archive/ultra-online-measurement-process.c,
+	  src/archive/ultra-online-measurement-process.h,
+	  src/archive/ultra-rinsing-process.c,
+	  src/archive/ultra-rinsing-process.h,
+	  src/archive/ultra-sampling-process.c,
+	  src/archive/ultra-sampling-process.h,
+	  src/archive/ultra-sensors-object.c,
+	  src/archive/ultra-sensors-object.h,
+	  src/archive/ultra-simple-measurement-process.c,
+	  src/archive/ultra-simple-measurement-process.h,
+	  src/archive/ultra-simple-tc-process.c,
+	  src/archive/ultra-simple-tc-process.h,
+	  src/archive/ultra-simple-tic-process.c,
+	  src/archive/ultra-simple-tic-process.h,
+	  src/archive/ultra-ticport-object.c,
+	  src/archive/ultra-ticport-object.h,
+	  src/archive/ultra-vessel-object.c,
+	  src/archive/ultra-vessel-object.h,
+	  src/archive/ultracontrol_daemon, src/axis_service,
+	  src/com.lar.Ultra.AxisX.gschema.xml,
+	  src/com.lar.Ultra.AxisY.gschema.xml,
+	  src/com.lar.Ultra.AxisZ.gschema.xml,
+	  src/com.lar.Ultra.Control.gschema.xml,
+	  src/com.lar.lgdm.app.ultraserviceactions.desktop,
+	  src/com.lar.monotoring.ultra.gschema.xml,
+	  src/com.lar.service.axis.service,
+	  src/com.lar.streams.stream1.gschema.xml,
+	  src/com.lar.tera.services.gschema.xml, src/control.sm.c,
+	  src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-hold.h,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h, src/prepare.sm.c,
+	  src/ultimate-airflow.c, src/ultimate-airflow.h,
+	  src/ultimate-humidity-object.c, src/ultimate-humidity-object.h,
+	  src/ultimate-monitoring.c, src/ultimate-monitoring.h,
+	  src/ultimate-pressure-object.c, src/ultimate-pressure-object.h,
+	  src/ultimate-process-manager.c, src/ultimate-process-manager.h,
+	  src/ultimate-stream-manager.c, src/ultimate-stream-manager.h,
+	  src/ultimate-stream.c, src/ultimate-stream.h,
+	  src/ultra-airflow-object.c, src/ultra-airflow-object.h,
+	  src/ultra-axis.c, src/ultra-axis.h, src/ultra-axishold-process.c,
+	  src/ultra-axishold-process.h, src/ultra-axisinit-process.c,
+	  src/ultra-axisinit-process.h, src/ultra-control.c,
+	  src/ultra-furnace-object.c, src/ultra-furnace-object.h,
+	  src/ultra-hardware-object.c, src/ultra-hardware-object.h,
+	  src/ultra-hold-process.c, src/ultra-hold-process.h,
+	  src/ultra-injection-process.c, src/ultra-injection-process.h,
+	  src/ultra-injectiontic-process.c,
+	  src/ultra-injectiontic-process.h,
+	  src/ultra-online-measurement-process.c,
+	  src/ultra-online-measurement-process.h,
+	  src/ultra-rinsing-process.c, src/ultra-rinsing-process.h,
+	  src/ultra-sampling-process.c, src/ultra-sampling-process.h,
+	  src/ultra-sensors-object.c, src/ultra-sensors-object.h,
+	  src/ultra-simple-measurement-process.c,
+	  src/ultra-simple-measurement-process.h,
+	  src/ultra-simple-tc-process.c, src/ultra-simple-tc-process.h,
+	  src/ultra-simple-tic-process.c, src/ultra-simple-tic-process.h,
+	  src/ultra-ticport-object.c, src/ultra-ticport-object.h,
+	  src/ultra-vessel-object.c, src/ultra-vessel-object.h,
+	  src/ultracontrol_daemon:
+
+2015-09-17 14:47  asmolkov
+
+	* src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-hold.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h:
+
+2015-09-17 13:44  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultimate-process-object.c:
+
+2015-09-17 13:40  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-process-hold.c,
+	  src/measurement-service/ultimate-process-hold.h,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-17 11:48  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-17 11:43  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-17 11:39  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-integration-object.c:
+
+2015-09-17 11:14  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-17 10:41  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c:
+
+2015-09-17 09:06  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-15 15:02  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-09-15 13:08  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-15 12:09  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h:
+
+2015-09-15 09:26  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultimate-humidity-object.c:
+
+2015-09-15 07:57  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement_processes/ultra-calibration-process.c:
+
+2015-09-14 14:28  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-14 13:55  asmolkov
+
+	* src/measurement-service/check-process.c,
+	  src/measurement-service/online-process.c:
+
+2015-09-14 13:36  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/check-process.c,
+	  src/measurement-service/check-process.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-14 13:18  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-14 11:26  asmolkov
+
+	* src/measurement-service/online-process.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-14 07:09  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultimate-process-object.h,
+	  src/measurement-service/ultimate-process.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h, test.out:
+
+2015-09-10 13:12  asmolkov
+
+	* src/measurement-service/ultimate-process.c:
+
+2015-09-10 10:10  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultimate-process-object.h,
+	  src/measurement-service/ultimate-process.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h:
+
+2015-09-10 10:08  gstuetzer
+
+	* src/axis-service/ultra-axisX-object.c: deutsch und Fehler in der
+	  Messwertanzeige im Statusbildschirm.
+
+2015-09-09 13:31  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-09 11:38  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-09 09:19  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-09-09 08:52  asmolkov
+
+	* src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-09 08:42  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-09 07:06  asmolkov
+
+	* src/measurement-service/ultra-control-process.c:
+
+2015-09-08 14:42  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/online-process.c,
+	  src/measurement-service/online-process.h,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultimate-process.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-08 10:01  asmolkov
+
+	* src/measurement-service/calibration-process.c:
+
+2015-09-08 08:45  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-09-08 08:20  asmolkov
+
+	* src/measurement-service/calibration-process.c,
+	  src/measurement-service/calibration-process.h,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-09-07 11:57  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/analyze-task.h,
+	  src/measurement-service/calibration-process.c,
+	  src/measurement-service/calibration-process.h,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/single-process.h,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-process-object.c,
+	  src/measurement-service/ultimate-process-object.h,
+	  src/measurement-service/ultimate-process.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h:
+
+2015-09-01 08:49  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-31 14:15  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-08-31 14:11  asmolkov
+
+	* src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-31 13:15  asmolkov
+
+	* ltmain.sh, missing, po/Makefile.in,
+	  src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/analyze-task.h,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-31 11:50  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/analyze-task.h,
+	  src/measurement-service/archiv,
+	  src/measurement-service/archiv/calibration-task.c,
+	  src/measurement-service/archiv/calibration-task.h,
+	  src/measurement-service/archiv/hold-task.c,
+	  src/measurement-service/archiv/hold-task.h,
+	  src/measurement-service/archiv/online-task.c,
+	  src/measurement-service/archiv/online-task.h,
+	  src/measurement-service/archiv/single-task.c,
+	  src/measurement-service/archiv/single-task.h,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/calibration-task.h,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/hold-task.h,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/online-task.c,
+	  src/measurement-service/online-task.h,
+	  src/measurement-service/single-process.c,
+	  src/measurement-service/single-process.h,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/single-task.h,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultimate-process.c,
+	  src/measurement-service/ultimate-process.h,
+	  src/measurement-service/ultra-channel-diff.c,
+	  src/measurement-service/ultra-channel-diff.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-channeldiff-object.c,
+	  src/measurement-service/ultra-channeldiff-object.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/ultimate-channel.c, src/ultimate-channel.h,
+	  src/ultimate-process.c, src/ultimate-process.h:
+
+2015-08-25 12:10  asmolkov
+
+	* configure.ac: Remove ultra_control.conf
+
+2015-08-25 07:13  asmolkov
+
+	* src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-08-24 13:42  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/online-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channeldiff-object.c,
+	  src/measurement-service/ultra-channeldiff-object.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-21 11:07  asmolkov
+
+	* src/measurement-service/online-task.c,
+	  src/measurement-service/single-task.c:
+
+2015-08-21 07:55  asmolkov
+
+	* ltmain.sh, missing, po/Makefile.in,
+	  src/com.lar.monotoring.ultra.gschema.valid,
+	  src/ultracontrol.conf, src/ultracontrol.conf.in:
+
+2015-08-20 07:16  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-18 13:09  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-17 15:24  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-pressure-object.c:
+
+2015-08-17 14:10  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-08-17 13:19  asmolkov
+
+	* src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-ticport-object.c,
+	  src/vessels_service/vessels-application-object.c:
+
+2015-08-17 11:54  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-08-17 09:20  asmolkov
+
+	* src/measurement-service/calibration-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h:
+
+2015-08-14 09:16  asmolkov
+
+	* src/measurement-service/calibration-task.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-08-13 15:46  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-08-13 13:47  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-07 12:52  asmolkov
+
+	* src/measurement-service/prepare-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-08-06 15:43  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-08-06 15:34  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-08-06 08:58  asmolkov
+
+	* src/measurement-service/calibration-task.c:
+
+2015-07-31 12:33  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-07-28 13:01  asmolkov
+
+	* src/measurement-service/online-task.c,
+	  src/measurement-service/ultra-integration-object.c:
+
+2015-07-28 09:42  asmolkov
+
+	* src/measurement-service/online-task.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-07-28 07:49  asmolkov
+
+	* src/measurement-service/online-task.c:
+
+2015-07-24 13:18  asmolkov
+
+	* src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-pressure-object.c:
+
+2015-07-24 13:17  asmolkov
+
+	* src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-pressure-object.c:
+
+2015-07-24 11:19  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-pressure-object.c,
+	  src/ultra-axisX-object.c, src/ultra-axisX-object.h,
+	  src/ultra-axisY-object.c, src/ultra-axisY-object.h,
+	  src/ultra-axisZ-object.c, src/ultra-axisZ-object.h,
+	  src/ultra-calibration-process.c, src/ultra-calibration-process.h,
+	  src/ultra-channel-differenz.c, src/ultra-channel-differenz.h,
+	  src/ultra-channel-object.c, src/ultra-channel-object.h,
+	  src/ultra-control-app-object.c, src/ultra-control-app-object.h:
+
+2015-07-24 10:17  asmolkov
+
+	* src/stirrers-service/stirrers-application-object.c:
+
+2015-07-23 15:00  asmolkov
+
+	* ChangeLog, src/measurement-service/calibration-task.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-07-23 13:17  asmolkov
+
+	* src/measurement-service/calibration-task.c:
+
+2015-07-23 13:09  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c,
+	  src/pumps-service/pumps-application-object.c:
+
+2015-07-23 12:09  asmolkov
+
+	* src/measurement-service/online-task.c,
+	  src/measurement-service/ultra-control-process.c:
+
+2015-07-23 11:55  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2015-07-23 11:18  asmolkov
+
+	* representations.aird, src/airflow-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-pressure-object.c,
+	  src/ultra-axisZ-object.c,
+	  src/vessels_service/ultra-vessel-object.c:
+
+2015-07-23 11:17  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/axis-service/ultra-axisZ-object.h:
+
+2015-07-23 09:04  asmolkov
+
+	* src/sequence-workings-service/ultra-injection-process.c,
+	  src/vessels_service/ultra-vessel-object.c,
+	  src/vessels_service/vessels-application-object.c:
+
+2015-07-22 09:05  asmolkov
+
+	* src/sequence-workings-service/ultra-injection-process.c:
+
+2015-07-22 09:00  asmolkov
+
+	* src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c:
+
+2015-07-21 13:41  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c,
+	  src/sequence-workings-service/ultra-allhold-process.c:
+
+2015-07-21 13:12  asmolkov
+
+	* src/pumps-service/pumps-application-object.c:
+
+2015-07-21 12:40  asmolkov
+
+	* src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-axisinit-process.c:
+
+2015-07-20 13:56  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/sequence-workings-service/ultra-rinsing-process.c:
+
+2015-07-16 14:40  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-application-object.h,
+	  src/measurement-service/online-task.c,
+	  src/measurement-service/online-task.h,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/sequence-workings-service/ultra-rinsing-process.c:
+
+2015-07-14 12:15  asmolkov
+
+	* src/sequence-workings-service/ultra-rinsing-process.c:
+
+2015-07-14 09:19  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/online-task.c,
+	  src/measurement-service/online-task.h,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-07-10 09:35  asmolkov
+
+	* src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-07-10 07:02  asmolkov
+
+	* src/measurement-service/measurement-task.c,
+	  src/measurement-service/measurement-task.h:
+
+2015-07-10 05:23  asmolkov
+
+	* src/measurement-service/calibration-task.c,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c:
+
+2015-07-09 16:36  asmolkov
+
+	* po/Makefile.in, src/measurement-service/calibration-task.c,
+	  src/measurement-service/single-task.c:
+
+2015-07-09 16:35  asmolkov
+
+	* src/measurement-service/single-task.c:
+
+2015-07-09 16:28  asmolkov
+
+	* configure.ac, debian/changelog:
+
+2015-07-09 15:56  asmolkov
+
+	* src/measurement-service/calibration-task.c,
+	  src/measurement-service/single-task.c:
+
+2015-07-09 15:44  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/analyze-task.h,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-07-09 14:08  asmolkov
+
+	* src/measurement-service/analyze-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c:
+
+2015-07-09 13:29  asmolkov
+
+	* src/measurement-service/calibration-task.c,
+	  src/sequence-workings-service/ultra-allhold-process.c:
+
+2015-07-09 13:21  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2015-07-09 13:20  asmolkov
+
+	* src/measurement-service/calibration-task.c,
+	  src/measurement-service/calibration-task.h,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/single-task.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-07-09 11:24  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/calibration-task.h,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/hold-task.h,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/single-task.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-07-08 07:03  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/Makefile.am,
+	  src/measurement-service/analyze-task.c,
+	  src/measurement-service/analyze-task.h,
+	  src/measurement-service/calibration-task.c,
+	  src/measurement-service/calibration-task.h,
+	  src/measurement-service/hold-task.c,
+	  src/measurement-service/hold-task.h,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-task.c,
+	  src/measurement-service/measurement-task.h,
+	  src/measurement-service/online-task.c,
+	  src/measurement-service/online-task.h,
+	  src/measurement-service/prepare-task.c,
+	  src/measurement-service/prepare-task.h,
+	  src/measurement-service/single-task.c,
+	  src/measurement-service/single-task.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-control-process.c,
+	  src/measurement-service/ultra-control-process.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h:
+
+2015-07-01 07:59  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-07-01 06:54  asmolkov
+
+	* src/measurement-service/measurement-application-object.c:
+
+2015-06-30 13:22  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-06-30 13:13  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-30 13:12  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-30 12:24  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-30 12:21  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-30 07:14  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-26 15:34  asmolkov
+
+	* ., measurement.out,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-26 10:06  asmolkov
+
+	* measurement.out, src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-26 09:02  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-26 07:36  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-26 07:29  asmolkov
+
+	* configure.ac, src/killall_service:
+
+2015-06-26 07:24  asmolkov
+
+	* ChangeLog, src/Makefile.am:
+
+2015-06-26 07:24  asmolkov
+
+	* src/Makefile.am:
+
+2015-06-26 07:23  asmolkov
+
+	* src/Makefile.am, src/measurement-service/Makefile.am,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/measurement_processes/ultra-calibration-process.c:
+
+2015-06-26 05:38  gstuetzer
+
+	* src/Makefile.am: xx
+
+2015-06-24 09:18  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/monitoring-service/ultimate-humidity-object.c:
+
+2015-06-23 12:47  asmolkov
+
+	* src/measurement_processes/ultra-calibration-process.c:
+
+2015-06-23 12:26  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-23 12:12  gstuetzer
+
+	* Makefile.in: Weg damit
+
+2015-06-23 12:07  asmolkov
+
+	* Makefile.in, src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/measurement_processes/ultra-calibration-process.c:
+
+2015-06-22 15:07  asmolkov
+
+	* src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h:
+
+2015-06-22 10:18  asmolkov
+
+	* src/measurement_processes/measurement-process-application-object.c:
+
+2015-06-22 08:36  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement_processes/ultra-measurement-process.c:
+
+2015-06-15 15:22  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-15 11:23  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c:
+
+2015-06-12 14:59  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-12 12:27  asmolkov
+
+	* src/vessels_service:
+
+2015-06-12 12:26  asmolkov
+
+	* src/vessels_service/ultra_vessels_service:
+
+2015-06-12 10:11  asmolkov
+
+	* src/measurement_processes/measurement-process-service.c:
+
+2015-06-12 08:00  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-11 15:06  asmolkov
+
+	* src/axis-service/ultra-axisZ-object.c:
+
+2015-06-11 13:22  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-11 11:51  asmolkov
+
+	* src/measurement_processes/ultra-measurement-process.c:
+
+2015-06-11 11:29  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement_processes/ultra-measurement-process.c:
+
+2015-06-11 10:26  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/measurement-process-service.c,
+	  src/measurement_processes/ultra-measurement-process.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-11 10:10  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-11 08:58  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-10 16:08  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-application-object.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/ultra-measurement-process.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-10 07:13  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c:
+
+2015-06-09 15:30  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-09 15:01  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-09 13:41  asmolkov
+
+	* src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-09 09:26  asmolkov
+
+	* src/measurement-service/Makefile.am:
+
+2015-06-09 09:26  asmolkov
+
+	* measurement.out, src/integration-service,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-09 08:25  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h:
+
+2015-06-08 14:51  asmolkov
+
+	* src/measurement_processes/ultra-measurement-process.c:
+
+2015-06-08 14:51  asmolkov
+
+	* src/integration-service/integration-application-object.c,
+	  src/integration-service/ultra-integration-object.c:
+
+2015-06-05 14:41  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-05 14:39  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-05 13:49  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-05 13:20  asmolkov
+
+	* src/integration-service, src/integration-service/Makefile.am,
+	  src/integration-service/com.lar.tera.measurement.service,
+	  src/integration-service/integration-application-object.c,
+	  src/integration-service/integration-application-object.h,
+	  src/integration-service/integration-service.c,
+	  src/integration-service/ultra-integration-object.c,
+	  src/integration-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-channel-object.c:
+
+2015-06-05 12:52  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-05 12:15  asmolkov
+
+	* src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h:
+
+2015-06-05 12:15  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c:
+
+2015-06-05 11:47  asmolkov
+
+	* src/axis-service/ultra-axis.c,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/ultra-measurement-process.c,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/ultra-sampling-process.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-05 11:46  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-integration-object.c,
+	  src/measurement-service/ultra-integration-object.h,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-04 13:40  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-04 12:09  asmolkov
+
+	* src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/ultra-measurement-process.c:
+
+2015-06-04 09:42  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-06-03 10:48  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/stirrers-service/stirrers-service.c:
+
+2015-06-02 16:09  asmolkov
+
+	* src/stirrers-service/stirrers-application-object.c,
+	  src/stirrers-service/stirrers-service.c:
+
+2015-06-02 15:27  asmolkov
+
+	* src/stirrers-service/stirrers-service.c:
+
+2015-06-02 15:22  asmolkov
+
+	* src/measurement_processes/measurement-process-application-object.c,
+	  src/stirrers-service/stirrers-application-object.c:
+
+2015-06-02 14:03  asmolkov
+
+	* src/measurement_processes/measurement-process-application-object.c:
+
+2015-06-02 14:01  asmolkov
+
+	* src/measurement_processes/measurement-process-application-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-02 12:41  asmolkov
+
+	* debian/control, src/measurement-service/ultra-channel-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-02 09:26  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-01 16:05  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-01 11:36  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c:
+
+2015-06-01 08:53  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-06-01 08:40  asmolkov
+
+	* debian/tmp, debian/ultracontrol, debian/ultracontrol-dev,
+	  debian/ultracontrol-doc:
+
+2015-06-01 08:35  blamowski
+
+	* debian/rules: fix version problem: force full version in shlibs
+	  for all projects
+
+2015-05-29 14:21  asmolkov
+
+	* src/measurement_processes/Makefile.am,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/measurement-process.c,
+	  src/measurement_processes/measurement-process.h,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/measurement_processes/ultra-calibration-process.h,
+	  src/measurement_processes/ultra-measurement-process.c:
+
+2015-05-29 12:48  asmolkov
+
+	* src/measurement_processes/ultra-measurement-process.c,
+	  src/measurement_processes/ultra-measurement-process.h:
+
+2015-05-29 08:36  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/measurement_processes/ultra-calibration-process.h,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-29 07:47  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-05-27 08:54  gstuetzer
+
+	* src/startApp: xx
+
+2015-05-27 08:52  gstuetzer
+
+	* src/startApp: xx
+
+2015-05-27 08:51  gstuetzer
+
+	* src/startApp: --
+
+2015-05-26 15:30  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-26 14:24  asmolkov
+
+	* ChangeLog, src/monitoring-service:
+
+2015-05-26 14:23  asmolkov
+
+	* src/monitoring-service/ultra_monitoring_service:
+
+2015-05-26 14:22  asmolkov
+
+	* src/monitoring-service/ultimate-pressure-object.c,
+	  src/monitoring-service/ultra_monitoring_service:
+
+2015-05-26 14:22  asmolkov
+
+	* src/startApp:
+
+2015-05-26 14:09  gstuetzer
+
+	* src/startApp: --
+
+2015-05-26 13:45  asmolkov
+
+	* src/killall_service:
+
+2015-05-26 13:38  asmolkov
+
+	* debian/ultracontrol.install.in:
+
+2015-05-26 13:23  asmolkov
+
+	* debian/ultracontrol.install.in:
+
+2015-05-26 12:49  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-26 12:13  asmolkov
+
+	* src/killall_service,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-26 08:54  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2015-05-22 11:22  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-21 12:28  asmolkov
+
+	* src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-21 11:54  asmolkov
+
+	* src/axis-service/com.lar.tera.axis.service,
+	  src/axis-service/ultra-axis-service.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-21 11:10  asmolkov
+
+	* src/measurement-service/measurement-service.c,
+	  src/measurement_processes/measurement-process-service.c,
+	  src/monitoring-service/monitoring-service.c:
+
+2015-05-21 11:10  asmolkov
+
+	* src/airflow-service/airflow-service.c,
+	  src/airflow-service/com.lar.tera.airflow.service:
+
+2015-05-21 11:10  asmolkov
+
+	* src/analogout-service/com.lar.tera.analogs.service,
+	  src/analogout-service/ultra-analogs-service.c:
+
+2015-05-21 11:09  asmolkov
+
+	* src/axis-service/ultra-axis-service.c:
+
+2015-05-21 11:08  asmolkov
+
+	* src/pumps-service/pumps-service.c:
+
+2015-05-21 11:07  asmolkov
+
+	* src/relays-service/ultra-relays-service.c:
+
+2015-05-21 11:07  asmolkov
+
+	* src/sequence-workings-service/sequence-workers-service.c:
+
+2015-05-21 11:06  asmolkov
+
+	* src/stirrers-service/stirrers-service.c:
+
+2015-05-21 11:06  asmolkov
+
+	* src/vessels_service/vessels-service.c:
+
+2015-05-21 11:05  asmolkov
+
+	* src/valves-service/valves-service.c:
+
+2015-05-21 10:56  asmolkov
+
+	* src/airflow-service/airflow-application-object.c,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-21 10:55  asmolkov
+
+	* src/airflow-service/airflow-application-object.c,
+	  src/airflow-service/airflow-service.c,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/analogout-service/ultra-analogs-service.c,
+	  src/axis-service/ultra-axis-service.c,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement_processes/measurement-process-service.c,
+	  src/monitoring-service/com.lar.tera.monitoring.service,
+	  src/monitoring-service/monitoring-service.c,
+	  src/pumps-service/com.lar.tera.pumps.service,
+	  src/pumps-service/pumps-service.c,
+	  src/relays-service/com.lar.tera.relays.service,
+	  src/relays-service/ultra-relays-service.c,
+	  src/sequence-workings-service/sequence-workers-service.c,
+	  src/stirrers-service/com.lar.tera.stirrers.service,
+	  src/stirrers-service/stirrers-service.c,
+	  src/valves-service/com.lar.tera.valves.service,
+	  src/valves-service/valves-service.c,
+	  src/vessels_service/com.lar.tera.vessels.service,
+	  src/vessels_service/vessels-service.c:
+
+2015-05-21 10:34  asmolkov
+
+	* src/airflow-service/ultra-airflow-object.c, src/killall_service,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-21 10:32  asmolkov
+
+	* src/airflow-service/airflow-service.c:
+
+2015-05-19 11:25  asmolkov
+
+	* src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-18 14:35  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-05-18 12:17  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service: Fix channels number
+
+2015-05-18 12:11  asmolkov
+
+	* src/measurement-service/ultra-stream-object.c: Channel name
+
+2015-05-18 11:43  asmolkov
+
+	* src/measurement_processes/ultra-calibration-process.c:
+
+2015-05-18 11:30  asmolkov
+
+	* configure.ac, src/Makefile.am,
+	  src/airflow-service/airflow-application-object.c,
+	  src/airflow-service/ultra-airflow-object.c, src/killall_service,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/measurement-process-service.c,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/monitoring-service/monitoring-application-object.c,
+	  src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-18 11:30  asmolkov
+
+	* src/measurement-service/measurement-service.c:
+
+2015-05-18 11:07  asmolkov
+
+	* src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2015-05-18 09:51  asmolkov
+
+	* src/airflow-service, src/airflow-service/airflow-service.c,
+	  src/airflow-service/ultra-airflow-object.c:
+
+2015-05-18 09:21  asmolkov
+
+	* src/airflow-service, src/airflow-service/Makefile.am,
+	  src/airflow-service/airflow-application-object.c,
+	  src/airflow-service/airflow-application-object.h,
+	  src/airflow-service/airflow-service.c,
+	  src/airflow-service/com.lar.tera.airflow.gschema.xml,
+	  src/airflow-service/com.lar.tera.airflow.service,
+	  src/airflow-service/ultra-airflow-object.c,
+	  src/airflow-service/ultra-airflow-object.h: Air flow control and
+	  watch service
+
+2015-05-18 09:12  asmolkov
+
+	* src/monitoring-service/Makefile.am,
+	  src/monitoring-service/com.lar.monotoring.ultra.gschema.xml,
+	  src/monitoring-service/monitoring-application-object.c,
+	  src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-pressure-object.c,
+	  src/monitoring-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultra-airflow-object.h,
+	  src/monitoring-service/ultra_monitoring_service:
+
+2015-05-18 08:09  asmolkov
+
+	* configure.ac, src/analogout-service/com.lar.tera.analogs.service,
+	  src/axis-service/com.lar.tera.axis.service, src/dbus-access,
+	  src/hardware-service, src/killall_service,
+	  src/measurement_processes/Makefile.am,
+	  src/measurement_processes/com.lar.service.measurement.process.service,
+	  src/measurement_processes/com.lar.tera.measurement.process.service,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/monitoring-service/Makefile.am,
+	  src/monitoring-service/com.lar.tera.monitoring.service,
+	  src/monitoring-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultra_monitoring_service,
+	  src/pumps-service/Makefile.am,
+	  src/pumps-service/com.lar.tera.pumps.service,
+	  src/pumps-service/pumps_service,
+	  src/stirrers-service/Makefile.am,
+	  src/stirrers-service/com.lar.tera.stirrers.service,
+	  src/vessels_service/Makefile.am,
+	  src/vessels_service/com.lar.tera.vessels.service,
+	  src/vessels_service/ultra_vessels_service:
+
+2015-05-18 07:19  asmolkov
+
+	* src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/com.lar.service.sequence.workers.service,
+	  src/sequence-workings-service/com.lar.tera.sequence.workers.service:
+
+2015-05-15 13:22  asmolkov
+
+	* debian/ultracontrol.install.in:
+
+2015-05-15 10:03  asmolkov
+
+	* src, src/measurement-service, src/measurement_processes,
+	  src/sequence-workings-service:
+
+2015-05-15 10:03  asmolkov
+
+	* debian/ultracontrol.postinst, src/Makefile.am,
+	  src/com.lar.control.ultra.gschema.xml,
+	  src/com.lar.tera.services.gschema.xml:
+
+2015-05-15 10:03  asmolkov
+
+	* src/vessels_service/ultra-vessel-object.c:
+
+2015-05-15 10:02  asmolkov
+
+	* src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/com.lar.service.sequence.workers.service,
+	  src/sequence-workings-service/sequence-workers-application-object.c:
+
+2015-05-15 10:02  asmolkov
+
+	* src/pumps-service/pumps_service:
+
+2015-05-15 10:02  asmolkov
+
+	* src/measurement-service/Makefile.am,
+	  src/measurement-service/com.lar.tera.measurement.service,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/ultra-stream-object.c:
+
+2015-05-15 10:02  asmolkov
+
+	* src/measurement_processes/Makefile.am,
+	  src/measurement_processes/com.lar.service.measurement.process.service,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/measurement-process-application-object.h,
+	  src/measurement_processes/measurement-process-service.c,
+	  src/measurement_processes/measurement-process.c,
+	  src/measurement_processes/ultra-calibration-process.c,
+	  src/measurement_processes/ultra-calibration-process.h:
+
+2015-05-13 11:06  asmolkov
+
+	* src/measurement_processes/com.lar.tera.measurement.gschema.xml:
+
+2015-05-12 10:18  asmolkov
+
+	* src/measurement_processes:
+
+2015-05-12 10:17  asmolkov
+
+	* src/measurement_processes/.deps, src/pumps-service/pumps_service:
+	  Delete build files
+
+2015-05-12 10:16  asmolkov
+
+	* src/measurement_processes, src/measurement_processes/Makefile,
+	  src/measurement_processes/Makefile.am,
+	  src/measurement_processes/Makefile.in,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/measurement-process.c:
+
+2015-05-12 10:14  asmolkov
+
+	* configure.ac, debian/ultracontrol.install.in, src/Makefile.am,
+	  src/axis-service/ultra-axisZ-object.c, src/axis_service,
+	  src/hardware-service, src/hardware-service/.deps,
+	  src/hardware-service/.deps/ultimate-airflow.Po,
+	  src/hardware-service/.deps/ultimate-humidity-object.Po,
+	  src/hardware-service/.deps/ultimate-monitoring.Po,
+	  src/hardware-service/.deps/ultimate-pressure-object.Po,
+	  src/hardware-service/.deps/ultra-airflow-object.Po,
+	  src/hardware-service/.deps/ultra-furnace-object.Po,
+	  src/hardware-service/.deps/ultra-hardware-service.Po,
+	  src/hardware-service/.deps/ultra-ticport-object.Po,
+	  src/hardware-service/.deps/ultra-vessel-object.Po,
+	  src/hardware-service/Makefile.am,
+	  src/hardware-service/com.lar.service.UltraHardware.service,
+	  src/hardware-service/com.lar.service.vessels.service,
+	  src/hardware-service/ultimate-airflow.c,
+	  src/hardware-service/ultimate-airflow.h,
+	  src/hardware-service/ultimate-humidity-object.c,
+	  src/hardware-service/ultimate-humidity-object.h,
+	  src/hardware-service/ultimate-monitoring.c,
+	  src/hardware-service/ultimate-monitoring.h,
+	  src/hardware-service/ultimate-pressure-object.c,
+	  src/hardware-service/ultimate-pressure-object.h,
+	  src/hardware-service/ultra-airflow-object.c,
+	  src/hardware-service/ultra-airflow-object.h,
+	  src/hardware-service/ultra-furnace-object.c,
+	  src/hardware-service/ultra-hardware-service.c,
+	  src/hardware-service/ultra-ticport-object.c,
+	  src/hardware-service/ultra-vessel-object.c,
+	  src/hardware-service/ultra-vessels-service.c,
+	  src/hardware-service/ultra_hardware_service,
+	  src/measurement-service, src/measurement-service/Makefile.am,
+	  src/measurement-service/com.lar.tera.measurement.service,
+	  src/measurement-service/measurement-application-object.c,
+	  src/measurement-service/measurement-application-object.h,
+	  src/measurement-service/measurement-service.c,
+	  src/measurement-service/ultimate-channel.c,
+	  src/measurement-service/ultimate-channel.h,
+	  src/measurement-service/ultra-channel-object.c,
+	  src/measurement-service/ultra-channel-object.h,
+	  src/measurement-service/ultra-stream-object.c,
+	  src/measurement-service/ultra-stream-object.h,
+	  src/measurement_processes, src/measurement_processes/.deps,
+	  src/measurement_processes/.deps/measurement-process-application-object.Po,
+	  src/measurement_processes/.deps/measurement-process-service.Po,
+	  src/measurement_processes/.deps/measurement-process.Po,
+	  src/measurement_processes/Makefile,
+	  src/measurement_processes/Makefile.am,
+	  src/measurement_processes/Makefile.in,
+	  src/measurement_processes/com.lar.service.measurement.process.service,
+	  src/measurement_processes/measurement-process-application-object.c,
+	  src/measurement_processes/measurement-process-application-object.h,
+	  src/measurement_processes/measurement-process-service.c,
+	  src/measurement_processes/measurement-process.c,
+	  src/measurement_processes/measurement-process.h,
+	  src/move-worker-processes-service,
+	  src/stirrers-service/com.lar.tera.stirrers.service,
+	  src/streams-service, src/ultra-control.c,
+	  src/ultra-stream-object.c, src/ultra-stream-object.h,
+	  src/ultracontrol_daemon, src/vessels-service:
+
+2015-05-12 10:14  asmolkov
+
+	* src/pumps-service/pumps_service:
+
+2015-05-12 10:14  asmolkov
+
+	* src/relays-service/ultra-relays-service.c:
+
+2015-05-12 09:17  asmolkov
+
+	* src/sequence-workings-service:
+
+2015-05-12 09:16  asmolkov
+
+	* src/sequence-workings-service,
+	  src/sequence-workings-service/Makefile.am,
+	  src/sequence-workings-service/com.lar.service.sequence.workers.service,
+	  src/sequence-workings-service/sequence-process.c,
+	  src/sequence-workings-service/sequence-process.h,
+	  src/sequence-workings-service/sequence-workers-application-object.c,
+	  src/sequence-workings-service/sequence-workers-application-object.h,
+	  src/sequence-workings-service/sequence-workers-service.c,
+	  src/sequence-workings-service/ultra-allhold-process.c,
+	  src/sequence-workings-service/ultra-allhold-process.h,
+	  src/sequence-workings-service/ultra-axishold-process.c,
+	  src/sequence-workings-service/ultra-axishold-process.h,
+	  src/sequence-workings-service/ultra-axisinit-process.c,
+	  src/sequence-workings-service/ultra-axisinit-process.h,
+	  src/sequence-workings-service/ultra-injection-process.c,
+	  src/sequence-workings-service/ultra-injection-process.h,
+	  src/sequence-workings-service/ultra-injectiontic-process.c,
+	  src/sequence-workings-service/ultra-injectiontic-process.h,
+	  src/sequence-workings-service/ultra-rinsing-process.c,
+	  src/sequence-workings-service/ultra-rinsing-process.h,
+	  src/sequence-workings-service/ultra-sampling-process.c,
+	  src/sequence-workings-service/ultra-sampling-process.h: Add
+	  sequence workers service.
+
+2015-05-12 07:48  asmolkov
+
+	* src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axis.c, src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2015-05-11 14:50  asmolkov
+
+	* src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axis.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c: Add injection processes
+	  Z-Axis
+	  Fix get parameter all axis.
+
+2015-05-06 09:27  asmolkov
+
+	* src/monitoring-service: svn clean
+
+2015-05-06 09:27  asmolkov
+
+	* src/pumps-service/pumps_service: svn clean
+
+2015-05-06 09:26  asmolkov
+
+	* src/pumps-service/pumps-service.c,
+	  src/pumps-service/pumps_service: Pure formatting task.
+
+2015-05-06 09:25  asmolkov
+
+	* src/relays-service/ultra-relays-service.c: Unnötige Textezeilen
+	  wurden gelöscht.
+
+2015-05-06 09:19  asmolkov
+
+	* src/valves-service/com.lar.tera.valves.service:
+
+2015-05-06 09:19  asmolkov
+
+	* src/monitoring-service, src/monitoring-service/Makefile.am,
+	  src/monitoring-service/com.lar.monotoring.ultra.gschema.xml,
+	  src/monitoring-service/com.lar.tera.monitoring.service,
+	  src/monitoring-service/monitoring-application-object.c,
+	  src/monitoring-service/monitoring-application-object.h,
+	  src/monitoring-service/monitoring-service.c,
+	  src/monitoring-service/ultimate-humidity-object.c,
+	  src/monitoring-service/ultimate-humidity-object.h,
+	  src/monitoring-service/ultimate-pressure-object.c,
+	  src/monitoring-service/ultimate-pressure-object.h,
+	  src/monitoring-service/ultra-airflow-object.c,
+	  src/monitoring-service/ultra-airflow-object.h: Initialize ULTRA
+	  monitoring server service .
+	  Add new automake sub-project.
+
+2015-05-04 16:06  asmolkov
+
+	* src/vessels_service:
+
+2015-05-04 16:06  asmolkov
+
+	* src/vessels_service, src/vessels_service/Makefile.am,
+	  src/vessels_service/com.lar.tera.vessels.service,
+	  src/vessels_service/ultra-furnace-object.c,
+	  src/vessels_service/ultra-furnace-object.h,
+	  src/vessels_service/ultra-ticport-object.c,
+	  src/vessels_service/ultra-ticport-object.h,
+	  src/vessels_service/ultra-vessel-object.c,
+	  src/vessels_service/ultra-vessel-object.h,
+	  src/vessels_service/vessels-application-object.c,
+	  src/vessels_service/vessels-application-object.h,
+	  src/vessels_service/vessels-service.c: Add ULRA vessels service
+	  source files
+
+2015-05-04 14:43  asmolkov
+
+	* src/pumps-service/Makefile.am,
+	  src/pumps-service/com.lar.tera.pumps.service,
+	  src/pumps-service/pumps-service.c:
+
+2015-05-04 14:04  asmolkov
+
+	* src/stirrers-service:
+
+2015-05-04 14:04  asmolkov
+
+	* src/stirrers-service, src/stirrers-service/Makefile.am,
+	  src/stirrers-service/com.lar.tera.stirrers.service,
+	  src/stirrers-service/stirrers-application-object.c,
+	  src/stirrers-service/stirrers-application-object.h,
+	  src/stirrers-service/stirrers-service.c: Add ultra stirrer
+	  service
+
+2015-05-04 13:34  asmolkov
+
+	* src/valves-service:
+
+2015-05-04 13:34  asmolkov
+
+	* src/valves-service, src/valves-service/Makefile.am,
+	  src/valves-service/com.lar.tera.valves.service,
+	  src/valves-service/valves-application-object.c,
+	  src/valves-service/valves-application-object.h,
+	  src/valves-service/valves-service.c: Add ultra valves service
+
+2015-05-04 13:13  asmolkov
+
+	* src/analogout-service/ultra-analogs-service.c:
+
+2015-05-04 13:13  asmolkov
+
+	* src/axis-service:
+
+2015-05-04 13:10  asmolkov
+
+	* src/axis-service, src/axis-service/.deps,
+	  src/axis-service/Makefile.am,
+	  src/axis-service/axis-application-object.c,
+	  src/axis-service/axis-application-object.h,
+	  src/axis-service/com.lar.service.axis.service,
+	  src/axis-service/com.lar.tera.axis.service,
+	  src/axis-service/ultra-axis-service.c:
+
+2015-05-04 12:57  asmolkov
+
+	* src/analogout-service/Makefile.am,
+	  src/analogout-service/com.lar.service.analogs.service,
+	  src/analogout-service/com.lar.tera.analogs.service,
+	  src/analogout-service/ultra-analogs-service.c:
+
+2015-05-04 12:55  asmolkov
+
+	* src/analogout-service/analogs-application-object.c,
+	  src/analogout-service/analogs-application-object.h:
+
+2015-05-04 12:30  asmolkov
+
+	* src/pumps-service/Makefile.am,
+	  src/pumps-service/com.lar.service.pumps.service,
+	  src/pumps-service/com.lar.tera.pumps.service,
+	  src/pumps-service/pumps-application-object.c:
+
+2015-05-04 12:30  asmolkov
+
+	* src/relays-service:
+
+2015-05-04 12:29  asmolkov
+
+	* src/relays-service, src/relays-service/Makefile.am,
+	  src/relays-service/com.lar.tera.relays.service,
+	  src/relays-service/relays-application-object.c,
+	  src/relays-service/relays-application-object.h,
+	  src/relays-service/ultra-relays-service.c:
+
+2015-05-04 11:53  asmolkov
+
+	* src/pumps-service:
+
+2015-05-04 11:52  asmolkov
+
+	* src/pumps-service, src/pumps-service/Makefile.am,
+	  src/pumps-service/com.lar.service.pumps.service,
+	  src/pumps-service/pumps-application-object.c,
+	  src/pumps-service/pumps-application-object.h,
+	  src/pumps-service/pumps-service.c: Add ultra pumps service
+
+2015-05-04 11:38  asmolkov
+
+	* src/axis-service/ultra_axis_service:
+
+2015-05-04 11:38  asmolkov
+
+	* src/axis-service/.deps/ultra-axis-service.Po,
+	  src/axis-service/ultra_axis_service:
+
+2015-05-04 11:37  asmolkov
+
+	* src/analogout-service:
+
+2015-05-04 09:36  asmolkov
+
+	* src/analogout-service, src/analogout-service/Makefile.am,
+	  src/analogout-service/com.lar.service.analogs.service,
+	  src/analogout-service/ultra-analogs-service.c: Ultra analogs out
+	  service
+
+2015-04-30 15:23  asmolkov
+
+	* configure.ac:
+
+2015-04-30 15:18  asmolkov
+
+	* src/axis-service/.deps/ultra-axis-service.Po,
+	  src/axis-service/Makefile.am,
+	  src/axis-service/ultra-axis-object.c,
+	  src/axis-service/ultra-axis-object.h,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisX-object.h,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2015-04-30 14:40  asmolkov
+
+	* src/axis-service/.deps/ultra-axis-service.Po,
+	  src/axis-service/Makefile.am,
+	  src/axis-service/ultra-axis-object.c,
+	  src/axis-service/ultra-axis-object.h,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisX-object.h,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisZ-object.c:
+
+2015-04-30 13:51  asmolkov
+
+	* src/axis-service/Makefile.am,
+	  src/axis-service/com.lar.service.axis.conf,
+	  src/axis-service/ultra-axis-service.c:
+
+2015-04-30 10:36  asmolkov
+
+	* src/axis-service:
+
+2015-04-30 10:34  asmolkov
+
+	* src/axis-service/Makefile, src/axis-service/Makefile.in:
+
+2015-04-30 10:33  asmolkov
+
+	* src/axis-service/Makefile.am, src/axis-service/axis_service,
+	  src/axis-service/com.lar.service.axis.service,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra_axis_service:
+
+2015-04-30 10:33  asmolkov
+
+	* src/axis-service/com.lar.service.axis.conf:
+
+2015-04-29 15:37  asmolkov
+
+	* ChangeLog, configure.ac, src/Makefile.am,
+	  src/axis-service/.deps/ultra-axis-service.Po,
+	  src/axis-service/com.lar.service.axis.service,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axis.c, src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra_axis_service,
+	  src/com.lar.service.axis.service,
+	  src/move-worker-processes-service, src/streams-service,
+	  src/ultimate-process-manager.c, src/ultra-axishold-process.c,
+	  src/ultra-channel-object.c, src/ultra-control.c,
+	  src/ultra-furnace-object.c, src/ultra-hardware-object.c,
+	  src/ultra-hold-process.c, src/ultra-simple-tc-process.c,
+	  src/ultra-stream-object.c, src/ultracontrol_daemon,
+	  src/vessels-service, src/vessels-service/Makefile.am,
+	  src/vessels-service/com.lar.service.vessels.service,
+	  src/vessels-service/ultra-furnace-object.c,
+	  src/vessels-service/ultra-furnace-object.h,
+	  src/vessels-service/ultra-ticport-object.c,
+	  src/vessels-service/ultra-ticport-object.h,
+	  src/vessels-service/ultra-vessel-object.c,
+	  src/vessels-service/ultra-vessel-object.h,
+	  src/vessels-service/ultra-vessels-service.c:
+
+2015-04-29 10:18  asmolkov
+
+	* src/axis-service, src/axis-service/.deps,
+	  src/axis-service/.deps/ultra-axis-service.Po,
+	  src/axis-service/.deps/ultra-axis.Po,
+	  src/axis-service/.deps/ultra-axisX-object.Po,
+	  src/axis-service/.deps/ultra-axisY-object.Po,
+	  src/axis-service/.deps/ultra-axisZ-object.Po,
+	  src/axis-service/Makefile, src/axis-service/Makefile.am,
+	  src/axis-service/Makefile.in, src/axis-service/axis_service,
+	  src/axis-service/com.lar.service.axis.service,
+	  src/axis-service/ultra-axis-service.c,
+	  src/axis-service/ultra-axis.c, src/axis-service/ultra-axis.h,
+	  src/axis-service/ultra-axisX-object.c,
+	  src/axis-service/ultra-axisX-object.h,
+	  src/axis-service/ultra-axisY-object.c,
+	  src/axis-service/ultra-axisY-object.h,
+	  src/axis-service/ultra-axisZ-object.c,
+	  src/axis-service/ultra-axisZ-object.h,
+	  src/axis-service/ultra_axis_service: axis-service add
+
+2015-04-28 06:50  asmolkov
+
+	* src/ultra-axishold-process.c, src/ultra-axishold-process.h:
+
+2015-04-27 16:10  asmolkov
+
+	* src/ultra-control.c:
+
+2015-04-27 15:55  asmolkov
+
+	* src/ultra-axisinit-process.c, src/ultra-control.c,
+	  src/ultracontrol_daemon:
+
+2015-04-27 15:11  asmolkov
+
+	* src/ultra-control.c, src/ultracontrol_daemon:
+
+2015-04-27 15:02  asmolkov
+
+	* src/ultra-control.c, src/ultracontrol_daemon:
+
+2015-04-27 14:47  asmolkov
+
+	* src/ultra-control.c:
+
+2015-04-27 14:46  asmolkov
+
+	* src/com.lar.lgdm.app.ultraserviceactions.desktop,
+	  src/ultra-control.c, src/ultracontrol_daemon:
+
+2015-04-27 12:16  asmolkov
+
+	* src/ultra-control.c:
+
+2015-04-27 11:11  asmolkov
+
+	* src/Makefile.am: Remove:
+	  - ultra-sensor-object.c
+	  - ultra-sensor-object.h
+
+2015-04-24 14:36  asmolkov
+
+	* src/ultra-control.c, src/ultra-hardware-object.c,
+	  src/ultra-rinsing-process.c, src/ultra-stream-object.c,
+	  src/ultracontrol_daemon:
+
+2015-04-23 09:04  asmolkov
+
+	* src/ultra-control.c:
+
+2015-04-23 09:00  asmolkov
+
+	* src/ultra-hardware-object.c, src/ultracontrol_daemon:
+
+2015-04-23 07:38  asmolkov
+
+	* src/ultimate-humidity-object.c, src/ultra-airflow-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-hardware-object.c,
+	  src/ultracontrol_daemon:
+
+2015-04-21 14:18  asmolkov
+
+	* src/ultra-axis.c, src/ultra-axisX-object.c,
+	  src/ultra-axisY-object.c, src/ultra-axisZ-object.c,
+	  src/ultra-axisinit-process.c, src/ultracontrol_daemon:
+
+2015-04-21 13:52  asmolkov
+
+	* src/Makefile.am, src/ultimate-process-manager.c,
+	  src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-axisinit-process.c,
+	  src/ultra-axisinit-process.h, src/ultracontrol_daemon:
+
+2015-04-21 12:09  asmolkov
+
+	* src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-hardware-object.c,
+	  src/ultracontrol_daemon:
+
+2015-04-20 11:53  asmolkov
+
+	* src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-hardware-object.c,
+	  src/ultracontrol_daemon:
+
+2015-04-15 11:09  asmolkov
+
+	* src/Makefile.am, src/ultimate-process-manager.h,
+	  src/ultra-axisX-object.c, src/ultra-calibration-process.c,
+	  src/ultra-channel-object.c, src/ultra-control-app-object.c,
+	  src/ultra-hold-process.c, src/ultra-injection-process.c,
+	  src/ultra-injectiontic-process.c, src/ultra-rinsing-process.c,
+	  src/ultra-sampling-process.c,
+	  src/ultra-simple-measurement-process.c,
+	  src/ultra-simple-tc-process.c, src/ultra-simple-tic-process.c,
+	  src/ultracontrol_daemon:
+
+2015-04-15 08:43  asmolkov
+
+	* src/Makefile.am, src/com.lar.control.ultra.gschema.xml,
+	  src/ultimate-channel.c, src/ultimate-channel.h,
+	  src/ultimate-process-manager.c, src/ultimate-process-manager.h,
+	  src/ultimate-stream-manager.c, src/ultimate-stream-manager.h,
+	  src/ultimate-stream.c, src/ultimate-stream.h,
+	  src/ultra-calibration-process.c, src/ultra-calibration-process.h,
+	  src/ultra-channel-differenz.c, src/ultra-channel-object.c,
+	  src/ultra-control-app-object.c, src/ultra-control.c,
+	  src/ultra-hardware-object.c, src/ultra-hardware-object.h,
+	  src/ultra-measurement-process.c, src/ultra-measurement-process.h,
+	  src/ultra-online-measurement-process.c,
+	  src/ultra-online-measurement-process.h,
+	  src/ultra-rinsing-process.c,
+	  src/ultra-simple-measurement-process.c,
+	  src/ultra-simple-tc-process.c, src/ultra-simple-tc-process.h,
+	  src/ultra-simple-tic-process.c, src/ultra-simple-tic-process.h,
+	  src/ultra-stream-object.c, src/ultracontrol_daemon:
+
+2015-04-08 08:36  asmolkov
+
+	* README, src/Makefile.am, src/initialize-api.c,
+	  src/initialize-api.h, src/ultimate-channel.c,
+	  src/ultimate-channel.h, src/ultimate-humidity-object.c,
+	  src/ultimate-process-manager.c, src/ultimate-process-manager.h,
+	  src/ultimate-process.c, src/ultimate-process.h,
+	  src/ultimate-stream-manager.c, src/ultimate-stream-manager.h,
+	  src/ultimate-stream.c, src/ultimate-stream.h,
+	  src/ultra-airflow-object.c, src/ultra-axis.c, src/ultra-axis.h,
+	  src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-axisZ-object.h,
+	  src/ultra-channel-differenz.c, src/ultra-channel-differenz.h,
+	  src/ultra-channel-object.c, src/ultra-channel-object.h,
+	  src/ultra-control-app-object.c, src/ultra-control-app-object.h,
+	  src/ultra-control.c, src/ultra-furnace-object.c,
+	  src/ultra-furnace-object.h, src/ultra-hardware-object.c,
+	  src/ultra-hardware-object.h, src/ultra-hold-process.c,
+	  src/ultra-hold-process.h, src/ultra-injection-process.c,
+	  src/ultra-injection-process.h, src/ultra-injectiontic-process.c,
+	  src/ultra-injectiontic-process.h,
+	  src/ultra-measurement-process.c, src/ultra-measurement-process.h,
+	  src/ultra-rinsing-process.c, src/ultra-rinsing-process.h,
+	  src/ultra-sampling-process.c, src/ultra-sampling-process.h,
+	  src/ultra-sensors-object.c,
+	  src/ultra-simple-measurement-process.c,
+	  src/ultra-simple-measurement-process.h,
+	  src/ultra-stream-object.c, src/ultra-stream-object.h,
+	  src/ultra-ticport-object.c, src/ultra-ticport-object.h,
+	  src/ultra-vessel-object.c, src/ultra-vessel-object.h,
+	  src/ultracontrol_daemon:
+
+2015-03-31 15:22  asmolkov
+
+	* src/ultra-axisZ-object.c, src/ultra-axisZ-object.h:
+
+2015-03-26 09:04  asmolkov
+
+	* src/ultimate-channel.c, src/ultimate-channel.h,
+	  src/ultra-channel-object.c, src/ultra-control-app-object.c,
+	  src/ultra-control.c, src/ultra-furnace-object.c,
+	  src/ultra-hardware-object.c, src/ultra-stream-object.c,
+	  src/ultracontrol_daemon:
+
+2015-03-25 10:24  asmolkov
+
+	* src/Makefile.am:
+
+2015-03-25 08:17  asmolkov
+
+	* src/ultra-stream-object.c:
+
+2015-03-24 14:28  asmolkov
+
+	* Makefile.in, configure.ac, debian/ultracontrol-dev.substvars,
+	  debian/ultracontrol.postinst, debian/ultracontrol.postinst.in,
+	  debian/ultracontrol.substvars, ltmain.sh, src/Makefile.am,
+	  src/com.lar.monotoring.ultra.gschema.xml,
+	  src/ultimate-humidity-object.c, src/ultimate-humidity-object.h,
+	  src/ultimate-monitoring.c, src/ultimate-monitoring.h,
+	  src/ultimate-pressure-object.c, src/ultimate-pressure-object.h,
+	  src/ultra-airflow-object.c, src/ultra-control-app-object.c,
+	  src/ultra-hardware-object.c, src/ultra-stream-object.c,
+	  src/ultracontrol_daemon:
+
+2015-03-19 16:07  asmolkov
+
+	* src/Makefile.am, src/com.lar.monotoring.ultra.gschema.valid,
+	  src/com.lar.monotoring.ultra.gschema.xml, src/ultra-axis.c,
+	  src/ultra-axis.h, src/ultra-hardware-object.c,
+	  src/ultracontrol.conf, src/ultracontrol_daemon:
+
+2015-03-19 16:07  asmolkov
+
+	* src/ultimate-airflow.c, src/ultimate-airflow.h,
+	  src/ultra-airflow-object.c, src/ultra-airflow-object.h:
+
+2015-03-19 10:44  asmolkov
+
+	* src/com.lar.monotoring.ultra.gschema.xml:
+
+2015-03-18 16:15  asmolkov
+
+	* debian/stamp-makefile-build, debian/stamp-makefile-install,
+	  debian/ultracontrol.install.in, debian/ultracontrol.postinst:
+
+2015-03-18 16:15  asmolkov
+
+	* src/ultracontrol.conf.in:
+
+2015-03-18 16:10  asmolkov
+
+	* Makefile.in, ltmain.sh, src/ultracontrol_daemon:
+
+2015-03-18 16:10  asmolkov
+
+	* src/Makefile.am, src/ultra-axis.c, src/ultra-axis.h,
+	  src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-axisZ-object.h,
+	  src/ultra-hardware-object.c:
+
+2015-03-18 11:03  asmolkov
+
+	* configure.ac, debian/control:
+
+2015-03-17 16:34  asmolkov
+
+	* src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-hardware-object.c, src/ultracontrol_daemon:
+
+2015-03-17 15:50  asmolkov
+
+	* README, src/Makefile.am, src/ultra-axis-object.c,
+	  src/ultra-axis-object.h, src/ultra-axis.c, src/ultra-axis.h,
+	  src/ultra-axisX-object.c, src/ultra-axisX-object.h,
+	  src/ultra-axisY-object.c, src/ultra-axisY-object.h,
+	  src/ultra-hardware-object.c, src/ultra-ticport-object.c,
+	  src/ultracontrol_daemon:
+
+2015-03-17 08:19  asmolkov
+
+	* src/ultra-axis-object.c, src/ultra-axis-object.h:
+
+2015-03-16 15:46  asmolkov
+
+	* src/ultra-axisX-object.c:
+
+2015-03-16 15:44  asmolkov
+
+	* README, src/ultra-axisX-object.c, src/ultra-furnace-object.c,
+	  src/ultra-ticport-object.c:
+
+2015-03-16 14:21  asmolkov
+
+	* src/ultra-axisX-object.c, src/ultra-furnace-object.c,
+	  src/ultra-ticport-object.c, src/ultracontrol_daemon:
+
+2015-03-16 14:02  asmolkov
+
+	* src/ultra-axisX-object.c:
+
+2015-03-16 13:57  asmolkov
+
+	* configure.ac, src/Makefile.am,
+	  src/com.lar.control.ultra.gschema.xml, src/dbus-access,
+	  src/dbus-access/com.lar.Security.conf, src/ultra-axisX-object.c,
+	  src/ultra-axisX-object.h, src/ultra-control-app-object.c,
+	  src/ultra-control-app-object.h, src/ultra-control-object.c,
+	  src/ultra-control-object.h, src/ultra-control.c,
+	  src/ultra-furnace-object.c, src/ultra-hardware-object.c,
+	  src/ultra-hardware-object.h, src/ultra-stream-object.c,
+	  src/ultra-stream-object.h, src/ultracontrol_daemon:
+
+2015-03-16 13:05  asmolkov
+
+	* src/ultra-channel-object.c, src/ultra-channel-object.h:
+
+2015-03-16 13:04  asmolkov
+
+	* src/ultra-ticport-object.c, src/ultra-ticport-object.h:
+
+2015-03-12 16:58  asmolkov
+
+	* Makefile.in:
+
+2015-03-12 15:18  asmolkov
+
+	* src/ultra-vessel-object.c, src/ultra-vessel-object.h: Add ultra
+	  vessel object
+
+2015-03-12 15:18  asmolkov
+
+	* src/ultra-furnace-object.c, src/ultra-furnace-object.h: Add Ultra
+	  furnace object ..
+
+2015-03-11 14:50  asmolkov
+
+	* src/dbus-access/com.lar.Security.conf:
+
+2015-03-10 12:59  asmolkov
+
+	* src/ultra-hardware-object.c, src/ultra-hardware-object.h,
+	  src/ultra-sensors-object.c, src/ultra-sensors-object.h:
+
+2015-03-04 08:23  asmolkov
+
+	* src/dbus-access, src/dbus-access/Makefile.am,
+	  src/dbus-access/com.lar.control.app.conf:
+
+2015-02-24 09:55  asmolkov
+
+	* debian/control:
+
+2015-02-24 09:40  asmolkov
+
+	* src/ultra-axisX-object.c, src/ultra-axisX-object.h:
+
+2015-02-24 09:32  asmolkov
+
+	* ., Makefile.in, ltmain.sh, src, src/Makefile.am,
+	  src/initialize-api.c, src/initialize-api.h,
+	  src/ultra-control-app-object.c, src/ultra-control-app-object.h,
+	  src/ultra-control-object.c, src/ultra-stream-object.c,
+	  src/ultracontrol_daemon:
+
+2015-02-18 09:53  asmolkov
+
+	* src/initialize-api.c, src/initialize-api.h:
+
+2015-02-18 09:43  asmolkov
+
+	* .:
+
+2015-02-17 15:51  asmolkov
+
+	* aclocal.m4, compile, config.guess, config.h.in, config.sub,
+	  configure, depcomp, install-sh, src/analyse.sm.c,
+	  src/com.lar.streams.stream1.gschema.valid, src/initialize-api.c,
+	  src/initialize-api.h, src/prepare.sm.c, src/ultracontrol:
+
+2015-02-17 14:13  asmolkov
+
+	* Makefile.am, Makefile.in, debian/ultracontrol-doc.install.in,
+	  src, src/Makefile.am, src/com.lar.streams.stream1.gschema.xml,
+	  src/ultra-axisX-object.c, src/ultra-axisX-object.h,
+	  src/ultra-control-app-object.c, src/ultra-control-object.c,
+	  src/ultra-control-object.h, src/ultra-control.c,
+	  src/ultra-stream-object.c, src/ultra-stream-object.h,
+	  src/ultracontrol_daemon: CHeck in
+
+2015-02-13 10:22  asmolkov
+
+	* src/ultra-control-app-object.c, src/ultra-control-app-object.h:
+
+2015-02-12 13:43  asmolkov
+
+	* src/com.lar.control.ultra.gschema.xml:
+
+2015-02-11 13:39  asmolkov
+
+	* ., INSTALL, Makefile.in, aclocal.m4, configure, configure.ac,
+	  debian, debian/files, debian/rules, debian/stamp-makefile-build,
+	  debian/stamp-makefile-install, debian/tmp, debian/tmp/usr,
+	  debian/tmp/usr/bin, debian/tmp/usr/bin/ultracontrol_daemon,
+	  debian/tmp/usr/doc, debian/tmp/usr/doc/ultracontrol,
+	  debian/tmp/usr/doc/ultracontrol/AUTHORS,
+	  debian/tmp/usr/doc/ultracontrol/COPYING,
+	  debian/tmp/usr/doc/ultracontrol/ChangeLog,
+	  debian/tmp/usr/doc/ultracontrol/INSTALL,
+	  debian/tmp/usr/doc/ultracontrol/NEWS,
+	  debian/tmp/usr/doc/ultracontrol/README, debian/tmp/usr/share,
+	  debian/tmp/usr/share/glib-2.0,
+	  debian/tmp/usr/share/glib-2.0/schemas,
+	  debian/tmp/usr/share/glib-2.0/schemas/com.lar.streams.stream1.gschema.xml,
+	  debian/ultracontrol, debian/ultracontrol-dev,
+	  debian/ultracontrol-dev.substvars,
+	  debian/ultracontrol-dev/DEBIAN,
+	  debian/ultracontrol-dev/DEBIAN/control,
+	  debian/ultracontrol-dev/DEBIAN/md5sums,
+	  debian/ultracontrol-dev/usr, debian/ultracontrol-dev/usr/share,
+	  debian/ultracontrol-dev/usr/share/doc,
+	  debian/ultracontrol-dev/usr/share/doc/ultracontrol-dev,
+	  debian/ultracontrol-dev/usr/share/doc/ultracontrol-dev/changelog.gz,
+	  debian/ultracontrol-dev/usr/share/doc/ultracontrol-dev/copyright,
+	  debian/ultracontrol-doc, debian/ultracontrol-doc.install.in,
+	  debian/ultracontrol-doc.substvars,
+	  debian/ultracontrol-doc/DEBIAN,
+	  debian/ultracontrol-doc/DEBIAN/control,
+	  debian/ultracontrol-doc/DEBIAN/md5sums,
+	  debian/ultracontrol-doc/usr, debian/ultracontrol-doc/usr/share,
+	  debian/ultracontrol-doc/usr/share/doc,
+	  debian/ultracontrol-doc/usr/share/doc/ultracontrol-doc,
+	  debian/ultracontrol-doc/usr/share/doc/ultracontrol-doc/changelog.gz,
+	  debian/ultracontrol-doc/usr/share/doc/ultracontrol-doc/copyright,
+	  debian/ultracontrol.substvars, debian/ultracontrol/DEBIAN,
+	  debian/ultracontrol/DEBIAN/control,
+	  debian/ultracontrol/DEBIAN/md5sums, debian/ultracontrol/usr,
+	  debian/ultracontrol/usr/share, debian/ultracontrol/usr/share/doc,
+	  debian/ultracontrol/usr/share/doc/ultracontrol,
+	  debian/ultracontrol/usr/share/doc/ultracontrol/ChangeLog,
+	  debian/ultracontrol/usr/share/doc/ultracontrol/changelog.gz,
+	  debian/ultracontrol/usr/share/doc/ultracontrol/copyright,
+	  po/Makefile.in, src, src/Makefile.am,
+	  src/com.lar.streams.stream1.gschema.valid, src/control.sm.c,
+	  src/ultra-control-object.c, src/ultra-control.c,
+	  src/ultra-stream-object.c, src/ultra-stream-object.h,
+	  src/ultra_control.in, src/ultracontrol_daemon:
+
+2015-02-09 15:10  asmolkov
+
+	* aclocal.m4, debian/changelog, src/Makefile.am,
+	  src/com.lar.streams.stream1.gschema.xml:
+
+2015-02-09 15:10  asmolkov
+
+	* configure.ac:
+
+2015-02-09 14:58  asmolkov
+
+	* debian/README, debian/source, debian/source/format:
+
+2015-02-09 14:57  asmolkov
+
+	* debian, debian/changelog, debian/compat, debian/control,
+	  debian/copyright, debian/docs, debian/rules,
+	  debian/ultracontrol-doc.install.in,
+	  debian/ultracontrol.install.in, debian/ultracontrol.postinst.in,
+	  debian/ultracontrol.postrm.in:
+
+2015-02-09 14:56  asmolkov
+
+	* Makefile.am:
+
+2015-02-05 16:47  asmolkov
+
+	* src/com.lar.streams.stream1.gschema.xml:
+
+2015-02-02 09:02  asmolkov
+
+	* src/dbus-access:
+
+2015-02-02 09:01  asmolkov
+
+	* src/Makefile.in, src/com.lar.Ultra.Furnace.gschema.xml,
+	  src/com.lar.streams.stream1.gschema.xml,
+	  src/com.lar.streams.stream1.ultra.gschema.valid,
+	  src/com.lar.streams.ultra.stream1.gschema.valid,
+	  src/com.lar.streams.ultra.stream2.gschema.valid,
+	  src/com.lar.streams.ultra.stream2.gschema.xml,
+	  src/com.lar.streams.ultra.stream3.gschema.valid,
+	  src/com.lar.streams.ultra.stream3.gschema.xml,
+	  src/com.lar.streams.ultra.stream4.gschema.valid,
+	  src/com.lar.streams.ultra.stream4.gschema.xml,
+	  src/com.lar.streams.ultra.stream5.gschema.valid,
+	  src/com.lar.streams.ultra.stream5.gschema.xml,
+	  src/com.lar.streams.ultra.stream6.gschema.valid,
+	  src/com.lar.streams.ultra.stream6.gschema.xml:
+
+2015-02-02 08:56  asmolkov
+
+	* m4macros:
+
+2015-02-02 08:56  asmolkov
+
+	* src/com.lar.streams.stream1.gschema.xml:
+
+2015-02-02 08:55  asmolkov
+
+	* configure, configure.ac, intltool-extract.in, intltool-merge.in,
+	  intltool-update.in, m4macros, m4macros/libtool.m4,
+	  m4macros/ltoptions.m4, m4macros/ltsugar.m4,
+	  m4macros/ltversion.m4, m4macros/lt~obsolete.m4, src/Makefile.am,
+	  src/Makefile.in, src/com.lar.streams.stream1.gschema.xml,
+	  src/com.lar.streams.stream1.ultra.gschema.valid,
+	  src/com.lar.streams.ultra.stream1.gschema.valid,
+	  src/com.lar.streams.ultra.stream1.gschema.xml,
+	  src/com.lar.streams.ultra.stream2.gschema.valid,
+	  src/com.lar.streams.ultra.stream3.gschema.valid,
+	  src/com.lar.streams.ultra.stream4.gschema.valid,
+	  src/com.lar.streams.ultra.stream5.gschema.valid,
+	  src/com.lar.streams.ultra.stream6.gschema.valid,
+	  src/dbus-access/Makefile, src/ultra-control-object.c,
+	  src/ultra-control-object.h, src/ultra-control.c,
+	  src/ultracontrol:
+
+2015-01-28 17:01  asmolkov
+
+	* src/com.lar.base.gschema.xml,
+	  src/com.lar.streams.ultra.stream1.gschema.xml,
+	  src/com.lar.streams.ultra.stream2.gschema.xml,
+	  src/com.lar.streams.ultra.stream3.gschema.xml,
+	  src/com.lar.streams.ultra.stream4.gschema.xml,
+	  src/com.lar.streams.ultra.stream5.gschema.xml,
+	  src/com.lar.streams.ultra.stream6.gschema.xml:
+
+2015-01-28 11:58  asmolkov
+
+	* src/Makefile.am, src/Makefile.in,
+	  src/com.lar.base.ultimate.gschema.xml,
+	  src/com.lar.streams.ultra.stream1.gschema.xml,
+	  src/com.lar.streams.ultra.stream2.gschema.xml,
+	  src/com.lar.streams.ultra.stream3.gschema.xml,
+	  src/com.lar.streams.ultra.stream4.gschema.xml,
+	  src/com.lar.streams.ultra.stream5.gschema.xml,
+	  src/com.lar.streams.ultra.stream6.gschema.xml:
+
+2015-01-27 16:48  asmolkov
+
+	* src/com.lar.base.ultimate.gschema.xml:
+
+2015-01-27 15:37  asmolkov
+
+	* src/com.lar.base.gschema.xml, src/ultracontrol:
+
+2015-01-27 12:52  asmolkov
+
+	* ., configure, configure.ac, po, src, src/Makefile.am,
+	  src/Makefile.in, src/dbus-access/Makefile,
+	  src/ultra-axisX-object.c, src/ultra-axisY-object.c,
+	  src/ultra-axisZ-object.c, src/ultra-control-object.c,
+	  src/ultra-control.c:
+
+2015-01-27 12:51  asmolkov
+
+	* po/Makefile.in:
+
+2015-01-27 08:58  asmolkov
+
+	* res:
+
+2015-01-27 08:55  asmolkov
+
+	* ., ChangeLog, configure.ac, src/dbus-access/Makefile.in:
+
+2015-01-27 08:54  asmolkov
+
+	* Makefile.in, aclocal.m4, compile, config.guess, config.h.in,
+	  config.sub, configure, depcomp, install-sh, intltool-extract.in,
+	  intltool-merge.in, intltool-update.in, ltmain.sh, missing:
+
+2015-01-27 08:36  asmolkov
+
+	* src/Makefile.in:
+
+2015-01-27 08:35  asmolkov
+
+	* m4macros, m4macros/intltool.m4, m4macros/libtool.m4,
+	  m4macros/ltoptions.m4, m4macros/ltsugar.m4,
+	  m4macros/ltversion.m4, m4macros/lt~obsolete.m4:
+
+2015-01-23 15:46  asmolkov
+
+	* Makefile.am, configure.ac, po/Makefile.in.in, po/POTFILES.in,
+	  res/schemas/com.lar.Ultra.AxisX.gschema.xml,
+	  res/schemas/com.lar.Ultra.AxisY.gschema.xml,
+	  res/schemas/com.lar.Ultra.AxisZ.gschema.xml,
+	  res/schemas/com.lar.Ultra.Control.gschema.xml,
+	  res/schemas/com.lar.Ultra.Furnace.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream1.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream2.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream3.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream4.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream5.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream6.gschema.xml,
+	  src/Makefile.am, src/com.lar.Ultra.AxisX.gschema.xml,
+	  src/com.lar.Ultra.AxisY.gschema.xml,
+	  src/com.lar.Ultra.AxisZ.gschema.xml,
+	  src/com.lar.Ultra.Control.gschema.xml,
+	  src/com.lar.Ultra.Furnace.gschema.xml,
+	  src/com.lar.streams.ultra.stream1.gschema.xml,
+	  src/com.lar.streams.ultra.stream2.gschema.xml,
+	  src/com.lar.streams.ultra.stream3.gschema.xml,
+	  src/com.lar.streams.ultra.stream4.gschema.xml,
+	  src/com.lar.streams.ultra.stream5.gschema.xml,
+	  src/com.lar.streams.ultra.stream6.gschema.xml,
+	  src/dbus-access/Makefile.am, src/ultra-control-object.c:
+
+2015-01-21 14:58  asmolkov
+
+	* ., AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, NEWS,
+	  README, autogen.sh, configure.ac, po, po/ChangeLog, po/LINGUAS,
+	  po/Makefile.in.in, po/POTFILES.in, res, res/Makefile.am,
+	  res/schemas, res/schemas/Makefile.am,
+	  res/schemas/com.lar.Ultra.AxisX.gschema.xml,
+	  res/schemas/com.lar.Ultra.AxisY.gschema.xml,
+	  res/schemas/com.lar.Ultra.AxisZ.gschema.xml,
+	  res/schemas/com.lar.Ultra.Control.gschema.xml,
+	  res/schemas/com.lar.Ultra.Furnace.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream1.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream2.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream3.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream4.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream5.gschema.xml,
+	  res/schemas/com.lar.streams.ultra.stream6.gschema.xml, src,
+	  src/Makefile.am, src/dbus-access, src/dbus-access/Makefile.am,
+	  src/dbus-access/com.lar.Ultra.AxisX.conf,
+	  src/dbus-access/com.lar.Ultra.AxisY.conf,
+	  src/dbus-access/com.lar.Ultra.AxisZ.conf,
+	  src/dbus-access/com.lar.Ultra.Control.conf,
+	  src/dbus-access/com.lar.Ultra.Furnace.conf,
+	  src/ultra-axisX-object.c, src/ultra-axisX-object.h,
+	  src/ultra-axisY-object.c, src/ultra-axisY-object.h,
+	  src/ultra-axisZ-object.c, src/ultra-axisZ-object.h,
+	  src/ultra-control-object.c, src/ultra-control-object.h,
+	  src/ultra-control.c, src/ultra_control.in:
+

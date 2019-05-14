@@ -4,7 +4,7 @@
         @since: 2.30 This D-Bus interface is used to describe a simple
 		stream. -->
 
-  <interface name="lar.ams.ultra.channel">
+  <interface name="lar.wqm.channel">
     <property name="IsAllow"          type="b" access="readwrite"/>
     <property name="Activated"        type="b" access="readwrite"/>
     <property name="Measure"          type="b" access="read"/>
@@ -31,9 +31,11 @@
     <property name="Integral"         type="d" access="read"/>
     <property name="LastZero"         type="d" access="read"/>
 
-    <method name="GetSignal">
-      <arg name="SignalData" direction="out" type="a(iid)"/>
+    <method name="GetValue">
+      <arg name="value" direction="out" type="d"/>
     </method>
-    <signal name="Update"></signal>
+    <signal name="Update">
+      <arg name="value" direction="out" type="d"/>
+    </signal>
  </interface>
 </node>

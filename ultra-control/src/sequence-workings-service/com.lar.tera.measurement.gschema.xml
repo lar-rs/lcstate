@@ -1,0 +1,44 @@
+<schemalist>
+  <schema id="ultra.measurement" path="/ultra/measurement/" gettext-domain="UltraMeasurement">
+   <key type='b' name='auto-start'>
+      <default>false</default>
+      <summary>Device need autostart</summary>
+      <description>
+        Default description
+        example.
+      </description>
+    </key>
+    <key type='d' name='justification'>
+     <range min="5.0" max="1500.0"/>
+      <default>20.0</default>
+      <summary>Justification time</summary>
+      <description>
+        Default description
+        example.
+      </description>
+   </key>
+    <key type='d' name='last-injection'>
+      <default>0.0</default>
+      <summary>Last injection time</summary>
+      <description>
+        Last injection Time.
+      </description>
+   </key>
+   <key type='d' name='stabilization-time'>
+      <default>0.0</default>
+      <summary>Stabilization wait time</summary>
+      <description>
+        Stabilization wait time in seconds
+      </description>
+   </key>
+
+    <key type="i" name="relays">
+      <default>4</default>
+      <range min="4" max="8"/>
+      <summary>Relay counter</summary>
+      <description>The Counter of Relays</description>
+    </key>
+
+
+  </schema>
+</schemalist>

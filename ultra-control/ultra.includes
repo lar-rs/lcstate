@@ -1,0 +1,9 @@
+.
+src/airflow-service
+src/axis-service
+src/measurement-service
+src/pumps-service
+src/sequence-workings-service
+src/stirrers-service
+src/valves-service
+src/vessels_service

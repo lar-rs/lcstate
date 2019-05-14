@@ -1,0 +1,61 @@
+ultracontrol (1.3.1) testing; urgency=medium
+
+  * Processspülung option. 
+
+ -- sascha <asmolkov@lar.com>  Wed, 01 Sep 2017 15:14:31 +0100
+ 
+ultracontrol (1.2.4) testing; urgency=medium
+
+  * New dilution process
+  * Z Axis new methods
+ -- sascha <asmolkov@lar.com>  Wed, 16 Nov 2016 14:50:31 +0100
+
+
+ultracontrol (1.2.3) testing; urgency=medium
+
+  * E1730 Z-Axis error level changed CRITICAL to WARNING
+  * Z Axis maxx position changed to 1800
+  * Error message "position deviation"
+  * FIX E1841 - 1846 Wenn kein Wasser eingespritzt wird kommt die Fehler.
+ -- sascha <asmolkov@lar.com>  Tue, 04 Okt 2016 15:53:31 +0100
+
+ultracontrol (1.2.0) UNRELEASED; urgency=medium
+
+  * squennse-workings-service
+     - Axishold sequense:
+       wurde angepasst und kann ab jetzt benutzt werden.
+  * Fluid-Fehler in dem Verdünnungsablauf wird ausgewertet (Pump7 E2107).
+  * FIX: measuremenrt process transmit measurement data.
+   - Der laufenden Prozess wird immer mit der Funktionsargumenten übergeben.
+   - Die Messergebnisse verlinken sich mit von den Messprozess weitergegebene Prozess-Model.
+
+ -- sascha <asmolkov@lar.com>  Wed, 17 Aug 2016 11:53:31 +0100
+
+ultracontrol (1.1.0) UNRELEASED; urgency=medium
+
+  * squennse-workings-service
+     - Rinsing sequense:
+       es wird das Ventil immer ausgeschaltet.
+     - All axis control sequence
+       init axis befor run.
+     - Bei Singlemeasurement sollte nicht mehr 'Sampling' Vorgang gestartet werden.
+
+ -- sascha <asmolkov@lar.com>  Wed, 27 Jul 2016 17:53:31 +0100
+
+ultracontrol (1.0.8) UNRELEASED; urgency=medium
+
+  * New ultra-control version (per Hand definiert): Test version
+
+ -- sascha <sascha@larjob>  Wed, 28 Jan 2015 17:04:31 +0100
+
+ultracontrol (1.0.3) UNRELEASED; urgency=medium
+
+  * New ultimatelib version (per Hand definiert): Test version
+
+ -- sascha <sascha@larjob>  Wed, 28 Jan 2015 17:04:31 +0100
+
+ultracontrol (1.0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- sascha <sascha@unknown>  Mon, 19 Jan 2015 15:49:33 +0100
